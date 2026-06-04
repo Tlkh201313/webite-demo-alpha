@@ -175,7 +175,7 @@ html.nsc-skeleton-active body {
     width: 7rem;
 }
 
-@media (max-width: 47.99em) {
+@media (max-width: 71.99em) {
     .nsc-skeleton__nav {
         display: none;
     }

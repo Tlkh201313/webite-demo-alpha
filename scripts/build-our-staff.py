@@ -374,49 +374,12 @@ if start == -1 or end == -1:
 page = page[:start] + main_block + page[end:]
 
 STAFF_IMG_SCRIPT = """
-        window.nscStaffImgFallback = function (img) {
-            const chain = (img.getAttribute('data-fallback-src') || '').split('|').filter(Boolean);
-            if (!chain.length) return;
-            img.onerror = null;
-            img.src = chain.shift();
-            if (chain.length) {
-                img.setAttribute('data-fallback-src', chain.join('|'));
-                img.onerror = function () { window.nscStaffImgFallback(img); };
-            }
-        };
         function loadDeferredStaffPhotos(root) {
             root.querySelectorAll('img.staff-photo--deferred[data-src]').forEach((img) => {
-                const primary = img.getAttribute('data-src');
-                if (!primary || img.getAttribute('src')) return;
+                const src = img.getAttribute('data-src');
+                if (!src || img.getAttribute('src')) return;
+                img.src = src;
                 img.removeAttribute('data-src');
-                const fallbacks = [primary];
-                const base = primary.split('?')[0];
-                if (base.includes('/Lisa-Veit.jpg')) {
-                    fallbacks.push('assets/staff/lisa-veit.jpg');
-                }
-                if (base.includes('northstowesc.org') && base.includes('-scaled.')) {
-                    fallbacks.push(base.replace('-scaled.', '.') + '?resize=112,144&ssl=1');
-                } else if (base.includes('northstowesc.org/wp-content') && !base.includes('-scaled.')) {
-                    const dot = base.rindexOf('.');
-                    if (dot > 0) {
-                        fallbacks.push(base.slice(0, dot) + '-scaled' + base.slice(dot) + '?resize=112,144&ssl=1');
-                    }
-                }
-                if (!primary.startsWith('assets/')) {
-                    fallbacks.push(base);
-                }
-                let attempt = 0;
-                const tryLoad = () => {
-                    if (attempt >= fallbacks.length) return;
-                    const url = fallbacks[attempt++];
-                    img.referrerPolicy = 'no-referrer';
-                    img.onerror = tryLoad;
-                    img.onload = () => { img.onerror = null; };
-                    img.src = url;
-                    img.loading = 'lazy';
-                    img.decoding = 'async';
-                };
-                tryLoad();
             });
         }
         document.querySelectorAll('.staff-accordion').forEach((details) => {
@@ -426,7 +389,14 @@ STAFF_IMG_SCRIPT = """
             });
         });
 """
-if "loadDeferredStaffPhotos" not in page:
+STAFF_IMG_OLD = re.compile(
+    r"\n\s*window\.nscStaffImgFallback[\s\S]*?"
+    r"document\.querySelectorAll\('\.staff-accordion'\)\.forEach\([\s\S]*?\}\);\n",
+    re.MULTILINE,
+)
+if STAFF_IMG_OLD.search(page):
+    page = STAFF_IMG_OLD.sub("\n" + STAFF_IMG_SCRIPT, page, count=1)
+elif "loadDeferredStaffPhotos" not in page:
     page = page.replace(
         "        const heroParallax = document.getElementById('hero-parallax');",
         STAFF_IMG_SCRIPT + "\n        const heroParallax = document.getElementById('hero-parallax');",

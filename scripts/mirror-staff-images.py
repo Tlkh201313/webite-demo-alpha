@@ -1,7 +1,6 @@
 """Download staff photos locally and rewrite about/staff-data.json image paths."""
 from __future__ import annotations
 
-import hashlib
 import json
 import re
 import urllib.parse

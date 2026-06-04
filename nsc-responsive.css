@@ -4,7 +4,7 @@
  */
 
 :root {
-    --nsc-gutter-mobile: 1rem;
+    --nsc-gutter-mobile: 0.75rem;
     --nsc-gutter-tablet: 1.25rem;
 }
 
@@ -54,7 +54,7 @@ embed {
 }
 
 /* —— Mobile —— */
-@media (max-width: 47.99em) {
+@media (max-width: 71.99em) {
     html {
         scroll-padding-top: 5.5rem;
     }
@@ -159,7 +159,7 @@ embed {
 }
 
 /* Landscape phone */
-@media (max-width: 47.99em) and (orientation: landscape) {
+@media (max-width: 71.99em) and (orientation: landscape) {
     section.relative.h-\[65vh\] {
         min-height: 16rem;
         height: 70vh;
@@ -168,7 +168,7 @@ embed {
 
 /* Safe area for notched devices */
 @supports (padding: max(0px)) {
-    @media (max-width: 47.99em) {
+    @media (max-width: 71.99em) {
         #site-chrome,
         body {
             padding-left: max(0px, env(safe-area-inset-left));
@@ -193,7 +193,7 @@ embed {
 }
 
 /* —— Tablet —— */
-@media (min-width: 48em) and (max-width: 63.99em) {
+@media (min-width: 72em) and (max-width: 63.99em) {
     html {
         scroll-padding-top: 6.25rem;
     }

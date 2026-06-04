@@ -332,7 +332,7 @@
     gap: 1rem;
     margin-top: 1.5rem;
 }
-@media (min-width: 48em) {
+@media (min-width: 72em) {
     .nsc-contact-steps {
         grid-template-columns: repeat(3, 1fr);
     }
