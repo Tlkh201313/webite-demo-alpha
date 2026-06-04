@@ -107,6 +107,18 @@ staff_css = """
             .staff-accordion[open] summary {
                 border-bottom: 1px solid rgba(255, 255, 255, 0.15);
             }
+            .staff-accordion__label {
+                flex: 1;
+                min-width: 0;
+            }
+            .staff-accordion__count {
+                flex-shrink: 0;
+                min-width: 3.25rem;
+                text-align: right;
+                font-weight: 400;
+                font-variant-numeric: tabular-nums;
+                opacity: 0.85;
+            }
             .staff-accordion__body {
                 padding: 1.5rem;
             }
@@ -309,7 +321,7 @@ for sec in data:
     count = len(sec["members"])
     sections_html.append(
         f"""<details class="staff-accordion reveal-on-scroll" id="{esc(sid)}"{open_attr}>
-<summary>{esc(sec["title"])} <span class="text-sm font-normal opacity-80">({count})</span></summary>
+<summary><span class="staff-accordion__label">{esc(sec["title"])}</span><span class="staff-accordion__count">({count})</span></summary>
 <div class="staff-accordion__body">{inner}</div>
 </details>"""
     )
