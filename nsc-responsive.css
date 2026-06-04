@@ -1,0 +1,215 @@
+/**
+ * Sitewide responsive layer — works with nsc-responsive.js data-device attributes
+ * and existing Tailwind / per-page nav breakpoints (48em mobile nav).
+ */
+
+:root {
+    --nsc-gutter-mobile: 1rem;
+    --nsc-gutter-tablet: 1.25rem;
+}
+
+/* Prevent horizontal page scroll on narrow viewports */
+html[data-device="mobile"],
+html[data-device="tablet"] {
+    overflow-x: clip;
+}
+
+html[data-device="mobile"] body,
+html[data-device="tablet"] body {
+    overflow-x: clip;
+}
+
+html[data-device="mobile"] {
+    scroll-padding-top: 5.5rem;
+}
+
+html[data-device="tablet"] {
+    scroll-padding-top: 6.25rem;
+}
+
+/* Fluid media everywhere */
+img,
+video,
+iframe,
+embed,
+object {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe,
+embed {
+    min-height: 12rem;
+}
+
+.entry-content iframe,
+.entry-content video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    border: 0;
+}
+
+/* Scrollable tables (wrapper added by nsc-responsive.js on mobile/tablet) */
+.nsc-table-wrap {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0 0 1px rgba(73, 14, 103, 0.1);
+}
+
+.nsc-table-wrap table {
+    margin: 0;
+    min-width: min(100%, 36rem);
+}
+
+/* —— Mobile —— */
+html[data-device="mobile"] .px-gutter,
+html[data-device="mobile"] .max-w-container-max {
+    padding-left: var(--nsc-gutter-mobile);
+    padding-right: var(--nsc-gutter-mobile);
+}
+
+html[data-device="mobile"] .max-w-container-max {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+html[data-device="mobile"] section.relative.h-\[65vh\] {
+    min-height: 18rem;
+    height: 52vh;
+}
+
+html[data-device="mobile"] .nsc-inner-banner__img {
+    max-height: 14rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+html[data-device="mobile"] .font-display-lg,
+html[data-device="mobile"] section.relative h1 {
+    font-size: clamp(1.5rem, 7vw, 2.25rem);
+    line-height: 1.15;
+}
+
+html[data-device="mobile"] #masthead .flex.items-center.justify-between {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+html[data-device="mobile"] #masthead img {
+    max-height: 3.25rem;
+    width: auto;
+}
+
+html[data-device="mobile"] .menu-toggle {
+    min-height: 2.75rem;
+    min-width: 2.75rem;
+}
+
+html[data-device="mobile"] .nsc-page-with-sidebar {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+}
+
+html[data-device="mobile"] .nsc-page-sidebar {
+    order: -1;
+}
+
+html[data-device="mobile"] .entry-content .wp-block-columns,
+html[data-device="mobile"] .entry-content .wp-block-media-text {
+    flex-direction: column !important;
+}
+
+html[data-device="mobile"] .grid.md\:grid-cols-2,
+html[data-device="mobile"] .grid.md\:grid-cols-3,
+html[data-device="mobile"] .grid.lg\:grid-cols-2,
+html[data-device="mobile"] .grid.lg\:grid-cols-3,
+html[data-device="mobile"] .grid.lg\:grid-cols-4 {
+    grid-template-columns: 1fr !important;
+}
+
+html[data-device="mobile"] footer .grid,
+html[data-device="mobile"] footer .flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+html[data-device="mobile"] .section-our-logos .our-logos-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+html[data-device="mobile"] .section-our-logos .our-logos-item img {
+    max-height: 4.5rem;
+}
+
+html[data-device="mobile"] .british-value-pill,
+html[data-device="mobile"] .rs-value-pill {
+    font-size: 0.875rem;
+}
+
+html[data-device="mobile"] .entry-content pre,
+html[data-device="mobile"] .entry-content code {
+    overflow-x: auto;
+    max-width: 100%;
+    word-break: break-word;
+}
+
+html[data-device="mobile"] .entry-content > * {
+    max-width: 100%;
+}
+
+/* Touch-friendly targets in chrome / nav only */
+html[data-touch="true"] #site-chrome a.font-cta-text,
+html[data-touch="true"] #site-chrome .menu-toggle,
+html[data-touch="true"] #site-chrome .nsc-secure-login__trigger,
+html[data-touch="true"] #site-chrome .nav-trigger {
+    min-height: 2.75rem;
+}
+
+html[data-touch="true"] .nav-inner > .font-cta-text {
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+}
+
+/* —— Tablet —— */
+html[data-device="tablet"] .max-w-container-max {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+html[data-device="tablet"] .nsc-page-with-sidebar {
+    grid-template-columns: 1fr !important;
+}
+
+html[data-device="tablet"] section.relative.h-\[65vh\] {
+    min-height: 22rem;
+    height: 58vh;
+}
+
+/* Landscape phone: slightly more hero height */
+html[data-device="mobile"][data-orientation="landscape"] section.relative.h-\[65vh\] {
+    min-height: 16rem;
+    height: 70vh;
+}
+
+/* Safe area for notched devices */
+@supports (padding: max(0px)) {
+    html[data-device="mobile"] #site-chrome,
+    html[data-device="mobile"] body {
+        padding-left: max(0px, env(safe-area-inset-left));
+        padding-right: max(0px, env(safe-area-inset-right));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html[data-device="mobile"] .editorial-shadow:hover,
+    html[data-device="tablet"] .editorial-shadow:hover {
+        transform: none;
+    }
+}
