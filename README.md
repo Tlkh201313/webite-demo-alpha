@@ -35,7 +35,10 @@ If the site does not appear after the first push:
 
 1. Open https://github.com/Tlkh201313/webite-demo-alpha/settings/pages
 2. Under **Build and deployment**, set **Source** to **GitHub Actions**
-3. Re-run the workflow from the **Actions** tab if needed
+3. Open https://github.com/Tlkh201313/webite-demo-alpha/actions — open the failed **Deploy to GitHub Pages** run, expand the red step, and read the error (often **Configure Pages** failed before step 2 was done)
+4. Click **Re-run all jobs** on the latest workflow run (or push any commit to `main`)
+
+Do **not** click **Configure** on the suggested “Static HTML” or Jekyll cards on the Pages settings page; this repo already uses `.github/workflows/deploy-pages.yml`.
 
 ## Repository
 

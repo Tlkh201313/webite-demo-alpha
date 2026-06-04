@@ -27,10 +27,25 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare publishable site
+        run: |
+          mkdir -p _pages
+          rsync -a \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='scripts/' \
+            --exclude='docs/' \
+            --exclude='graphify-out/' \
+            --exclude='.firecrawl/' \
+            --exclude='serve.ps1' \
+            --exclude='*.py' \
+            ./ _pages/
+          test -f _pages/index.html || (echo "Missing _pages/index.html" && exit 1)
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _pages
 
       - name: Deploy to GitHub Pages
         id: deployment
