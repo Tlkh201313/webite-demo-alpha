@@ -206,13 +206,13 @@
     overflow: hidden;
 }
 
-@media (min-width: 72em) {
+@media (min-width: 48em) {
     .nsc-secure-login__backdrop {
         display: none !important;
     }
 }
 
-@media (max-width: 71.99em) {
+@media (max-width: 47.99em) {
     .nsc-secure-login__panel {
         position: fixed;
         top: auto;

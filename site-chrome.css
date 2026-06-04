@@ -321,7 +321,7 @@ section.py-section-padding {
     max-width: 52rem;
 }
 
-@media (min-width: 72em) {
+@media (min-width: 48em) {
     .nsc-page-with-sidebar .entry-content > p,
     .nsc-page-with-sidebar .entry-content > ul,
     .nsc-page-with-sidebar .entry-content > ol,

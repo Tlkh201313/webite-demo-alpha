@@ -54,9 +54,10 @@ embed {
 }
 
 /* —— Mobile —— */
-@media (max-width: 71.99em) {
+@media (max-width: 47.99em) {
     html {
         scroll-padding-top: 5.5rem;
+        font-size: clamp(13px, 3.8vw, 16px); /* Fluidly scales everything (fonts, padding, margins) based on phone screen width */
     }
 
     .px-gutter,
@@ -159,7 +160,7 @@ embed {
 }
 
 /* Landscape phone */
-@media (max-width: 71.99em) and (orientation: landscape) {
+@media (max-width: 47.99em) and (orientation: landscape) {
     section.relative.h-\[65vh\] {
         min-height: 16rem;
         height: 70vh;
@@ -168,7 +169,7 @@ embed {
 
 /* Safe area for notched devices */
 @supports (padding: max(0px)) {
-    @media (max-width: 71.99em) {
+    @media (max-width: 47.99em) {
         #site-chrome,
         body {
             padding-left: max(0px, env(safe-area-inset-left));
