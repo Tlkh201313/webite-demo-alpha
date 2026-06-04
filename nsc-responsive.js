@@ -1,6 +1,7 @@
 /**
- * Device / viewport detection for NSC static pages.
- * Sets data-device, data-orientation, and --nsc-vw/--nsc-vh on <html>.
+ * Device / viewport utilities for NSC static pages.
+ * Sets --nsc-vw/--nsc-vh on <html> and wraps scrollable tables.
+ * Note: Core responsiveness is handled via native CSS media queries.
  */
 (function () {
     if (window.__nscResponsiveInit) {
@@ -9,20 +10,6 @@
     window.__nscResponsiveInit = true;
 
     const root = document.documentElement;
-    const mobileMq = window.matchMedia("(max-width: 47.99em)");
-    const tabletMq = window.matchMedia("(min-width: 48em) and (max-width: 63.99em)");
-    const portraitMq = window.matchMedia("(orientation: portrait)");
-    const coarseMq = window.matchMedia("(pointer: coarse)");
-
-    function deviceCategory() {
-        if (mobileMq.matches) {
-            return "mobile";
-        }
-        if (tabletMq.matches) {
-            return "tablet";
-        }
-        return "desktop";
-    }
 
     function updateViewportVars() {
         root.style.setProperty("--nsc-vw", window.innerWidth * 0.01 + "px");
@@ -30,8 +17,8 @@
     }
 
     function wrapEntryTables() {
-        const device = deviceCategory();
-        if (device === "desktop") {
+        // Wrap tables if on smaller screens (less than 1024px)
+        if (window.innerWidth >= 1024) {
             return;
         }
         document.querySelectorAll(".entry-content table").forEach((table) => {
@@ -49,25 +36,9 @@
     }
 
     function apply() {
-        const device = deviceCategory();
-        root.dataset.device = device;
-        root.dataset.orientation = portraitMq.matches ? "portrait" : "landscape";
-        root.dataset.touch = coarseMq.matches ? "true" : "false";
         updateViewportVars();
         wrapEntryTables();
     }
-
-    function onMqChange() {
-        apply();
-    }
-
-    [mobileMq, tabletMq, portraitMq, coarseMq].forEach((mq) => {
-        if (typeof mq.addEventListener === "function") {
-            mq.addEventListener("change", onMqChange);
-        } else if (typeof mq.addListener === "function") {
-            mq.addListener(onMqChange);
-        }
-    });
 
     let resizeTimer = 0;
     window.addEventListener(
