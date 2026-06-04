@@ -1,6 +1,12 @@
-name: Deploy to GitHub Pages (manual)
+name: Page update (GitHub Pages)
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - 'assets/**'
+      - '.github/workflows/**'
   workflow_dispatch:
 
 permissions:
@@ -40,6 +46,7 @@ jobs:
             ./ _pages/
           test -f _pages/index.html || (echo "Missing _pages/index.html" && exit 1)
           test -d _pages/assets/images || (echo "Missing _pages/assets/images" && exit 1)
+          grep -q 'staff-accordion__count' _pages/about/our-staff.html || (echo "Missing staff accordion count styles in our-staff.html" && exit 1)
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v3

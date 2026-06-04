@@ -21,10 +21,7 @@ page = page.replace(
     '<li><a href="ofsted-information.html" aria-current="page" class="bg-white/15">Ofsted Information</a></li>\n<li><a href="our-staff.html">Our Staff</a></li>',
     '<li><a href="ofsted-information.html">Ofsted Information</a></li>\n<li><a href="our-staff.html" aria-current="page" class="bg-white/15">Our Staff</a></li>',
 )
-HERO_IMG = (
-    "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2022/10/NSC-Banner-5.jpg"
-    "?resize=1200,266&ssl=1"
-)
+HERO_IMG = "../assets/images/NSC-Banner-5-1c9bb89d90.jpg"
 page = page.replace(
     'src="https://www.northstowesc.org/wp-content/uploads/2025/04/Banner-28.png"',
     f'src="{HERO_IMG}"',
@@ -32,12 +29,6 @@ page = page.replace(
 page = page.replace(
     'src="https://www.northstowesc.org/wp-content/uploads/2022/10/NSC-Banner-5.jpg"',
     f'src="{HERO_IMG}"',
-)
-page = page.replace(
-    '<meta content="width=device-width, initial-scale=1.0" name="viewport"/>',
-    '<meta content="width=device-width, initial-scale=1.0" name="viewport"/>\n'
-    '<link rel="preconnect" href="https://i0.wp.com" crossorigin/>\n'
-    '<link rel="dns-prefetch" href="https://i0.wp.com"/>',
 )
 page = page.replace(
     """<h1 class="font-display-lg text-[clamp(2rem,6vw,3rem)] sm:text-display-lg text-on-primary mb-6 leading-tight opacity-0 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards]">Ofsted Information</h1>
@@ -115,9 +106,12 @@ staff_css = """
                 flex-shrink: 0;
                 min-width: 3.25rem;
                 text-align: right;
+                font-size: inherit;
+                line-height: 1;
                 font-weight: 400;
                 font-variant-numeric: tabular-nums;
                 opacity: 0.85;
+                align-self: center;
             }
             .staff-accordion__body {
                 padding: 1.5rem;
@@ -204,27 +198,11 @@ def text(s: str) -> str:
     return esc(html.unescape(s or ""))
 
 
-def wp_origin_url(url: str | None) -> str | None:
+def staff_photo_url(url: str | None) -> str | None:
+    """Use mirrored local assets; remote hotlinks break on GitHub Pages."""
     if not url:
         return None
-    base = url.split("?")[0].strip()
-    if "i0.wp.com/www." in base:
-        return base.replace("https://i0.wp.com/www.", "https://www.")
-    return base
-
-
-def wp_cdn_url(url: str | None, w: int, h: int | None = None) -> str | None:
-    """Jetpack CDN resize — much smaller than full uploads."""
-    if not url:
-        return None
-    if url.startswith("assets/"):
-        return url
-    base = url.split("?")[0].strip()
-    if "northstowesc.org/wp-content" in base:
-        path = base.split("northstowesc.org", 1)[1]
-        base = f"https://i0.wp.com/www.northstowesc.org{path}"
-    q = f"resize={w},{h}" if h else f"resize={w}"
-    return f"{base}?{q}&ssl=1"
+    return url.split("?")[0].strip()
 
 
 def roles_html(roles: list[str]) -> str:
@@ -237,20 +215,10 @@ def roles_html(roles: list[str]) -> str:
     return "".join(parts)
 
 
-def photo_onerror_attr(fallback: str | None) -> str:
-    if not fallback:
-        return ""
-    return (
-        f' data-fallback-src="{esc(fallback)}" '
-        f'onerror="window.nscStaffImgFallback&&window.nscStaffImgFallback(this)"'
-    )
-
-
 def lead_card(m: dict, *, eager: bool = False) -> str:
     img = ""
     if m.get("image"):
-        src = wp_cdn_url(m["image"], 320, 427)
-        fallback = wp_origin_url(m["image"])
+        src = staff_photo_url(m["image"])
         load = (
             'loading="eager" fetchpriority="high" decoding="async"'
             if eager
@@ -258,7 +226,7 @@ def lead_card(m: dict, *, eager: bool = False) -> str:
         )
         img = (
             f'<img class="staff-lead-card__photo" src="{esc(src)}" alt="" {load} '
-            f'width="160" height="213"{photo_onerror_attr(fallback)}/>'
+            f'width="160" height="213"/>'
         )
     else:
         img = '<div class="staff-lead-card__photo bg-lavender-tint flex items-center justify-center"><span class="material-symbols-outlined text-royal-purple text-4xl">person</span></div>'
@@ -282,18 +250,16 @@ def lead_card(m: dict, *, eager: bool = False) -> str:
 def compact_card(m: dict, *, deferred: bool = True) -> str:
     photo = ""
     if m.get("image"):
-        src = wp_cdn_url(m["image"], 112, 144)
-        fallback = wp_origin_url(m["image"])
-        err = photo_onerror_attr(fallback)
+        src = staff_photo_url(m["image"])
         if deferred:
             photo = (
                 f'<img class="staff-compact-card__photo staff-photo--deferred" '
-                f'data-src="{esc(src)}" alt="" width="56" height="72"{err}/>'
+                f'data-src="{esc(src)}" alt="" width="56" height="72" loading="lazy" decoding="async"/>'
             )
         else:
             photo = (
                 f'<img class="staff-compact-card__photo" src="{esc(src)}" alt="" '
-                f'loading="lazy" decoding="async" width="56" height="72"{err}/>'
+                f'loading="lazy" decoding="async" width="56" height="72"/>'
             )
     else:
         photo = '<div class="staff-compact-card__placeholder" aria-hidden="true"><span class="material-symbols-outlined text-xl">person</span></div>'
