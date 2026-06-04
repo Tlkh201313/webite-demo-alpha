@@ -57,7 +57,11 @@ embed {
 @media (max-width: 47.99em) {
     html {
         scroll-padding-top: 5.5rem;
-        font-size: clamp(13px, 3.8vw, 16px); /* Fluidly scales everything (fonts, padding, margins) based on phone screen width */
+        /* Fluid scale: 15px on narrow phones, up to 17px on wider ones.
+           Using vw ensures real phones scale identically to DevTools. */
+        font-size: clamp(15px, 4.2vw, 17px);
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
     }
 
     .px-gutter,
