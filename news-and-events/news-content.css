@@ -1,0 +1,1026 @@
+/* Shared Learning section content — cached across all learning/*.html pages */
+
+/* --- Performance --- */
+.nsc-inner-banner__img {
+    background: linear-gradient(180deg, #f3ebf6 0%, #e8dff0 100%);
+}
+
+.entry-content img,
+.curriculum-figure img,
+.options-figure img,
+.options-booklet-cover img {
+    max-width: 100%;
+    height: auto;
+}
+
+.entry-content .padlet-embed {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 608px;
+}
+
+.entry-content .wp-block-spacer {
+    display: none;
+}
+
+/* --- Layout polish --- */
+.entry-header {
+    margin-bottom: 1.75rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(73, 14, 103, 0.1);
+}
+
+.nsc-page-with-sidebar {
+    gap: 2.5rem;
+}
+
+@media (min-width: 64em) {
+    .nsc-page-with-sidebar {
+        gap: 3rem;
+    }
+}
+
+/* Purple curriculum sidebar — must not use light “in-content” link styles */
+.nsc-page-sidebar {
+    border-radius: 0.5rem;
+    background: #490e67;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.nsc-page-sidebar .nsc-page-sidebar__parent {
+    margin: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    padding: 0.85rem 1rem;
+    color: #ffffff;
+    background: #350053;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.nsc-page-sidebar .nsc-page-sidebar__parent--sub {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.nsc-page-sidebar nav {
+    display: block;
+}
+
+.nsc-page-sidebar nav a {
+    display: block;
+    padding: 0.65rem 1rem;
+    margin: 0;
+    border-radius: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.35;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    transition: background 0.15s ease;
+}
+
+.nsc-page-sidebar nav a:hover,
+.nsc-page-sidebar nav a:focus {
+    background: #531871;
+    color: #ffffff;
+}
+
+.nsc-page-sidebar nav a[aria-current="page"] {
+    background: #73308b;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.nsc-page-sidebar nav a:last-child {
+    border-bottom: 0;
+}
+
+@media (min-width: 48em) {
+    .nsc-page-with-sidebar {
+        grid-template-columns: minmax(0, 1fr) 17.5rem;
+    }
+}
+
+/* --- Scraped WordPress content --- */
+.entry-content .wp-block-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: grid;
+    gap: 0.625rem;
+}
+
+.entry-content .wp-block-list li {
+    position: relative;
+    padding: 0.625rem 0.875rem 0.625rem 2rem;
+    font-size: 1.0625rem;
+    line-height: 1.5;
+    background: rgba(243, 235, 246, 0.45);
+    border-radius: 0.5rem;
+    border: 1px solid rgba(73, 14, 103, 0.08);
+}
+
+.entry-content .wp-block-list li::before {
+    content: "";
+    position: absolute;
+    left: 0.75rem;
+    top: 1.05em;
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 50%;
+    background: #490e67;
+}
+
+.entry-content .wp-block-image img,
+.entry-content figure img {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 20px rgba(73, 14, 103, 0.08);
+}
+
+.entry-content .wp-block-columns {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media (min-width: 48em) {
+    .entry-content .wp-block-columns {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.entry-content .padlet-embed {
+    border: 1px solid rgba(73, 14, 103, 0.12);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    width: 100%;
+    background: #f4f4f4;
+    box-shadow: 0 4px 20px rgba(73, 14, 103, 0.06);
+}
+
+.padlet-embed iframe {
+    width: 100%;
+    height: min(608px, 70vh);
+    display: block;
+    border: 0;
+}
+
+.curriculum-lead,
+.subjects-lead,
+.options-lead {
+    font-size: 1.1875rem;
+    line-height: 1.55;
+    max-width: 42rem;
+}
+
+.curriculum-figure img {
+    border-radius: 0.5rem;
+}
+
+/* --- Subjects hub --- */
+.subjects-section {
+    margin-top: 2.5rem;
+}
+
+.subjects-section__title {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #490e67;
+    margin-bottom: 0.5rem;
+}
+
+.subjects-section__intro {
+    font-size: 1.0625rem;
+    color: #4c444f;
+    margin-bottom: 1.25rem;
+    max-width: 40rem;
+}
+
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr));
+    gap: 0.875rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.subjects-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    min-height: 100%;
+    padding: 1rem 1.125rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(73, 14, 103, 0.12);
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(73, 14, 103, 0.06);
+    text-decoration: none;
+    color: #191c1d;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+a.subjects-card:hover {
+    border-color: rgba(73, 14, 103, 0.35);
+    box-shadow: 0 8px 28px rgba(73, 14, 103, 0.12);
+    transform: translateY(-2px);
+    color: #350053;
+}
+
+.subjects-card__icon {
+    font-family: "Material Symbols Outlined";
+    font-size: 1.75rem;
+    color: #490e67;
+    line-height: 1;
+}
+
+.subjects-card__name {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.subjects-card__detail {
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    color: #4c444f;
+}
+
+.subjects-quick-links,
+.options-quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.subjects-quick-links a,
+.options-quick-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(73, 14, 103, 0.2);
+    background: #f3ebf6;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #490e67;
+    text-decoration: none;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.subjects-quick-links a:hover,
+.options-quick-links a:hover {
+    background: #490e67;
+    border-color: #490e67;
+    color: #ffffff;
+}
+
+.subjects-ks4-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    gap: 0.625rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.subjects-ks4-item {
+    display: block;
+    padding: 0.625rem 0.875rem;
+    border-radius: 0.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.35;
+    background: rgba(73, 14, 103, 0.06);
+    color: #191c1d;
+}
+
+a.subjects-ks4-item {
+    font-weight: 600;
+    color: #490e67;
+    text-decoration: none;
+    border: 1px solid rgba(73, 14, 103, 0.12);
+    background: #ffffff;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+a.subjects-ks4-item:hover {
+    background: #f3ebf6;
+    border-color: rgba(73, 14, 103, 0.3);
+    color: #350053;
+}
+
+.subjects-ks4-item--muted {
+    color: #4c444f;
+    font-weight: 500;
+}
+
+.entry-content .subjects-card,
+.entry-content .subjects-quick-links a,
+.entry-content a.subjects-ks4-item,
+.entry-content .options-quick-links a,
+.entry-content .options-video-card__link {
+    text-decoration: none;
+}
+
+/* --- Year 8/9 options --- */
+.options-callout {
+    margin-top: 1.75rem;
+    padding: 1.25rem 1.5rem;
+    border-radius: 0.75rem;
+    border-left: 4px solid #490e67;
+    background: rgba(243, 235, 246, 0.85);
+}
+
+.options-callout__label {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: #490e67;
+    margin-bottom: 0.75rem;
+}
+
+.options-callout ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    font-size: 1.0625rem;
+    line-height: 1.55;
+}
+
+.options-callout li + li {
+    margin-top: 0.5rem;
+}
+
+.options-note {
+    margin-top: 1.25rem;
+    padding: 1rem 1.125rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 177, 0, 0.12);
+    border: 1px solid rgba(255, 177, 0, 0.35);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.options-section {
+    margin-top: 2.75rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(73, 14, 103, 0.12);
+}
+
+.options-section__title {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #490e67;
+    margin-bottom: 0.75rem;
+}
+
+.options-section__intro {
+    font-size: 1.0625rem;
+    color: #4c444f;
+    margin-bottom: 1.25rem;
+    max-width: 40rem;
+}
+
+.options-resources {
+    display: grid;
+    grid-template-columns: minmax(0, 16rem) 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+@media (max-width: 40em) {
+    .options-resources {
+        grid-template-columns: 1fr;
+    }
+}
+
+.options-booklet-cover {
+    margin: 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(73, 14, 103, 0.12);
+}
+
+.options-booklet-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.options-figure {
+    margin: 0;
+    text-align: center;
+}
+
+.options-figure figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.9375rem;
+    color: #4c444f;
+}
+
+.options-video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 1.25rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.options-video-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(73, 14, 103, 0.12);
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(73, 14, 103, 0.06);
+}
+
+.options-video-card__media {
+    background: #10001e;
+}
+
+.options-video-card__media video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.options-video-card__body {
+    padding: 1rem 1.125rem 1.125rem;
+}
+
+.options-video-card__title {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: #490e67;
+    margin: 0 0 0.5rem;
+}
+
+.options-video-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #490e67;
+}
+
+.options-video-card__link:hover {
+    color: #350053;
+}
+
+/* --- Motion & visual polish (GPU-friendly: opacity + transform only) --- */
+
+.nsc-inner-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.nsc-inner-banner::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    height: 45%;
+    pointer-events: none;
+    background: linear-gradient(180deg, transparent 0%, rgba(243, 235, 246, 0.55) 100%);
+}
+
+.nsc-inner-banner__title {
+    position: relative;
+    z-index: 1;
+    letter-spacing: -0.02em;
+}
+
+.nsc-inner-banner__img {
+    transform-origin: center center;
+}
+
+.entry-header .entry-title {
+    letter-spacing: -0.02em;
+    position: relative;
+    display: inline-block;
+}
+
+.entry-header .entry-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.35rem;
+    width: 100%;
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #490e67, #85419d);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.62s var(--nsc-ease-emphasis, cubic-bezier(0.16, 1, 0.3, 1)) 0.12s;
+}
+
+.learning-split-reveal.is-visible .entry-title::after {
+    transform: scaleX(1);
+}
+
+.entry-content > :is(h2, h3) {
+    font-family: "Hanken Grotesk", sans-serif;
+    color: #490e67;
+    letter-spacing: -0.01em;
+    scroll-margin-top: 6rem;
+}
+
+.entry-content > h2 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin-top: 2.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.entry-content > h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.entry-content a:not([class]) {
+    color: #490e67;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgba(73, 14, 103, 0.35);
+    text-underline-offset: 0.15em;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.entry-content a:not([class]):hover {
+    color: #350053;
+    text-decoration-color: #85419d;
+}
+
+.entry-content .youtube-player__activate .material-symbols-outlined {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.entry-content .youtube-player__activate:hover .material-symbols-outlined {
+    transform: scale(1.08);
+}
+
+.options-video-card {
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.options-video-card:hover {
+    border-color: rgba(73, 14, 103, 0.28);
+    box-shadow: 0 10px 32px rgba(73, 14, 103, 0.12);
+    transform: translateY(-2px);
+}
+
+.options-video-card__link .material-symbols-outlined,
+.subjects-quick-links a .material-symbols-outlined,
+.options-quick-links a .material-symbols-outlined {
+    transition: transform 0.2s ease;
+}
+
+.options-video-card__link:hover .material-symbols-outlined,
+.subjects-quick-links a:hover .material-symbols-outlined,
+.options-quick-links a:hover .material-symbols-outlined {
+    transform: translateX(2px);
+}
+
+.subjects-quick-links a,
+.options-quick-links a {
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.subjects-quick-links a:hover,
+.options-quick-links a:hover {
+    transform: translateY(-1px);
+}
+
+a.subjects-card:focus-visible,
+a.subjects-ks4-item:focus-visible,
+.options-video-card__link:focus-visible,
+.subjects-quick-links a:focus-visible,
+.options-quick-links a:focus-visible,
+.nsc-page-sidebar nav a:focus-visible {
+    outline: 2px solid #ffb100;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    @keyframes learning-banner-in {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes learning-banner-img-in {
+        from {
+            opacity: 0;
+            transform: scale(1.02);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .nsc-inner-banner__title {
+        animation: learning-banner-in 0.62s var(--nsc-ease-emphasis, cubic-bezier(0.16, 1, 0.3, 1)) both;
+    }
+
+    .nsc-inner-banner__img {
+        animation: learning-banner-img-in 0.78s var(--nsc-ease-out, cubic-bezier(0.22, 1, 0.36, 1)) 0.06s both;
+    }
+
+    .learning-split-reveal article,
+    .learning-split-reveal aside {
+        transform: translate3d(0, 16px, 0);
+        transition: transform 0.58s var(--nsc-ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+        will-change: transform;
+    }
+
+    .learning-split-reveal.is-visible article {
+        transform: translateY(0);
+    }
+
+    .learning-split-reveal.is-visible aside {
+        transform: translateY(0);
+        transition-delay: 0.12s;
+    }
+
+    .learning-stagger:not(.is-visible) > :is(
+            h2,
+            h3,
+            p,
+            ul,
+            ol,
+            figure,
+            .subjects-section,
+            .options-section,
+            .options-callout,
+            .options-note,
+            .leadership-aims,
+            .leadership-roles,
+            .leadership-apply,
+            .padlet-embed,
+            .youtube-player,
+            .curriculum-figure,
+            .wp-block-image,
+            .wp-block-list
+        ) {
+        animation: learning-block-fallback 0.4s 0.85s forwards;
+    }
+
+    @keyframes learning-block-fallback {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .learning-stagger > :is(
+            h2,
+            h3,
+            p,
+            ul,
+            ol,
+            figure,
+            .subjects-section,
+            .options-section,
+            .options-callout,
+            .options-note,
+            .leadership-aims,
+            .leadership-roles,
+            .leadership-apply,
+            .padlet-embed,
+            .youtube-player,
+            .curriculum-figure,
+            .wp-block-image,
+            .wp-block-list
+        ) {
+        opacity: 0;
+        transform: translate3d(0, 14px, 0);
+        transition:
+            opacity 0.5s var(--nsc-ease-out, cubic-bezier(0.22, 1, 0.36, 1)),
+            transform 0.5s var(--nsc-ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+    }
+
+    .learning-stagger.is-visible > :is(
+            h2,
+            h3,
+            p,
+            ul,
+            ol,
+            figure,
+            .subjects-section,
+            .options-section,
+            .options-callout,
+            .options-note,
+            .leadership-aims,
+            .leadership-roles,
+            .leadership-apply,
+            .padlet-embed,
+            .youtube-player,
+            .curriculum-figure,
+            .wp-block-image,
+            .wp-block-list
+        ) {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .learning-stagger.is-visible > :nth-child(1) {
+        transition-delay: 0ms;
+    }
+    .learning-stagger.is-visible > :nth-child(2) {
+        transition-delay: calc(var(--nsc-stagger-step, 52ms) * 1);
+    }
+    .learning-stagger.is-visible > :nth-child(3) {
+        transition-delay: calc(var(--nsc-stagger-step, 52ms) * 2);
+    }
+    .learning-stagger.is-visible > :nth-child(4) {
+        transition-delay: calc(var(--nsc-stagger-step, 52ms) * 3);
+    }
+    .learning-stagger.is-visible > :nth-child(5) {
+        transition-delay: calc(var(--nsc-stagger-step, 52ms) * 4);
+    }
+    .learning-stagger.is-visible > :nth-child(6) {
+        transition-delay: calc(var(--nsc-stagger-step, 52ms) * 5);
+    }
+    .learning-stagger.is-visible > :nth-child(7) {
+        transition-delay: calc(var(--nsc-stagger-step, 52ms) * 6);
+    }
+    .learning-stagger.is-visible > :nth-child(8) {
+        transition-delay: calc(var(--nsc-stagger-step, 52ms) * 7);
+    }
+    .learning-stagger.is-visible > :nth-child(9) {
+        transition-delay: calc(var(--nsc-stagger-step, 52ms) * 8);
+    }
+    .learning-stagger.is-visible > :nth-child(10) {
+        transition-delay: calc(var(--nsc-stagger-step, 52ms) * 9);
+    }
+    .learning-stagger.is-visible > :nth-child(11) {
+        transition-delay: calc(var(--nsc-stagger-step, 52ms) * 10);
+    }
+    .learning-stagger.is-visible > :nth-child(12) {
+        transition-delay: calc(var(--nsc-stagger-step, 52ms) * 11);
+    }
+
+    .learning-split-reveal.is-visible article,
+    .learning-split-reveal.is-visible aside,
+    .learning-stagger.is-visible > * {
+        will-change: auto;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .nsc-inner-banner__title,
+    .nsc-inner-banner__img {
+        animation: none !important;
+    }
+
+    .learning-split-reveal article,
+    .learning-split-reveal aside,
+    .learning-stagger > * {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .entry-header .entry-title::after {
+        transform: scaleX(1);
+        transition: none;
+    }
+}
+
+/* --- Student leadership & role accordions --- */
+.leadership-lead {
+    font-size: 1.1875rem;
+    line-height: 1.55;
+    color: #4c444f;
+    max-width: 42rem;
+    margin-bottom: 0.25rem;
+}
+
+.leadership-aims {
+    margin-top: 2rem;
+}
+
+.leadership-aims__title,
+.leadership-roles__title {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #490e67;
+    margin-bottom: 1rem;
+}
+
+.leadership-aims__grid {
+    display: grid;
+    gap: 0.875rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 48em) {
+    .leadership-aims__grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.leadership-aims__card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.125rem 1.25rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(73, 14, 103, 0.12);
+    background: linear-gradient(145deg, rgba(243, 235, 246, 0.95) 0%, #ffffff 100%);
+    box-shadow: 0 4px 20px rgba(73, 14, 103, 0.06);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.leadership-aims__card:hover {
+    border-color: rgba(73, 14, 103, 0.28);
+    box-shadow: 0 8px 28px rgba(73, 14, 103, 0.1);
+    transform: translateY(-2px);
+}
+
+.leadership-aims__icon {
+    font-family: "Material Symbols Outlined";
+    font-size: 1.75rem;
+    line-height: 1;
+    color: #490e67;
+}
+
+.leadership-aims__card p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #191c1d;
+}
+
+.leadership-roles {
+    margin-top: 2.75rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(73, 14, 103, 0.12);
+}
+
+.leadership-roles__intro {
+    font-size: 1.0625rem;
+    color: #4c444f;
+    margin-bottom: 1.25rem;
+    max-width: 36rem;
+}
+
+.leadership-roles__list {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.views-accordion {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 1px solid rgba(73, 14, 103, 0.12);
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(73, 14, 103, 0.06);
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.views-accordion[open] {
+    border-color: rgba(73, 14, 103, 0.28);
+    box-shadow: 0 8px 28px rgba(73, 14, 103, 0.1);
+}
+
+.views-accordion summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: #490e67;
+    color: #ffffff;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    transition: background 0.2s ease;
+}
+
+.views-accordion summary:hover {
+    background: #531871;
+}
+
+.views-accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.views-accordion__label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 0;
+}
+
+.views-accordion__icon {
+    font-family: "Material Symbols Outlined";
+    font-size: 1.35rem;
+    line-height: 1;
+    flex-shrink: 0;
+    opacity: 0.92;
+}
+
+.views-accordion summary::after {
+    content: "expand_more";
+    font-family: "Material Symbols Outlined";
+    font-size: 1.5rem;
+    font-weight: 400;
+    flex-shrink: 0;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.views-accordion[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.views-accordion[open] summary {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.views-accordion__body {
+    padding: 1.25rem 1.5rem 1.5rem;
+    font-size: 1.0625rem;
+    line-height: 1.55;
+}
+
+.views-accordion__body p {
+    margin: 0 0 1rem;
+}
+
+.views-accordion__body p:last-child {
+    margin-bottom: 0;
+}
+
+.views-accordion__body ul {
+    margin: 0.75rem 0 1rem;
+    padding-left: 1.25rem;
+}
+
+.views-accordion__body li + li {
+    margin-top: 0.4rem;
+}
+
+.views-accordion__figure {
+    margin: 1.25rem 0 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(73, 14, 103, 0.08);
+}
+
+.views-accordion__figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.leadership-apply {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.875rem;
+    margin-top: 2rem;
+    padding: 1.125rem 1.25rem;
+    border-radius: 0.75rem;
+    border-left: 4px solid #490e67;
+    background: rgba(243, 235, 246, 0.85);
+}
+
+.leadership-apply .material-symbols-outlined {
+    font-size: 1.5rem;
+    color: #490e67;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.leadership-apply p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #191c1d;
+}

@@ -1,0 +1,25 @@
+# Local / tooling
+.cursor/
+.firecrawl/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*~
+
+# Dev / audit artifacts (not deployed)
+graphify-out/
+.graphify_*.py
+.graphify_*.json
+docs/dead-dup-scan.json
+
+# Python venv (if created locally)
+.venv/
+venv/

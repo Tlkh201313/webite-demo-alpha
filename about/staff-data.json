@@ -1,0 +1,1035 @@
+[
+  {
+    "id": "senior-leadership-team-slt",
+    "title": "Senior Leadership Team (SLT)",
+    "members": [
+      {
+        "name": "Claire Mills",
+        "roles": [
+          "Principal"
+        ],
+        "email": "Head@northstowe.education",
+        "bio": "Claire began teaching in 2004 after training in Manchester, and has worked in schools across England including South Yorkshire, East Yorkshire, Derbyshire and Oxfordshire. Claire completed her postgraduate diploma in Innovation in Education at Warwick University in 2012 and her Masters degree in Teaching and Learning in Sheffield University in 2014. Claire joined Meridian Trust in 2018 as Deputy Headteacher at Swavesey Village College, taking on the role of Acting Headteacher for the 2022-2023 academic year. Whilst at Swavesey Village College, Claire was an integral part of the team that saw the school continued to gain an Ofsted Outstanding grading in all areas. Claire is passionate about inclusion and high-quality pastoral support, knowing and valuing all students to enable them to achieve their best in the classroom and beyond. Prior to becoming a teacher, Claire was a research scientist in molecular biology and genetics, gaining her doctorate from the ETH Z\u00fcrich, Switzerland.",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2024/10/Claire-Mills-scaled.jpg",
+        "type": "leadership"
+      },
+      {
+        "name": "Martin Campbell",
+        "roles": [
+          "Executive Principal"
+        ],
+        "email": "mcampbell@meridiantrust.co.uk",
+        "bio": "A teacher since 1997 Martin worked at Cambridge Meridian Academies Trust (CMAT) in a variety of roles; a consultant, Head Teacher of North Cambridge Academy and as an Executive Principal. Prior to joining CMAT he was Headteacher of Kettering Science Academy \u2013 an all through school for ages 4 to 18, Vice Principal at Parkside Community College and Head of English at Coleridge Community College. Following the successful merger of Cambridge Primary Education Trust and CMAT, Martin continues to work as a secondary Executive Principal for Meridian Trust. Whilst at North Cambridge Academy he oversaw significant improvements which ensured Ofsted graded the school as \u2018Good\u2019 with \u2018Outstanding\u2019 leadership on two occasions (2015 and 2019). Prior to being a teacher Martin had a number of occupations which have included: soldier in the Scots Guards with operational tours of Northern Ireland and Falklands in 1982, croupier in London, instructor of wind surfing and canoeing and manager in various hotels in the Savoie, France.",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2024/07/Martin-Campbell-e1622547483800-1024x999.jpg",
+        "type": "leadership"
+      },
+      {
+        "name": "Zoe Tregear",
+        "roles": [
+          "Vice Principal Head of Dyson House"
+        ],
+        "email": "ZTregear@northstowe.education",
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2026/01/Zoe-Tregear-scaled.jpg",
+        "type": "leadership"
+      },
+      {
+        "name": "Simon Russell",
+        "roles": [
+          "Assistant Headteacher Designated Safeguarding Lead Head of Attenborough House"
+        ],
+        "email": "SRussell@northstowe.education",
+        "bio": "Simon secured a PGCE at Loughborough University. Graduating in 2004, Simon moved to Cambridge to take up his first teaching post at Swavesey Village College. Simon was quickly promoted into variety of roles and has always been committed to achieving the best outcome for each student. Simon\u2019s career changed in 2011, when he became Director of school and community sport. Through detailed strategic planning and clear vison, Simon has led a variety range of staff to meet high expectations and influence change. Simon worked across a range of schools across the trust and has achieved the NPQSL. Simon started and subsequently lead the Physical Education and Sport CMAT group, steering students\u2019 progress through common systems, positive ethos and high aspirations. Simon was nominated and received a National award for Professional Practice by the Association of Physical Education (2017). Simon\u2019s work at Northstowe Secondary College started in 2013. His knowledge and expertise were called upon in order to provide in-depth consultation to develop new sports strategies and building design. Now leading on ethos, Simon is keen to ensure all students, parents and staff feel supported in demonstrating our whole school values of kind, curious and hardworking.",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083550264-scaled.jpg",
+        "type": "leadership"
+      },
+      {
+        "name": "Carl Deighton",
+        "roles": [
+          "Assistant Headteacher Head of Parks House"
+        ],
+        "email": "CDeighton@northstowe.education",
+        "bio": "Carl is passionate about ensuring every child achieves their full potential. He trained to teach in 2009 and graduated with a PGCE at the University of Leicester. Carl has taught English in a variety of locations; Leicester, Peterborough, and Ramsey over the last 12 years. He was Director of Key Stage 3 and Head of English in his last position where he led the whole school curriculum for KS3 and successfully led an outstanding English department, achieving excellent A Level and GCSE results consistently for several years. Carl has been a pastoral leader, teaching and learning coordinator and literacy coordinator. He has successfully mentored new teachers and trainees who have become outstanding practitioners. He has researched on developing boys\u2019 literacy and implemented strategies to improve attainment which was highly successful. Carl\u2019s aim is for every child to achieve outstanding results whilst enjoying school and becoming empathetic, respectable citizens.",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2022/09/Carl-Deighton.jpg",
+        "type": "leadership"
+      },
+      {
+        "name": "Adam Roberts",
+        "roles": [
+          "Assistant Headteacher Careers Lead Head of Glennie House"
+        ],
+        "email": "ARoberts@northstowe.education",
+        "bio": "Adam is a Product Design graduate from Nottingham Trent University. After spending some time travelling and working with children in Cambodia, he came back to the UK to complete his PGCE at the University of Manchester. After qualifying, Adam moved back to his hometown of Cambridge to work as a Design & Technology teacher at Soham Village College. He quickly became a department lead and then went on to become the director of SEND and senior mental health lead. He also has experience of safeguarding and alternative provision.",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Adam-Roberts-scaled.jpg",
+        "type": "leadership"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "id": "teaching-staff-and-tutors",
+    "title": "Teaching Staff and Tutors",
+    "members": [
+      {
+        "name": "Mr Matthew Adams",
+        "roles": [
+          "Assistant Subject Leader of English",
+          "Tutor to PMA"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2024/10/Matthew-Adams-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Laila Ahmed",
+        "roles": [
+          "Teacher of Science",
+          "Tutor to ALA"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916084118795-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Miss Charlotte Atkins",
+        "roles": [
+          "Assistant Subject Leader of Maths",
+          "Tutor to DCA"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2024/10/Charlotte-Atkins-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Miss Sophie Barker",
+        "roles": [
+          "Teacher of Maths",
+          "Tutor to DSB"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Sophie-Barker-1-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Dr. Balvinder Bloor",
+        "roles": [
+          "Teacher of Science"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2022/10/Balvinder-Bloor-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Naomi Clarke",
+        "roles": [
+          "Teacher of Art"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Naomi-Clarke-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Miss",
+        "roles": [
+          "Teacher of Science",
+          "Tutor to AJC"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083523765-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Joshua Curry",
+        "roles": [
+          "Teacher of PE and Science",
+          "Tutor to GJC"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083408184-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Miss Amy Dalby",
+        "roles": [
+          "Teacher of English and PE",
+          "Tutor to GAD"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2024/10/Amy-Dalby-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Kate Davies",
+        "roles": [
+          "Curriculum Lead for Art",
+          "Tutor to GKD"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Kate-Davies-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Ms Natasha Dhari",
+        "roles": [
+          "Curriculum Lead for Science",
+          "Tutor to AND"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Natasha-Dhari-1-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Christina Dunham",
+        "roles": [
+          "Curriculum Lead for Geography",
+          "Tutor to PCD"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2022/10/Christina-Dunham-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Helen Duthie",
+        "roles": [
+          "Teacher of Maths and Computer Science",
+          "Tutor to DHD"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083330226-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Dan Ecclestone",
+        "roles": [
+          "Teacher of Music"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/09/Dan-Ecclestone-768x1024.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Miss Claire Frodsham",
+        "roles": [
+          "Teacher of English",
+          "Tutor to PCF"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2024/10/Claire-Frodsham-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Miss Lindsey Gassner",
+        "roles": [
+          "Assistant Subject Leader of PE",
+          "Tutor to GLG"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083421930-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Andrew Higgins",
+        "roles": [
+          "Teacher of Science"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/09/Andy-Higgins-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Ben Hillman",
+        "roles": [
+          "Teacher of Maths",
+          "Tutor to DBH"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916084301969-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Rebecca Howard",
+        "roles": [
+          "Teacher of Physical Education",
+          "Tutor to GRH"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2022/10/Rebecca-Howard-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Lesley Long",
+        "roles": [
+          "Teacher of Science",
+          "Tutor to ALL"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2022/10/Lesley-Long-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Miss Hannah Matthews",
+        "roles": [
+          "Teacher of English"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/MF-0919094416868-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Annie McGovern",
+        "roles": [
+          "Teacher of History",
+          "Tutor to PAM"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2022/10/Annie-Morgan-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Keir Merchant",
+        "roles": [
+          "Teacher of Geography",
+          "Tutor to PKM"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2024/10/Kier-Merchant-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Laura Metcalfe",
+        "roles": [
+          "Curriculum Lead for English"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2022/10/Laura-Metcalfe-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Ben Mulholland",
+        "roles": [
+          "Curriculum Lead for Music"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Ben-Mulholland-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Miss Elisabeth Ngamba",
+        "roles": [
+          "Teacher of Modern Foreign Languages",
+          "Tutor to AEN"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Elisabeth-Ngamba-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Miss Hope Noble",
+        "roles": [
+          "Teacher of English",
+          "Senior Tutor to Dyson House"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Hope-Noble-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Miss Leah Patel",
+        "roles": [
+          "Teacher of Social Sciences / Cover Supervisor",
+          "Tutor to GLP"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083348078-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Dr Katja Waschneck",
+        "roles": [
+          "Teacher of MFL",
+          "Tutor to AEN"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2026/01/Katja-Waschneck.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Chris Peters",
+        "roles": [
+          "Curriculum Lead for Maths",
+          "Tutor to DCP"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2022/10/Chris-Peters-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Mark Rasmussen",
+        "roles": [
+          "Teacher of Business",
+          "Tutor to AMR"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2024/10/Mark-Rasmussen-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Mark Rix",
+        "roles": [
+          "Teacher of Science",
+          "Lead Practitioner \u2013 AP and Behaviour"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Mark-Rix-1-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Bradley Robinson",
+        "roles": [
+          "Curriculum Lead for Physical Education",
+          "Associate Assistant Principal"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916111126594-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Miss Mary-Ann Sebborn",
+        "roles": [
+          "Curriculum Lead for MFL (Modern Foreign Languages)",
+          "Tutor to AMS"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2022/10/Mary-Ann-Sebborn-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Sam Skinner",
+        "roles": [
+          "Curriculum Lead for Drama",
+          "Tutor to GSS"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Sam-Skinner-1-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Tom Spencer",
+        "roles": [
+          "Teacher of Maths",
+          "Tutor to DTS"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Tom-Spencer-1-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Miss Kerry Steers",
+        "roles": [
+          "Teacher of Social Sciences"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916084216588-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Jack Stinton",
+        "roles": [
+          "Teacher of Dance and Drama"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083443933-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Michael Styles",
+        "roles": [
+          "Teacher of History and Ethics"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/09/Michael-Styles-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Mark Swann",
+        "roles": [
+          "Teacher of Dance"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Mark-Swann-1-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Miss Victoria Taylor",
+        "roles": [
+          "Teacher of Geography",
+          "Tutor to PVT"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083247168-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Rob Thomas",
+        "roles": [
+          "Curriculum Lead for History",
+          "Tutor to PRT"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2022/10/Rob-Thomas-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Nicola Thomas",
+        "roles": [
+          "Teacher of Health and Social Care"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/09/Nicola-Thomas.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Miss Flip Toley",
+        "roles": [
+          "Teacher of Geography",
+          "Head of Sixth Form"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916112307417-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Miss Segen Tshaie",
+        "roles": [
+          "Teacher of Physics"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916111333137-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Anthony Williams",
+        "roles": [
+          "Teacher of DT and Art",
+          "Senior Tutor to Glennie House",
+          "Associate Assistant Principal"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083930585-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Tim Wilson",
+        "roles": [
+          "Curriculum Lead for Ethics",
+          "Tutor to PTW"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Tim-Wilson-1-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Dr. Deborah Winn",
+        "roles": [
+          "Curriculum Lead for DT",
+          "Tutor to DDW"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Debi-Winn-scaled.jpg",
+        "type": "compact"
+      }
+    ],
+    "count": 48
+  },
+  {
+    "id": "support-staff-send-and-teaching-assistants",
+    "title": "Support Staff \u2013 SEND and Teaching Assistants",
+    "members": [
+      {
+        "name": "Mrs Nicola Nevin",
+        "roles": [
+          "SENCO"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083005818-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Yasmin Burgess",
+        "roles": [
+          "Teaching Assistant"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083649208-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Susannah Collison",
+        "roles": [
+          "Higher Level Teaching Assistant (HLTA) / Assistant SENCO"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083054040-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Paula Dopadlik",
+        "roles": [
+          "Higher Level Teaching Assistant (HLTA) / Assistant SENCO"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083113847-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Miss Louisa Ecclestone",
+        "roles": [
+          "Teaching Assistant"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083733579-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Laura Efthymiou",
+        "roles": [
+          "Teaching Assistant"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083714988-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Ms Najoua Er-rahhali",
+        "roles": [
+          "Teaching Assistant"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/04/Najoua.jpeg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Esther Fung",
+        "roles": [
+          "Teaching Assistant"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916105733978-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Quin O\u2019Sullivan",
+        "roles": [
+          "Teaching Assistant"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083138463-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Lisa Veit",
+        "roles": [
+          "Teaching Assistant"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2022/11/Lisa-Veit-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Susan Walton",
+        "roles": [
+          "Higher Level Teaching Assistant (HIVE Manager)"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Susan-Walton-scaled.jpg",
+        "type": "compact"
+      }
+    ],
+    "count": 11
+  },
+  {
+    "id": "support-staff-student-support-assistants-ssa",
+    "title": "Support Staff \u2013 Student Support Assistants (SSA)",
+    "members": [
+      {
+        "name": "Mrs Louise Bucknall",
+        "roles": [
+          "Student Support Assistant (SSA):",
+          "Parks House"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083207383-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Caroline Cook",
+        "roles": [
+          "Student Support Assistant (SSA):",
+          "Attenborough House"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2022/10/Caroline-Cook-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Ms Debbie Pitt",
+        "roles": [
+          "Student Support Assistant (SSA):",
+          "Dyson House"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083844831-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Anne Steventon",
+        "roles": [
+          "Senior Tutor (Maternity Cover):",
+          "Parks House"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Anne-Steventon-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Clare Wadd",
+        "roles": [
+          "Student Support Assistant (SSA):",
+          "Glennie House"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2022/10/Clare-Wadd-scaled.jpg",
+        "type": "compact"
+      }
+    ],
+    "count": 5
+  },
+  {
+    "id": "support-staff",
+    "title": "Support Staff",
+    "members": [
+      {
+        "name": "Mr Simon Anker",
+        "roles": [
+          "Inclusion Support Assistant"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2022/10/Simon-Anker-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Sony Babu",
+        "roles": [
+          "DT Technician"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916111151131-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Katie Bevington",
+        "roles": [
+          "Receptionist"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/09/Katie-Bevington.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Rosh Bewick",
+        "roles": [
+          "Science Technician"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2021/09/rosh-bewick-staff.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Ece Cinar Balci",
+        "roles": [
+          "DT Technician"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083750997-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Catherine Cope",
+        "roles": [
+          "Finance Officer"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2024/01/Catherine-Cope-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Claire Driver",
+        "roles": [
+          "Exams Officer"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/11/Claire-Driver.png",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Hannah Grainger",
+        "roles": [
+          "Careers and Marketing Coordinator"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Emma-Leaney.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Emma Mawer",
+        "roles": [
+          "PA to the Principal"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916084001377-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Priti Mills",
+        "roles": [
+          "Science Technician"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/05/Priti-Mills-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Emily Moore",
+        "roles": [
+          "School Counsellor"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916084500299-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Jodi Newton",
+        "roles": [
+          "Finance Assistant"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/04/Jodi-Newton-1.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Kelly Papworth",
+        "roles": [
+          "Deputy Designated Safeguarding Lead (DSL)"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Kelly-Papworth-1-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Miss Michelle Smith",
+        "roles": [
+          "Interventions Teacher"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Michelle-Smith-1-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Ms Nicky Tabb",
+        "roles": [
+          "Attendance Officer"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/04/Nicky-Tabb.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Rebecca Wade",
+        "roles": [
+          "Receptionist"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/Rebecca-Wade.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Sarah Wakerley",
+        "roles": [
+          "HR Officer"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916083614889-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Katherine Webb",
+        "roles": [
+          "Data Assistant"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916105805456-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Sarah Wilson",
+        "roles": [
+          "HR Assistant"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/10/GM-0916084040074-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mrs Harriet Wright",
+        "roles": [
+          "Librarian"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/05/Harriet-Wright.jpg",
+        "type": "compact"
+      }
+    ],
+    "count": 20
+  },
+  {
+    "id": "site-team",
+    "title": "Site Team",
+    "members": [
+      {
+        "name": "Mr Jim Mowatt",
+        "roles": [
+          "Facilities Manager"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/09/Jim-Mowatt-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Robert Saunders",
+        "roles": [
+          "Senior Site Officer"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2024/10/Robert-Saunders.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Liam Gardner",
+        "roles": [
+          "Site Officer"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2024/10/Liam-Gardner-scaled.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Stephen Webster",
+        "roles": [
+          "Site Officer"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2025/03/Stephen-Webster.jpg",
+        "type": "compact"
+      },
+      {
+        "name": "Mr Chris Wilson",
+        "roles": [
+          "Site Officer"
+        ],
+        "email": null,
+        "bio": "",
+        "image": "https://i0.wp.com/www.northstowesc.org/wp-content/uploads/2023/05/Chris-Wilson-2.jpg",
+        "type": "compact"
+      }
+    ],
+    "count": 5
+  }
+]

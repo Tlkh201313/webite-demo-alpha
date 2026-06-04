@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="referrer" content="strict-origin-when-cross-origin"/>
+<title>Welcome | Northstowe Secondary College</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#d9dadb",
+                        "on-error-container": "#93000a",
+                        "alert-amber": "#FFB100",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#438bce",
+                        "outline-variant": "#cfc3d0",
+                        "on-tertiary-fixed": "#001d35",
+                        "on-tertiary-fixed-variant": "#00497a",
+                        "on-secondary-container": "#6d2a86",
+                        "surface-container-high": "#e7e8e9",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "house-dyson": "#E30613",
+                        "on-surface-variant": "#4c444f",
+                        "royal-purple": "#490E67",
+                        "primary": "#10001e",
+                        "tertiary-container": "#00213b",
+                        "surface-container-low": "#f3f4f5",
+                        "background": "#f8f9fa",
+                        "on-secondary-fixed-variant": "#6b2883",
+                        "on-secondary": "#ffffff",
+                        "house-attenborough": "#E5BE01",
+                        "secondary-fixed-dim": "#eeb1ff",
+                        "inverse-primary": "#e5b5ff",
+                        "deep-plum": "#350053",
+                        "tertiary-fixed-dim": "#9ccaff",
+                        "on-primary-fixed": "#30004b",
+                        "lavender-tint": "#F3EBF6",
+                        "tertiary-fixed": "#d0e4ff",
+                        "surface-tint": "#7a4a98",
+                        "outline": "#7e7480",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#f0f1f2",
+                        "secondary-fixed": "#fad7ff",
+                        "secondary-container": "#e89cff",
+                        "secondary": "#85419d",
+                        "house-parks": "#00AEEF",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface": "#f8f9fa",
+                        "on-primary-container": "#a572c3",
+                        "primary-fixed": "#f4d9ff",
+                        "on-secondary-fixed": "#330045",
+                        "primary-container": "#350053",
+                        "on-surface": "#191c1d",
+                        "inverse-surface": "#2e3132",
+                        "tertiary": "#000814",
+                        "surface-variant": "#e1e3e4",
+                        "on-background": "#191c1d",
+                        "primary-fixed-dim": "#e5b5ff",
+                        "trust-blue": "#2C79BA",
+                        "house-glennie": "#009640",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container": "#edeeef",
+                        "on-primary-fixed-variant": "#60317e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-sm": "12px",
+                        "stack-md": "24px",
+                        "stack-lg": "48px",
+                        "section-padding": "80px",
+                        "gutter": "32px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "cta-text": ["Hanken Grotesk"],
+                        "body-md": ["Inter"],
+                        "label-md": ["JetBrains Mono"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "cta-text": ["16px", {"lineHeight": "20px", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    },
+                    "animation": {
+                        "fade-in-up": "fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+                        "shimmer": "shimmer 2s infinite linear",
+                        "float": "float 6s ease-in-out infinite"
+                    },
+                    "keyframes": {
+                        "fadeInUp": {
+                            "0%": { opacity: "0", transform: "translateY(20px)" },
+                            "100%": { opacity: "1", transform: "translateY(0)" }
+                        },
+                        "shimmer": {
+                            "0%": { backgroundPosition: "200% 0" },
+                            "100%": { backgroundPosition: "-200% 0" }
+                        },
+                        "float": {
+                            "0%, 100%": { transform: "translateY(0)" },
+                            "50%": { transform: "translateY(-10px)" }
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .editorial-shadow {
+            box-shadow: 0px 4px 20px rgba(53, 0, 83, 0.05);
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+        
+        /* Entrance Animations */
+        @media (prefers-reduced-motion: no-preference) {
+            .reveal-on-scroll {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .reveal-on-scroll.is-visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+            /* Staggered delays for Core Values */
+            .stagger-1 { transition-delay: 100ms; }
+            .stagger-2 { transition-delay: 200ms; }
+            .stagger-3 { transition-delay: 300ms; }
+            .stagger-4 { transition-delay: 400ms; }
+            .stagger-5 { transition-delay: 500ms; }
+
+            /* Nav: mobile accordion (northstowesc.org) + desktop flyouts at 48em */
+            .menu-toggle {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                min-height: 2.75rem;
+                min-width: 2.75rem;
+                padding: 0.5rem 0.875rem;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: 0.375rem;
+                background: rgba(255, 255, 255, 0.08);
+                color: #ffffff;
+                font-family: "Hanken Grotesk", sans-serif;
+                font-size: 0.8125rem;
+                font-weight: 700;
+                line-height: 1.2;
+                cursor: pointer;
+                transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+                -webkit-tap-highlight-color: transparent;
+            }
+            .menu-toggle:hover,
+            .menu-toggle:focus-visible {
+                background: #73308b;
+                border-color: rgba(255, 255, 255, 0.35);
+                outline: none;
+            }
+            .menu-toggle:active {
+                transform: scale(0.97);
+            }
+            .menu-toggle.is-open {
+                background: #73308b;
+                border-color: rgba(255, 255, 255, 0.3);
+            }
+            .menu-toggle__icon {
+                font-size: 1.625rem;
+                line-height: 1;
+                transition: transform 0.2s ease;
+            }
+            .menu-toggle__icon-close {
+                display: none;
+            }
+            .menu-toggle.is-open .menu-toggle__icon-menu {
+                display: none;
+            }
+            .menu-toggle.is-open .menu-toggle__icon-close {
+                display: block;
+            }
+            .menu-toggle__label {
+                letter-spacing: 0.02em;
+            }
+            @media (max-width: 22rem) {
+                .menu-toggle__label {
+                    display: none;
+                }
+                .menu-toggle {
+                    padding: 0.5rem;
+                    min-width: 2.75rem;
+                }
+            }
+            .dropdown-toggle {
+                display: none;
+            }
+            .nav-dropdown-panel a,
+            .nav-inner > .font-cta-text[href="#"] {
+                font-family: "Hanken Grotesk", sans-serif;
+                font-weight: 600;
+                text-decoration: none;
+                color: #ffffff;
+            }
+
+            @media (max-width: 47.99em) {
+                .site-navigation {
+                    display: grid;
+                    grid-template-rows: 0fr;
+                    width: 100%;
+                    margin-top: 0.5rem;
+                    background: #490e67;
+                    border: 1px solid rgba(255, 255, 255, 0.12);
+                    border-radius: 0.5rem;
+                    box-shadow: 0 8px 24px rgba(16, 0, 30, 0.25);
+                    max-height: none;
+                    overflow: hidden;
+                    opacity: 0;
+                    visibility: hidden;
+                    pointer-events: none;
+                    transition: grid-template-rows 0.28s ease, opacity 0.22s ease, visibility 0.22s ease, margin-top 0.22s ease;
+                }
+                .site-navigation:not(.is-open) {
+                    border-color: transparent;
+                    box-shadow: none;
+                    margin-top: 0;
+                }
+                .site-navigation.is-open {
+                    grid-template-rows: 1fr;
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: auto;
+                    margin-top: 0.75rem;
+                }
+                .site-navigation > .nav-inner {
+                    min-height: 0;
+                    overflow: hidden;
+                }
+                .site-navigation.is-open > .nav-inner {
+                    max-height: min(72vh, calc(100dvh - 11rem));
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    -webkit-overflow-scrolling: touch;
+                    overscroll-behavior: contain;
+                }
+                .nav-inner {
+                    flex-direction: column;
+                    align-items: stretch;
+                    gap: 0;
+                }
+                .nav-menu-item,
+                .nav-inner > .font-cta-text {
+                    position: relative;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+                }
+                .nav-menu-item.mobile-has-submenu,
+                .nav-dropdown-panel li.has-children {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: stretch;
+                }
+                .nav-menu-item.is-submenu-open > .nav-trigger,
+                .nav-dropdown-panel li.has-children.is-submenu-open > a {
+                    background: #531871;
+                }
+                .nav-menu-item > .nav-trigger,
+                .nav-inner > .font-cta-text {
+                    display: flex;
+                    align-items: center;
+                    box-sizing: border-box;
+                    -webkit-tap-highlight-color: transparent;
+                }
+                .nav-menu-item.mobile-has-submenu > .nav-trigger {
+                    flex: 1 1 0;
+                    min-width: 0;
+                    width: auto;
+                    min-height: 3rem;
+                    padding: 0.875rem 1rem 0.875rem 1.125rem;
+                    font-size: clamp(0.9375rem, 2.8vw, 1.0625rem);
+                    line-height: 1.3;
+                }
+                .nav-inner > .font-cta-text {
+                    width: 100%;
+                    min-height: 3rem;
+                    padding: 0.875rem 1.125rem;
+                    font-size: clamp(0.9375rem, 2.8vw, 1.0625rem);
+                    line-height: 1.3;
+                }
+                .nav-menu-item > .nav-trigger:active,
+                .nav-inner > .font-cta-text:active,
+                .nav-dropdown-panel a:active {
+                    background: #531871;
+                }
+                .nav-chevron-desktop,
+                .nav-dropdown-panel .sub-chevron {
+                    display: none !important;
+                }
+                .nav-dropdown-panel,
+                .nav-dropdown-panel .submenu-panel {
+                    position: static;
+                    display: none;
+                    min-width: 0;
+                    width: 100%;
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: auto;
+                    box-shadow: none;
+                    border: none;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                }
+                .nav-menu-item.mobile-has-submenu > .nav-dropdown-panel,
+                .nav-dropdown-panel li.has-children > .submenu-panel {
+                    flex: 0 0 100%;
+                    width: 100%;
+                    order: 10;
+                }
+                .nav-menu-item.is-submenu-open > .nav-dropdown-panel,
+                .nav-dropdown-panel li.has-children.is-submenu-open > .submenu-panel {
+                    display: block;
+                }
+                .nav-dropdown-panel {
+                    background: #3f045d;
+                }
+                .nav-dropdown-panel .submenu-panel {
+                    background: #350053;
+                }
+                .nav-dropdown-panel .submenu-panel .submenu-panel {
+                    background: #2a0042;
+                }
+                .nav-dropdown-panel a {
+                    display: flex;
+                    align-items: center;
+                    min-height: 2.75rem;
+                    width: 100%;
+                    padding: 0.625rem 1rem 0.625rem 1.5rem;
+                    font-size: clamp(0.875rem, 2.6vw, 0.96875rem);
+                    line-height: 1.35;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                    box-sizing: border-box;
+                }
+                .nav-dropdown-panel li.has-children > a {
+                    flex: 1 1 0;
+                    min-width: 0;
+                    width: auto;
+                    padding: 0.625rem 0.75rem 0.625rem 1.5rem;
+                }
+                .nav-dropdown-panel .submenu-panel a {
+                    padding-left: 2.25rem;
+                    min-height: 2.625rem;
+                }
+                .nav-dropdown-panel .submenu-panel .submenu-panel a {
+                    padding-left: 3rem;
+                    font-size: clamp(0.8125rem, 2.4vw, 0.9rem);
+                    min-height: 2.5rem;
+                }
+                .nav-dropdown-panel li:last-child a {
+                    border-bottom: 0;
+                }
+                .nav-inner > .font-cta-text:last-child,
+                .nav-menu-item:last-of-type {
+                    border-bottom: 0;
+                }
+                .nav-menu-item::after {
+                    display: none;
+                }
+                /* Side arrow only (official site) — link left, chevron right */
+                .dropdown-toggle {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex: 0 0 2.75rem;
+                    width: 2.75rem;
+                    min-width: 2.75rem;
+                    align-self: stretch;
+                    min-height: 3rem;
+                    padding: 0;
+                    margin: 0;
+                    border: 0;
+                    border-left: 1px solid rgba(255, 255, 255, 0.15);
+                    border-radius: 0;
+                    background: transparent;
+                    color: #ffffff;
+                    cursor: pointer;
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                    transform: none;
+                    transition: background 0.15s ease;
+                    -webkit-tap-highlight-color: transparent;
+                    order: 2;
+                }
+                .nav-dropdown-panel li.has-children > .dropdown-toggle {
+                    min-height: 2.75rem;
+                }
+                .dropdown-toggle:active {
+                    background: #73308b;
+                }
+                .dropdown-toggle::after {
+                    font-family: "Material Symbols Outlined";
+                    font-size: 1.375rem;
+                    font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+                    content: "expand_more";
+                    transition: transform 0.2s ease;
+                }
+                .dropdown-toggle[aria-expanded="true"] {
+                    background: #73308b;
+                }
+                .dropdown-toggle[aria-expanded="true"]::after {
+                    transform: rotate(180deg);
+                }
+                .dropdown-toggle:hover,
+                .dropdown-toggle:focus-visible {
+                    background: #531871;
+                    outline: none;
+                }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .site-navigation,
+                .menu-toggle,
+                .menu-toggle__icon,
+                .dropdown-toggle::after {
+                    transition: none;
+                }
+            }
+
+            @media (min-width: 48em) {
+                .menu-toggle,
+                .dropdown-toggle {
+                    display: none !important;
+                }
+                .nav-chevron-desktop {
+                    display: inline !important;
+                }
+                .site-navigation {
+                    display: block !important;
+                    width: 100%;
+                    margin-top: 1.125rem;
+                    padding-top: 0.375rem;
+                    max-height: none;
+                    overflow: visible;
+                    background: transparent;
+                    border: 0;
+                }
+                .nav-inner {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 1rem 1.5rem;
+                }
+                .nav-menu-item > .nav-trigger {
+                    padding: 0.5rem 0.75rem;
+                    margin: -0.5rem -0.75rem;
+                    width: auto;
+                }
+                .nav-menu-item:hover > .nav-trigger,
+                .nav-menu-item:focus-within > .nav-trigger {
+                    background: #73308b;
+                }
+                .nav-menu-item::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 100%;
+                    height: 6px;
+                }
+                .nav-dropdown-panel {
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    min-width: 300px;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    background: #490e67;
+                    border: 1px solid rgba(255, 255, 255, 0.08);
+                    box-shadow: 0 12px 32px rgba(16, 0, 30, 0.35);
+                    z-index: 50;
+                    opacity: 0;
+                    visibility: hidden;
+                    pointer-events: none;
+                    transition: opacity 0.2s ease, visibility 0.2s ease;
+                }
+                .nav-menu-item:hover > .nav-dropdown-panel,
+                .nav-menu-item:focus-within > .nav-dropdown-panel {
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: auto;
+                }
+                .nav-dropdown-panel li {
+                    position: relative;
+                }
+                .nav-dropdown-panel a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 1rem;
+                    padding: 0.875rem 1.5rem;
+                    font-size: 15px;
+                    line-height: 1.35;
+                    white-space: normal;
+                    border-bottom: 0;
+                    transition: background 0.15s ease;
+                }
+                .nav-dropdown-panel li:hover > a {
+                    background: #531871;
+                }
+                .nav-dropdown-panel .submenu-panel {
+                    position: absolute;
+                    left: 100%;
+                    top: 0;
+                    min-width: 340px;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    background: #490e67;
+                    border: 1px solid rgba(255, 255, 255, 0.08);
+                    box-shadow: 0 12px 32px rgba(16, 0, 30, 0.35);
+                    z-index: 60;
+                    opacity: 0;
+                    visibility: hidden;
+                    pointer-events: none;
+                    transition: opacity 0.15s ease, visibility 0.15s ease;
+                }
+                .nav-dropdown-panel li.has-children:hover > .submenu-panel,
+                .nav-dropdown-panel li.has-children:focus-within > .submenu-panel {
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: auto;
+                }
+                .nav-dropdown-panel .sub-chevron {
+                    display: inline;
+                    font-size: 1.125rem;
+                    opacity: 0.9;
+                    flex-shrink: 0;
+                }
+                .nav-dropdown-panel.nav-panel--align-right {
+                    left: auto;
+                    right: 0;
+                }
+                .nav-dropdown-panel .submenu-panel.nav-panel--flip-left {
+                    left: auto;
+                    right: 100%;
+                }
+            }
+
+            @media (min-width: 64em) {
+                .site-navigation {
+                    margin-top: 1.625rem;
+                    padding-top: 0.5rem;
+                }
+            }
+        }
+
+        /* Nav Link Underline Hover */
+        .nav-link-underline {
+            position: relative;
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            .nav-link-underline::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: -4px;
+                left: 0;
+                background-color: currentColor;
+                transform-origin: bottom right;
+                transition: transform 0.3s ease-out;
+            }
+            .nav-link-underline:hover::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+
+        /* Shimmer effect for News Cards */
+        .shimmer-hover {
+            position: relative;
+            overflow: hidden;
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            .shimmer-hover::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 50%;
+                height: 100%;
+                background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+                transform: skewX(-20deg);
+                transition: left 0.5s;
+                z-index: 10;
+                pointer-events: none;
+            }
+            .shimmer-hover:hover::before {
+                left: 150%;
+            }
+        }
+
+        /* Enhanced hover states */
+        .interactive-hover {
+            transition: all 0.3s ease;
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            .interactive-hover:hover {
+                transform: translateY(-4px) scale(1.02);
+                box-shadow: 0 10px 25px rgba(53, 0, 83, 0.15);
+            }
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .council-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .council-table th,
+        .council-table td {
+            padding: 0.875rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(73, 14, 103, 0.12);
+        }
+        .council-table thead th {
+            background: #e2d3f0;
+            color: #350053;
+            font-family: "Hanken Grotesk", sans-serif;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .council-table tbody tr:hover {
+            background: rgba(243, 235, 246, 0.6);
+        }
+        @media (max-width: 40em) {
+            .council-table thead {
+                display: none;
+            }
+            .council-table tr {
+                display: block;
+                margin-bottom: 1rem;
+                padding: 1rem;
+                background: #fff;
+                border-radius: 0.5rem;
+                border: 1px solid rgba(73, 14, 103, 0.1);
+            }
+            .council-table td {
+                display: block;
+                border: none;
+                padding: 0.25rem 0;
+            }
+            .council-table td::before {
+                content: attr(data-label);
+                display: block;
+                font-size: 0.75rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                color: #85419d;
+                margin-bottom: 0.15rem;
+            }
+        }
+    </style>
+<link rel="stylesheet" href="nsc-skeleton.css"/>
+<link rel="stylesheet" href="nsc-secure-login.css"/>
+<link rel="stylesheet" href="nsc-reveal.css"/>
+<link rel="stylesheet" href="site-chrome.css"/>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<div id="nsc-skeleton-loader" class="nsc-skeleton" role="status" aria-live="polite" aria-busy="true" aria-label="Loading Northstowe Secondary College">
+<div class="nsc-skeleton__page">
+<div class="nsc-skeleton__alert nsc-skeleton__shimmer" aria-hidden="true"><span class="nsc-skeleton__alert-line"></span></div>
+<header class="nsc-skeleton__masthead" aria-hidden="true">
+<div class="nsc-skeleton__masthead-inner">
+<div class="nsc-skeleton__masthead-row">
+<div class="nsc-skeleton__logo nsc-skeleton__shimmer"></div>
+<div class="nsc-skeleton__masthead-actions">
+<div class="nsc-skeleton__menu-pill nsc-skeleton__shimmer"></div>
+<div class="nsc-skeleton__search nsc-skeleton__shimmer"></div>
+<div class="nsc-skeleton__cta nsc-skeleton__shimmer"></div>
+</div>
+</div>
+<nav class="nsc-skeleton__nav" aria-hidden="true">
+<span class="nsc-skeleton__nav-pill nsc-skeleton__nav-pill--sm nsc-skeleton__shimmer"></span>
+<span class="nsc-skeleton__nav-pill nsc-skeleton__nav-pill--md nsc-skeleton__shimmer"></span>
+<span class="nsc-skeleton__nav-pill nsc-skeleton__nav-pill--lg nsc-skeleton__shimmer"></span>
+<span class="nsc-skeleton__nav-pill nsc-skeleton__nav-pill--xl nsc-skeleton__shimmer"></span>
+<span class="nsc-skeleton__nav-pill nsc-skeleton__nav-pill--lg nsc-skeleton__shimmer"></span>
+<span class="nsc-skeleton__nav-pill nsc-skeleton__nav-pill--md nsc-skeleton__shimmer"></span>
+<span class="nsc-skeleton__nav-pill nsc-skeleton__nav-pill--sm nsc-skeleton__shimmer"></span>
+</nav>
+</div>
+</header>
+<section class="nsc-skeleton__banner" aria-hidden="true">
+<div class="nsc-skeleton__banner-inner">
+<div class="nsc-skeleton__banner-title nsc-skeleton__shimmer"></div>
+</div>
+<div class="nsc-skeleton__banner-img nsc-skeleton__shimmer"></div>
+</section>
+<section class="nsc-skeleton__hero-home" aria-hidden="true">
+<div class="nsc-skeleton__hero-home-lines">
+<span class="nsc-skeleton__shimmer"></span>
+<span class="nsc-skeleton__shimmer"></span>
+<span class="nsc-skeleton__shimmer"></span>
+</div>
+</section>
+<section class="nsc-skeleton__content" aria-hidden="true">
+<div class="nsc-skeleton__content-inner">
+<div class="nsc-skeleton__layout">
+<div class="nsc-skeleton__main">
+<div class="nsc-skeleton__quick-bar">
+<div class="nsc-skeleton__quick nsc-skeleton__shimmer"></div>
+<div class="nsc-skeleton__quick nsc-skeleton__shimmer"></div>
+</div>
+<div class="nsc-skeleton__card nsc-skeleton__card--lavender">
+<div class="nsc-skeleton__card-title nsc-skeleton__shimmer"></div>
+<div class="nsc-skeleton__line nsc-skeleton__line--wide nsc-skeleton__shimmer"></div>
+<div class="nsc-skeleton__line nsc-skeleton__line--medium nsc-skeleton__shimmer"></div>
+<div class="nsc-skeleton__line nsc-skeleton__line--short nsc-skeleton__shimmer"></div>
+</div>
+<div class="nsc-skeleton__card">
+<div class="nsc-skeleton__line nsc-skeleton__line--wide nsc-skeleton__shimmer"></div>
+<div class="nsc-skeleton__line nsc-skeleton__line--medium nsc-skeleton__shimmer"></div>
+</div>
+</div>
+<aside class="nsc-skeleton__sidebar nsc-skeleton__shimmer"></aside>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+<script src="nsc-skeleton.js"></script>
+<script src="nsc-secure-login.js" defer></script>
+<!-- Site chrome: wellbeing banner + header (flush stack) -->
+<div id="site-chrome" class="sticky top-0 z-50">
+<div class="bg-alert-amber text-primary py-2 px-4 sm:px-gutter flex items-center justify-center leading-none shadow-none">
+<a class="font-cta-text text-cta-text flex items-center justify-center gap-2 hover:opacity-80 transition-opacity w-full text-center" href="#">
+<span class="material-symbols-outlined">support_agent</span>
+            Feeling worried or anxious? We are here to help.
+            <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<!-- TopNavBar -->
+<header id="masthead" class="bg-royal-purple border-b border-white/10 shadow-sm overflow-visible">
+<div class="flex flex-col w-full max-w-container-max mx-auto px-4 sm:px-gutter py-3 sm:py-4">
+<div class="flex flex-wrap items-center justify-between gap-3 sm:gap-4">
+<!-- Brand Anchor -->
+<a class="flex-shrink-0 hover:scale-105 transition-transform duration-300" href="main.html">
+<img alt="Northstowe Secondary College Logo" class="h-12 sm:h-16 w-auto object-contain mix-blend-lighten" src="https://lh3.googleusercontent.com/aida/AP1WRLs6H9IuoyL5C2MhSmC14-z0L-UtDJ63B7-VqPCN93fwU1ire7pbIQqBR6G20wu4vbAEfkfFa7M_GQ7jbLoDLzDOTKgv4wOrLMONaQRExU-Syor8-XCF9hFHIpvXSuGOXsQhPjf-buxVfxLotkWnQgDHTfxuAvP4JsxYw5dENpyvvOdb1wTxORYf-qDLi6-Z-VBWTcI4qTPeRcJMB-dQ5sDYNdotUml8iTM_SUQ_0aiWvFsKbX7DULxXu9E"/>
+</a>
+<!-- Actions (menu toggle on small screens, like official site) -->
+<div class="flex items-center gap-2 sm:gap-4 flex-shrink-0">
+<button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-navigation" aria-label="Open main menu">
+<span class="material-symbols-outlined menu-toggle__icon menu-toggle__icon-menu" aria-hidden="true">menu</span>
+<span class="material-symbols-outlined menu-toggle__icon menu-toggle__icon-close" aria-hidden="true">close</span>
+<span class="menu-toggle__label">Main Menu</span>
+</button>
+<div class="hidden lg:flex items-center rounded-full px-4 py-1.5 border border-outline-variant bg-white/10 transition-colors focus-within:bg-white/20 focus-within:border-white/40">
+<span class="material-symbols-outlined text-on-primary/70 text-sm mr-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-body-md w-32 placeholder:text-on-primary/70 text-on-primary transition-all focus:w-48" placeholder="Search..." type="text"/>
+</div>
+<div class="nsc-secure-login" data-nsc-secure-login>
+<button type="button" class="nsc-secure-login__trigger" aria-expanded="false" aria-haspopup="true" aria-controls="nsc-secure-login-panel" id="nsc-secure-login-trigger">
+<span class="material-symbols-outlined" aria-hidden="true">lock</span>
+<span class="nsc-secure-login__label">Secure login</span>
+<span class="material-symbols-outlined nsc-secure-login__chevron" aria-hidden="true">expand_more</span>
+</button>
+<div class="nsc-secure-login__panel" id="nsc-secure-login-panel" role="menu" aria-labelledby="nsc-secure-login-trigger" hidden>
+<p class="nsc-secure-login__intro">Choose a platform to sign in. External links open in a new tab.</p>
+<div class="nsc-secure-login__group">
+<p class="nsc-secure-login__group-title">Parents &amp; carers</p>
+<ul class="nsc-secure-login__list" role="none"><li>
+<a class="nsc-secure-login__link" href="https://www.mychildatschool.com/MCAS/MCSParentLogin" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">family_restroom</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">MCAS (Parent login)</span>
+<span class="nsc-secure-login__link-hint">Payments, messages and student information</span>
+</span>
+</a>
+</li><li>
+<a class="nsc-secure-login__link nsc-secure-login__link--local" href="parents-and-carers/bromcom.html" role="menuitem">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">help</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">Bromcom / MCAS guide</span>
+<span class="nsc-secure-login__link-hint">Setup help on our website</span>
+</span>
+</a>
+</li></ul>
+</div><div class="nsc-secure-login__group">
+<p class="nsc-secure-login__group-title">School systems</p>
+<ul class="nsc-secure-login__list" role="none"><li>
+<a class="nsc-secure-login__link" href="https://cmat.cloud" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">cloud</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">Microsoft 365</span>
+
+</span>
+</a>
+</li><li>
+<a class="nsc-secure-login__link" href="https://outlook.office.com" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">mail</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">School email</span>
+
+</span>
+</a>
+</li><li>
+<a class="nsc-secure-login__link" href="https://northstowe.oliverasp.co.uk/library/home/news" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">local_library</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">Oliver library</span>
+
+</span>
+</a>
+</li></ul>
+</div><div class="nsc-secure-login__group">
+<p class="nsc-secure-login__group-title">Learning platforms</p>
+<ul class="nsc-secure-login__list" role="none"><li>
+<a class="nsc-secure-login__link" href="https://www.languagenut.com/resources/en-gb/index.html#/LoginScreen?packages=8,34,43,54,33,66&product=languagenut&conditions=1" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">translate</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">Languagenut</span>
+
+</span>
+</a>
+</li><li>
+<a class="nsc-secure-login__link" href="https://app.senecalearning.com/login" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">school</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">Seneca Learning</span>
+
+</span>
+</a>
+</li><li>
+<a class="nsc-secure-login__link" href="https://smartrevise.online/Account/Login" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">auto_stories</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">SmartRevise</span>
+
+</span>
+</a>
+</li><li>
+<a class="nsc-secure-login__link" href="https://auth.sparxmaths.uk/oauth2/auth?client_id=sparx-maths-sw&hd=7945fbe6-d4b2-4b01-89b0-207a949b4642&redirect_uri=https%3A%2F%2Fstudentapi.api.sparxmaths.uk%2Foauth%2Fcallback&response_type=code&scope=openid+profile+email&state=oQnSYpp33PJrbUHBBLHSRmHng-XLHEJxwnL0NaaE9s9a49odEHNP8MAhnWX3Jcvw6CcrWJhwfkITJzBAV7vJedkZeJ2649ueXcEP3J-essYFyP4sS6OV-E5vRhMCpN6Wnfhk237OPGJk3C9Td1EapOzlzkO7RL7rriaKfnFwTYgWWxE7rlI3cIEkSuRH_CM0jg5CMTsLyT7mbdYezZRRWPH8g9htzXObsrs52Gay6K9sZJrPhjp4YL2KAhL-pWuc24tzU7H09vn8L1Xk" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">calculate</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">Sparx Maths</span>
+
+</span>
+</a>
+</li><li>
+<a class="nsc-secure-login__link" href="https://auth.sparxmaths.uk/oauth2/auth?client_id=sparx-reader&hd=7945fbe6-d4b2-4b01-89b0-207a949b4642&redirect_uri=https%3A%2F%2Fapi.sparxreader.com%2Foauth2%2Fcallback%2Fsparx&response_type=code&scope=openid+profile+email&state=q24C5E4qk-5tT3-6ITzxd1UsPjOptePH1w6tLfyelrmoUTkrOAg0yyEf4Oxn2Jou8h9x8Aax9YcfswqCjmoh1L-Su7Dzb9BO_llnfCWYWwRD42L_4yNWznCWIChy8l2tA9q6vuRzF72Fbzzhxy7HoGFNzKRj82DIYjA_do4IPgB1P6ff0ydsm1IJpIFmhwJqHnKrI2pL6eguka7FWAlh4dke2pw0JQ%3D%3D" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">menu_book</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">Sparx Reader</span>
+
+</span>
+</a>
+</li><li>
+<a class="nsc-secure-login__link" href="https://app.tassomai.com/login?returnUrl=%2Fdashboard" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">quiz</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">Tassomai</span>
+
+</span>
+</a>
+</li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation: flyouts on desktop, accordion toggles below 48em -->
+<nav id="site-navigation" class="site-navigation main-navigation w-full min-[48em]:w-auto" aria-label="Main Menu">
+<div class="nav-inner flex items-center gap-6 lg:gap-8">
+<div class="relative nav-menu-item">
+<a class="nav-trigger font-cta-text text-cta-text hover:text-lavender-tint flex items-center gap-1 transition-all text-on-primary" href="welcome.html">Home<span class="material-symbols-outlined text-lg nav-chevron-desktop" aria-hidden="true">expand_more</span></a>
+<ul class="nav-dropdown-panel">
+<li><a href="welcome.html" aria-current="page" class="bg-white/15">Welcome from the Headteacher</a></li>
+</ul>
+</div>
+<div class="relative nav-menu-item">
+<a class="nav-trigger font-cta-text text-cta-text hover:text-lavender-tint flex items-center gap-1 transition-all text-on-primary" href="about/about-us.html">About<span class="material-symbols-outlined text-lg nav-chevron-desktop" aria-hidden="true">expand_more</span></a>
+<ul class="nav-dropdown-panel">
+<li><a href="about/about-us.html">About Us</a></li>
+<li><a href="about/build-timeline.html">Build Timeline</a></li>
+<li><a href="https://www.meridiantrust.co.uk/key-information/gdpr/" target="_blank" rel="noopener noreferrer">GDPR</a></li>
+<li><a href="about/governance.html">Governance and Academy Council</a></li>
+<li class="has-children">
+<a href="about/meridian-trust.html">Meridian Trust<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="https://www.meridiantrust.co.uk/captain-carbon/" target="_blank" rel="noopener noreferrer">Captain Carbon's Mission</a></li>
+</ul>
+</li>
+<li><a href="about/vision-and-values.html">NSC Vision and Values</a></li>
+<li><a href="about/ofsted-information.html">Ofsted Information</a></li>
+<li><a href="about/our-staff.html">Our Staff</a></li>
+<li><a href="about/parent-student-views.html">Parent and Student Views</a></li>
+<li><a href="about/policies-statutory-information.html">Policies and Statutory Information</a></li>
+<li><a href="about/school-performance.html">School Performance</a></li>
+<li><a href="about/sponsorship.html">Sponsorship</a></li>
+<li><a href="about/staff-vacancies.html">Staff Vacancies</a></li>
+<li><a href="about/testimonials.html">Testimonials</a></li>
+</ul>
+</div>
+<div class="relative nav-menu-item">
+<a class="nav-trigger font-cta-text text-cta-text hover:text-lavender-tint flex items-center gap-1 transition-all text-on-primary" href="learning/curriculum.html">Learning<span class="material-symbols-outlined text-lg nav-chevron-desktop" aria-hidden="true">expand_more</span></a>
+<ul class="nav-dropdown-panel">
+<li class="has-children">
+<a href="learning/curriculum.html">Curriculum<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="learning/curriculum/celebrating-diversity.html">Celebrating Diversity</a></li>
+<li><a href="learning/curriculum/keystage-3.html">Key Stage 3</a></li>
+<li><a href="learning/curriculum/keystage-4.html">Key Stage 4</a></li>
+<li><a href="learning/curriculum/pastoral.html">Pastoral</a></li>
+<li class="has-children">
+<a href="learning/curriculum/subjects.html">Subjects<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="learning/curriculum/subjects/art.html">Art</a></li>
+<li><a href="learning/curriculum/subjects/computer-science.html">Computer Science</a></li>
+<li><a href="learning/curriculum/subjects/dt.html">Design and Technology</a></li>
+<li><a href="learning/curriculum/subjects/english.html">English</a></li>
+<li><a href="learning/curriculum/subjects/ethics.html">Ethics</a></li>
+<li><a href="learning/curriculum/subjects/food-nutrition.html">Food Nutrition</a></li>
+<li><a href="learning/curriculum/subjects/french.html">French</a></li>
+<li><a href="learning/curriculum/subjects/geography.html">Geography</a></li>
+<li><a href="learning/curriculum/subjects/health-and-social-care.html">Health and Social Care</a></li>
+<li><a href="learning/curriculum/subjects/history.html">History</a></li>
+<li><a href="learning/curriculum/subjects/how-to-thrive.html">How To Thrive</a></li>
+<li><a href="learning/curriculum/subjects/maths.html">Maths</a></li>
+<li><a href="learning/curriculum/subjects/pe-and-sports.html">PE and Sports</a></li>
+<li><a href="learning/curriculum/subjects/performing-arts.html">Performing Arts</a></li>
+<li><a href="learning/curriculum/subjects/science.html">Science</a></li>
+</ul>
+</li>
+<li><a href="learning/curriculum/year-8-9-options.html">Year 8 / 9 Options</a></li>
+</ul>
+</li>
+<li class="has-children">
+<a href="learning/enrichment.html">Enrichment<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="learning/enrichment/extending-the-boundaries-of-learning-learning-outside-the-classroom.html">Extending the Boundaries of Learning</a></li>
+<li><a href="learning/enrichment/student-leadership.html">Student Leadership</a></li>
+</ul>
+</li>
+<li class="has-children">
+<a href="learning/examinations.html">Examinations<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="learning/year-11-masterclasses.html">Year 11 Masterclasses</a></li>
+<li><a href="learning/examinations/access-arrangements.html">Access Arrangements</a></li>
+</ul>
+</li>
+<li><a href="learning/homework-prep.html">Homework (PREP)</a></li>
+<li><a href="learning/interventions.html">Interventions</a></li>
+<li><a href="learning/progress-and-assessment.html">Progress and Assessment</a></li>
+<li><a href="learning/remote-learning.html">Remote Learning</a></li>
+<li><a href="learning/teaching-and-learning-strategy.html">Teaching and Learning Strategy</a></li>
+<li><a href="learning/whole-school-fluency.html">Whole School Fluency</a></li>
+</ul>
+</div>
+<div class="relative nav-menu-item">
+<a class="nav-trigger font-cta-text text-cta-text hover:text-lavender-tint flex items-center gap-1 transition-all text-on-primary" href="nsc-life/index.html">NSC Life<span class="material-symbols-outlined text-lg nav-chevron-desktop" aria-hidden="true">expand_more</span></a>
+<ul class="nav-dropdown-panel">
+<li><a href="nsc-life/absence.html">Absence</a></li>
+<li><a href="nsc-life/attendance.html">Attendance</a></li>
+<li class="has-children">
+<a href="nsc-life/careers-education.html">Careers (CEIAG)<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="nsc-life/careers-education/careers-and-guidance-for-students.html">Careers and Guidance for Students</a></li>
+<li><a href="nsc-life/careers-education/careers-and-guidance-for-parents.html">Careers and Guidance for Parents</a></li>
+<li><a href="nsc-life/careers-education/careers-and-guidance-for-teachers.html">Careers and Guidance for Teachers</a></li>
+<li><a href="nsc-life/careers-education/information-for-employers.html">Information for Employers</a></li>
+<li><a href="nsc-life/careers-education/labour-market-information.html">Labour Market Information</a></li>
+<li><a href="nsc-life/careers-education/post-16-pathways.html">Post-16 Pathways</a></li>
+<li><a href="nsc-life/careers-education/year-10-work-experience.html">Year 10 Work Experience</a></li>
+</ul>
+</li>
+<li><a href="nsc-life/catering.html">Catering</a></li>
+<li><a href="nsc-life/celebrating-achievement.html">Celebrating Achievement</a></li>
+<li><a href="nsc-life/eal.html">EAL</a></li>
+<li class="has-children">
+<a href="nsc-life/house-system.html">House System<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="nsc-life/house-system/attenborough.html">Attenborough</a></li>
+<li><a href="nsc-life/house-system/dyson.html">Dyson</a></li>
+<li><a href="nsc-life/house-system/glennie.html">Glennie</a></li>
+<li><a href="nsc-life/house-system/parks.html">Parks</a></li>
+</ul>
+</li>
+<li><a href="nsc-life/library.html">Library</a></li>
+<li class="has-children">
+<a href="nsc-life/mental-health-wellbeing.html">Mental Health &amp; Wellbeing<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="nsc-life/feeling-worried-or-anxious.html">Feeling worried or anxious?</a></li>
+</ul>
+</li>
+<li class="has-children">
+<a href="nsc-life/pastoral-care-and-safeguarding.html">Pastoral Care and Safeguarding<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="nsc-life/pastoral-care-and-safeguarding/safeguarding-statement.html">Safeguarding Statement</a></li>
+</ul>
+</li>
+<li><a href="nsc-life/rewards-and-sanctions.html">Rewards and Sanctions</a></li>
+<li><a href="nsc-life/school-day.html">School Day</a></li>
+<li><a href="nsc-life/send.html">SEND</a></li>
+<li><a href="nsc-life/travel.html">Travel</a></li>
+<li><a href="nsc-life/uniform.html">Uniform</a></li>
+</ul>
+</div>
+<div class="relative nav-menu-item">
+<a class="nav-trigger font-cta-text text-cta-text hover:text-lavender-tint flex items-center gap-1 transition-all text-on-primary" href="parents-and-carers/index.html">Parents and Carers<span class="material-symbols-outlined text-lg nav-chevron-desktop" aria-hidden="true">expand_more</span></a>
+<ul class="nav-dropdown-panel">
+<li><a href="parents-and-carers/admissions.html">Admissions</a></li>
+<li><a href="parents-and-carers/applying-for-free-school-meals.html">Applying for Free School Meals</a></li>
+<li><a href="parents-and-carers/bromcom.html">Bromcom/MCAS</a></li>
+<li><a href="parents-and-carers/early-closure-notification.html">Early Closure Notification</a></li>
+<li><a href="parents-and-carers/home-school-communication.html">Home School Communication</a></li>
+<li><a href="parents-and-carers/keeping-children-safe-online.html">Keeping Children Safe Online</a></li>
+<li><a href="parents-and-carers/open-evening.html">NSC Open Evening 2025</a></li>
+<li><a href="parents-and-carers/parents-forum.html">Parents Forum</a></li>
+<li><a href="parents-and-carers/pupil-premium.html">Pupil Premium and Meridian Trust Charter</a></li>
+<li><a href="parents-and-carers/support-your-childs-learning.html">Supporting Your Child&#x27;s Learning</a></li>
+<li><a href="parents-and-carers/transition.html">Transition</a></li>
+</ul>
+</div>
+<div class="relative nav-menu-item">
+<a class="nav-trigger font-cta-text text-cta-text hover:text-lavender-tint flex items-center gap-1 transition-all text-on-primary" href="news-and-events/index.html">News and Events<span class="material-symbols-outlined text-lg nav-chevron-desktop" aria-hidden="true">expand_more</span></a>
+<ul class="nav-dropdown-panel">
+<li><a href="news-and-events/calendar.html">Calendar and Key Dates</a></li>
+<li><a href="news-and-events/latest-news.html">Latest News</a></li>
+<li><a href="news-and-events/newsletters.html">NSC Newsletters</a></li>
+<li class="has-children">
+<a href="#">Term Dates<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="news-and-events/term-dates-2025-2026.html">Term Dates 2025-2026</a></li>
+<li><a href="news-and-events/term-dates-2026-2027.html">Term Dates 2026-2027</a></li>
+<li><a href="news-and-events/term-dates-2027-2028.html">Term Dates 2027-2028</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<a class="font-cta-text text-cta-text hover:text-lavender-tint transition-all duration-200 text-on-primary nav-link-underline min-[48em]:nav-link-underline" href="https://pandesports.com/northstowe-college" target="_blank" rel="noopener noreferrer">Hire Our Spaces</a>
+<a class="font-cta-text text-cta-text hover:text-lavender-tint transition-all duration-200 text-on-primary nav-link-underline min-[48em]:nav-link-underline" href="contact-us.html">Contact Us</a>
+</div>
+</nav>
+</div>
+</header>
+</div>
+<!-- Hero Section -->
+<section class="relative h-[52vh] sm:h-[60vh] lg:h-[64vh] min-h-[360px] sm:min-h-[420px] flex items-center overflow-hidden">
+<div class="absolute inset-0 w-full h-full" id="hero-parallax">
+<img alt="Northstowe Secondary College campus" class="w-full h-full object-cover z-0 scale-110 transition-transform duration-[10s] hover:scale-100" src="https://lh3.googleusercontent.com/aida/AP1WRLtXSHuwTDdMakxRrUiyzyiLqbkBOVZdH0qglcsGMTXt4c-qzNs830UPDku6vLvw7jBg9rM8LSCl3bY4VZen5ZphyA-Qdpu3_NkArxUJQy2cpQ8OWqvuu2ZeaYEJslBmWTmRZDDk2hAMBG7lOgJsSWmRzvjvLLThw7hlYRKqPvxzpxfL2vHSvcEbml1iVhERSoPw3lZDpU-ofrSXRXQfHeLevK7IFP5FMGf-9ssPEu4iSGkjj2Tz42BNWACu"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-deep-plum/92 via-deep-plum/60 to-deep-plum/30 z-10"></div>
+<div class="relative z-20 w-full max-w-container-max mx-auto px-4 sm:px-gutter">
+<div class="max-w-3xl">
+<span class="font-label-md text-label-md text-lavender-tint tracking-widest block mb-4 uppercase opacity-0 animate-[fadeInUp_0.8s_ease-out_0.2s_forwards]">Welcome</span>
+<h1 class="font-display-lg text-[clamp(2rem,6vw,3rem)] sm:text-display-lg text-on-primary mb-6 leading-tight opacity-0 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards]">Welcome</h1>
+<p class="font-body-lg text-body-lg text-on-primary/90 mb-10 leading-relaxed opacity-0 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards]">
+                    Welcome to Northstowe Secondary College, part of the wider Northstowe Learning Community and Meridian Trust.
+                </p>
+<div class="flex flex-wrap gap-4 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.8s_forwards]">
+<a class="bg-on-primary text-deep-plum font-cta-text text-cta-text px-8 py-4 flex items-center gap-2 hover:bg-lavender-tint transition-all duration-300 interactive-hover rounded-md" href="#welcome-message">
+                        Read our message
+                        <span class="material-symbols-outlined">arrow_downward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Welcome message -->
+<section class="py-section-padding bg-surface-container-lowest" id="welcome-message">
+<div class="max-w-container-max mx-auto px-4 sm:px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 reveal-on-scroll">
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase mb-stack-sm block">Northstowe Learning Community</span>
+<h2 class="font-headline-lg text-headline-lg text-royal-purple mb-6">A new chapter for our community</h2>
+<div class="space-y-stack-sm font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+<p>Welcome to Northstowe Secondary College, part of the wider Northstowe Learning Community and <a class="text-trust-blue hover:text-royal-purple font-medium underline" href="about/meridian-trust.html">Meridian Trust</a>.</p>
+<p>This is an exciting time for our students moving schools and we want to ensure that the transfer into the College is both a smooth and stimulating experience for every individual. It is an especially exciting time for us all as we embark upon this journey to open a brand new secondary school and forge our new community. This journey will provide opportunities to build on the strengths and experiences of our community in collaboration with our sister school Swavesey Village College (SVC).</p>
+<p>We have been working towards the opening of Northstowe Secondary College since our initial bid to open a new all through 0-19 education campus in 2007–8. It is very exciting for our Trust to now be working with the community in Northstowe and Longstanton, bringing this long standing vision to reality and ensuring that Northstowe Secondary College is an inspiring place to work and learn.</p>
+</div>
+</div>
+<div class="lg:col-span-5 reveal-on-scroll">
+<figure class="relative rounded-xl overflow-hidden editorial-shadow interactive-hover">
+<img alt="Andy Daly (Executive Principal) and Mike Fox (Chair of Governors)" class="w-full h-auto object-cover" src="https://www.northstowesc.org/wp-content/uploads/2018/10/Mike-and-Andy.jpg"/>
+<figcaption class="font-body-md text-body-md text-on-surface-variant text-center mt-4 px-2">Andy Daly (Executive Principal) and Mike Fox (Chair of Governors)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<!-- Related links -->
+<section class="py-section-padding bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-4 sm:px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto reveal-on-scroll">
+<a class="group flex flex-col p-8 rounded-xl bg-lavender-tint/40 border border-royal-purple/10 hover:bg-royal-purple transition-all duration-300 interactive-hover" href="about/about-us.html">
+<span class="material-symbols-outlined text-royal-purple group-hover:text-on-primary text-3xl mb-4 transition-colors">info</span>
+<h3 class="font-headline-md text-headline-md text-royal-purple group-hover:text-on-primary mb-2 transition-colors">About Us</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-primary/90 transition-colors">Our values, facilities, and learning community story.</p>
+<span class="mt-4 font-cta-text text-cta-text text-trust-blue group-hover:text-lavender-tint inline-flex items-center gap-1 transition-colors">Learn more <span class="material-symbols-outlined text-[18px]">arrow_forward</span></span>
+</a>
+<a class="group flex flex-col p-8 rounded-xl bg-lavender-tint/40 border border-royal-purple/10 hover:bg-royal-purple transition-all duration-300 interactive-hover" href="main.html">
+<span class="material-symbols-outlined text-royal-purple group-hover:text-on-primary text-3xl mb-4 transition-colors">home</span>
+<h3 class="font-headline-md text-headline-md text-royal-purple group-hover:text-on-primary mb-2 transition-colors">College home</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-primary/90 transition-colors">Return to the main Northstowe Secondary College site.</p>
+</a>
+</div>
+</div>
+</section>
+<!-- CTA -->
+<section class="py-section-padding bg-royal-purple text-center px-4 sm:px-gutter reveal-on-scroll">
+<div class="max-w-2xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-stack-md">Part of Northstowe Learning Community</h2>
+<p class="font-body-lg text-body-lg text-on-primary/90 mb-stack-lg">Explore more about our college, trust, and community partnerships.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<a class="bg-on-primary text-deep-plum font-cta-text text-cta-text px-8 py-4 rounded-lg hover:bg-lavender-tint transition-colors flex items-center gap-2 interactive-hover" href="about/about-us.html">
+                        About Us
+                        <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a class="border-2 border-on-primary text-on-primary font-cta-text text-cta-text px-8 py-4 rounded-lg hover:bg-on-primary/10 transition-colors interactive-hover" href="main.html">
+                        Back to home
+                    </a>
+</div>
+</div>
+</section>
+<!-- Trust Partner Section -->
+<section class="py-section-padding border-t border-outline-variant reveal-on-scroll">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<h2 class="font-headline-md text-headline-md text-royal-purple mb-12">Northstowe Learning Community &amp; Meridian Trust</h2>
+<div class="flex flex-wrap justify-center items-center gap-16 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+<img alt="Northstowe Primary School" class="h-16 w-auto transition-transform hover:scale-110 duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARNfzPCfTwsFKXqOLtHp153N-20N_V_WRuzu1J_pF-DjQK1EdbdSKJtw4XrG1dhQE0eLWpzwyL19_ICDPuDpMSpGcWT07XyZclW2lmr0h9urCtadvD9F5iXpS861zAIVIPUGjMeDjRsHnAV4GWyOiOn-3kvGrkIYQwr4jMfZvTrFfSJLgmVh4LoEaFqseNzjyguTUUDFKiDe-mqVp4BpT4FWDxeom4wBeBQrOBIPz4E7BQ7F4ePJQShSD9zwrwpK52fE4Y38YSUn14"/>
+<div class="flex items-center gap-4 transition-transform hover:scale-105 duration-300 interactive-hover">
+<img alt="Meridian Trust" class="h-20 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWPGKSMLUJSBBXu2zH62fs3hQuP3U79eqeaDTPe_05F_YOTOwzumRe_GROHXTKkHhX96YmuaQVQpAZ7myz-0EpyONf6PuGGswYdIkZEjy00NhQlc4eYDivjemfvyTPIn6nhh8LpjlOr7hyhxN6IKkJexBiGwgNobEpNmoY8gSr81vhgYRa0vX0UmuZfifISW6-5S3hD6xuuKEfWI_9evdCUz582fHHxwMIjOAVKe8yfSXilT-X1mK5tnfAXESbHuEO3Y2CQFfLom6f"/>
+<div class="text-left">
+<p class="font-label-md text-label-md text-on-surface-variant max-w-xs">Sharing excellent education practice across Cambridgeshire.</p>
+</div>
+</div>
+<img alt="Northstowe Sixth Form" class="h-16 w-auto transition-transform hover:scale-110 duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXq80oShGpJ9rGWBEFxDPsbAkS3qnCHx1exsUq8sOPj3Ezq4jYHNQiWbHCHO9--MBm2Nkq7TbLZtuuUbwtmDYuIgpQq2_EP_CkkFV6kINwMXBlDX89QYdBbRCaAb5qS1S-NM_znjxBk4ePLNQycLWg4kkDKorEoutmTj68E4VJaEqgQWu0anIxUpwGAMALuniOW4BqTEwd-IyHvttZ6qcYvVJ-u14xI0MVYQDyPcGanMBaBOvFBbCWOfOF6N0PPfqTfKSVfXQuwlzm"/>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="text-on-primary pt-section-padding pb-8 bg-royal-purple border-t border-white/10">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
+<!-- Info Col -->
+<div class="space-y-6">
+<img alt="Logo White" class="h-16 w-auto hover:opacity-80 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLs6H9IuoyL5C2MhSmC14-z0L-UtDJ63B7-VqPCN93fwU1ire7pbIQqBR6G20wu4vbAEfkfFa7M_GQ7jbLoDLzDOTKgv4wOrLMONaQRExU-Syor8-XCF9hFHIpvXSuGOXsQhPjf-buxVfxLotkWnQgDHTfxuAvP4JsxYw5dENpyvvOdb1wTxORYf-qDLi6-Z-VBWTcI4qTPeRcJMB-dQ5sDYNdotUml8iTM_SUQ_0aiWvFsKbX7DULxXu9E"/>
+<p class="font-body-md text-surface-variant opacity-80 leading-relaxed">
+                    Northstowe Secondary College is committed to creating a safe and stimulating environment where all students are empowered to achieve their potential.
+                </p>
+</div>
+<!-- Links Col -->
+<div>
+<h4 class="font-headline-md text-headline-md mb-8">Quick Links</h4>
+<nav class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-surface-variant hover:text-on-primary transition-all nav-link-underline inline-block w-fit" href="contact-us.html">Contact Us</a>
+<a class="font-body-md text-body-md text-surface-variant hover:text-on-primary transition-all nav-link-underline inline-block w-fit" href="#">Job Vacancies</a>
+<a class="font-body-md text-body-md text-surface-variant hover:text-on-primary transition-all nav-link-underline inline-block w-fit" href="about/meridian-trust.html">Meridian Trust</a>
+<a class="font-body-md text-body-md text-surface-variant hover:text-on-primary transition-all nav-link-underline inline-block w-fit" href="#">Sitemap</a>
+<a class="font-body-md text-body-md text-surface-variant hover:text-on-primary transition-all nav-link-underline inline-block w-fit" href="#">Privacy Policy</a>
+</nav>
+</div>
+<!-- Contact Col -->
+<div>
+<h4 class="font-headline-md text-headline-md mb-8">Get In Touch</h4>
+<div class="space-y-4 font-body-md text-surface-variant opacity-80">
+<div class="flex items-start gap-3 group">
+<span class="material-symbols-outlined text-on-primary group-hover:scale-110 transition-transform">location_on</span>
+<span class="">Stirling Road, Northstowe, Cambridge, CB24 1DJ</span>
+</div>
+<div class="flex items-center gap-3 group">
+<span class="material-symbols-outlined text-on-primary group-hover:scale-110 transition-transform">call</span>
+<a class="hover:text-on-primary nav-link-underline" href="tel:01223343800">01223 343800</a>
+</div>
+<div class="flex items-center gap-3 group">
+<span class="material-symbols-outlined text-on-primary group-hover:scale-110 transition-transform">mail</span>
+<a class="hover:text-on-primary nav-link-underline" href="mailto:office@northstowesc.org">office@northstowesc.org</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Copyright Bar -->
+<div class="max-w-container-max mx-auto px-gutter mt-20 pt-8 border-t border-on-primary/10" style="border-color: rgba(255, 255, 255, 0.1);">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 text-label-md font-label-md opacity-60">
+<p class="">© Northstowe Secondary College. Part of the Meridian Trust.</p>
+<p class="">Website by Meridian Trust</p>
+</div>
+</div>
+</footer>
+<script src="nsc-reveal.js" defer></script>
+<!-- FAB for Top -->
+<button class="fixed bottom-8 right-8 w-12 h-12 bg-royal-purple text-on-primary rounded-full editorial-shadow flex items-center justify-center hover:bg-deep-plum hover:scale-110 active:scale-95 transition-all duration-300 z-50 group" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<span class="material-symbols-outlined group-hover:-translate-y-1 transition-transform duration-300">arrow_upward</span>
+</button>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+
+        // Prototype nav: keep placeholder links local until real pages exist
+        document.querySelectorAll('header nav a[href="#"]').forEach((link) => {
+            link.addEventListener('click', (event) => event.preventDefault());
+        });
+
+        // Responsive nav (northstowesc.org: Main Menu + accordion below 48em)
+        const siteNavigation = document.getElementById('site-navigation');
+        const menuToggle = document.querySelector('.menu-toggle');
+        const desktopNavMq = window.matchMedia('(min-width: 48em)');
+
+        function createDropdownToggle() {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'dropdown-toggle';
+            button.setAttribute('aria-expanded', 'false');
+            button.innerHTML = '<span class="sr-only">Expand submenu</span>';
+            return button;
+        }
+
+        function bindMobileAccordionToggle(container, button) {
+            button.addEventListener('click', (event) => {
+                if (desktopNavMq.matches) {
+                    return;
+                }
+                event.preventDefault();
+                event.stopPropagation();
+                const isOpen = container.classList.toggle('is-submenu-open');
+                button.setAttribute('aria-expanded', String(isOpen));
+            });
+        }
+
+        function setupMobileNavToggles() {
+            document.querySelectorAll('.nav-menu-item').forEach((item) => {
+                const panel = item.querySelector(':scope > .nav-dropdown-panel');
+                const link = item.querySelector(':scope > .nav-trigger');
+                if (!panel || !link) {
+                    return;
+                }
+
+                item.classList.add('mobile-has-submenu');
+
+                let toggle = item.querySelector(':scope > .dropdown-toggle');
+                if (!toggle) {
+                    toggle = createDropdownToggle();
+                    bindMobileAccordionToggle(item, toggle);
+                }
+                link.insertAdjacentElement('afterend', toggle);
+            });
+
+            document.querySelectorAll('.nav-dropdown-panel .has-children').forEach((item) => {
+                const link = item.querySelector(':scope > a');
+                const panel = item.querySelector(':scope > .submenu-panel');
+                if (!link || !panel) {
+                    return;
+                }
+
+                let toggle = item.querySelector(':scope > .dropdown-toggle');
+                if (!toggle) {
+                    toggle = createDropdownToggle();
+                    bindMobileAccordionToggle(item, toggle);
+                }
+                link.insertAdjacentElement('afterend', toggle);
+            });
+        }
+
+        function setMainMenuOpen(isOpen) {
+            siteNavigation?.classList.toggle('is-open', isOpen);
+            menuToggle?.classList.toggle('is-open', isOpen);
+            menuToggle?.setAttribute('aria-expanded', String(isOpen));
+            menuToggle?.setAttribute('aria-label', isOpen ? 'Close main menu' : 'Open main menu');
+            const label = menuToggle?.querySelector('.menu-toggle__label');
+            if (label) {
+                label.textContent = isOpen ? 'Close' : 'Main Menu';
+            }
+        }
+
+        function resetMobileNavState() {
+            setMainMenuOpen(false);
+            document.querySelectorAll('.is-submenu-open').forEach((node) => {
+                node.classList.remove('is-submenu-open');
+            });
+            document.querySelectorAll('.dropdown-toggle').forEach((button) => {
+                button.setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        setupMobileNavToggles();
+
+        function setupDesktopNavPanelFlip() {
+            if (!siteNavigation) {
+                return;
+            }
+
+            function clearNavPanelFlip() {
+                siteNavigation.querySelectorAll('.nav-panel--align-right, .nav-panel--flip-left').forEach((panel) => {
+                    panel.classList.remove('nav-panel--align-right', 'nav-panel--flip-left');
+                    panel.style.removeProperty('max-height');
+                    panel.style.removeProperty('overflow-y');
+                    panel.style.removeProperty('transform');
+                });
+            }
+
+            function fitNavPanel(panel) {
+                if (!desktopNavMq.matches || !panel) {
+                    return;
+                }
+                panel.classList.remove('nav-panel--align-right', 'nav-panel--flip-left');
+                panel.style.removeProperty('max-height');
+                panel.style.removeProperty('overflow-y');
+                panel.style.removeProperty('transform');
+                requestAnimationFrame(() => {
+                    const pad = 12;
+                    let rect = panel.getBoundingClientRect();
+                    const isSubmenu = panel.classList.contains('submenu-panel');
+                    if (rect.right > window.innerWidth - pad) {
+                        panel.classList.add(isSubmenu ? 'nav-panel--flip-left' : 'nav-panel--align-right');
+                        rect = panel.getBoundingClientRect();
+                    }
+                    if (isSubmenu && rect.left < pad) {
+                        panel.classList.remove('nav-panel--flip-left');
+                    }
+                    if (rect.bottom > window.innerHeight - pad) {
+                        if (isSubmenu) {
+                            panel.style.maxHeight = `${Math.max(160, window.innerHeight - rect.top - pad)}px`;
+                            panel.style.overflowY = 'auto';
+                        } else {
+                            let shift = rect.bottom - (window.innerHeight - pad);
+                            const maxShift = Math.max(0, rect.top - pad);
+                            shift = Math.min(shift, maxShift);
+                            if (shift > 0) {
+                                panel.style.transform = `translateY(-${shift}px)`;
+                            }
+                        }
+                    }
+                });
+            }
+
+            siteNavigation.querySelectorAll('.nav-menu-item').forEach((item) => {
+                const panel = item.querySelector(':scope > .nav-dropdown-panel');
+                if (!panel) {
+                    return;
+                }
+                const onOpen = () => {
+                    clearNavPanelFlip();
+                    fitNavPanel(panel);
+                };
+                item.addEventListener('mouseenter', onOpen);
+                item.addEventListener('focusin', onOpen);
+            });
+
+            siteNavigation.querySelectorAll('li.has-children').forEach((item) => {
+                const sub = item.querySelector(':scope > .submenu-panel');
+                if (!sub) {
+                    return;
+                }
+                const onOpen = () => fitNavPanel(sub);
+                item.addEventListener('mouseenter', onOpen);
+                item.addEventListener('focusin', onOpen);
+            });
+
+            siteNavigation.addEventListener('mouseleave', clearNavPanelFlip);
+            window.addEventListener('resize', clearNavPanelFlip);
+        }
+
+        setupDesktopNavPanelFlip();
+
+        menuToggle?.addEventListener('click', () => {
+            setMainMenuOpen(!siteNavigation.classList.contains('is-open'));
+        });
+
+        desktopNavMq.addEventListener('change', (event) => {
+            if (event.matches) {
+                resetMobileNavState();
+            }
+        });
+
+        // Parallax effect for Hero Image
+        const heroParallax = document.getElementById('hero-parallax');
+        if (heroParallax) {
+            window.addEventListener('scroll', () => {
+                const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                if (!prefersReducedMotion) {
+                    const scrollY = window.scrollY;
+                    heroParallax.style.transform = `translateY(${scrollY * 0.4}px)`;
+                }
+            });
+        }
+    });
+</script>
+</body></html>

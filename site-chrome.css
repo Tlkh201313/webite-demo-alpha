@@ -1,0 +1,359 @@
+/**
+ * NSC sitewide design layer — typography, prose, chrome polish.
+ * Load after nsc-reveal.css so these refinements win on shared selectors.
+ */
+
+:root {
+    --nsc-purple: #490e67;
+    --nsc-deep-plum: #350053;
+    --nsc-lavender: #f3ebf6;
+    --nsc-trust-blue: #2c79ba;
+    --nsc-surface: #f8f9fa;
+    --nsc-on-surface: #191c1d;
+    --nsc-on-surface-variant: #4c444f;
+    --nsc-ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --nsc-radius-sm: 0.375rem;
+    --nsc-radius-md: 0.75rem;
+    --nsc-shadow-soft: 0 4px 24px rgba(53, 0, 83, 0.08);
+    --nsc-shadow-lift: 0 14px 44px rgba(53, 0, 83, 0.14);
+    --nsc-prose-width: 42rem;
+}
+
+html {
+    scroll-padding-top: 7.5rem;
+    text-size-adjust: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* —— Site chrome —— */
+#site-chrome > div:first-child {
+    box-shadow: 0 1px 0 rgba(16, 0, 30, 0.06);
+}
+
+#site-chrome > div:first-child a {
+    letter-spacing: 0.02em;
+}
+
+#masthead {
+    box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.1),
+        0 10px 36px rgba(16, 0, 30, 0.22);
+}
+
+.glass-nav {
+    background-color: rgba(255, 255, 255, 0.94);
+    border-bottom: 1px solid rgba(73, 14, 103, 0.08);
+    box-shadow: 0 4px 20px rgba(53, 0, 83, 0.06);
+}
+
+.editorial-shadow {
+    box-shadow: var(--nsc-shadow-soft);
+    transition:
+        box-shadow 0.28s var(--nsc-ease),
+        transform 0.28s var(--nsc-ease);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .editorial-shadow:hover {
+        box-shadow: var(--nsc-shadow-lift);
+        transform: translateY(-2px);
+    }
+}
+
+.interactive-hover {
+    transition:
+        transform 0.22s var(--nsc-ease),
+        box-shadow 0.22s var(--nsc-ease),
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.interactive-hover:active {
+    transform: scale(0.98);
+}
+
+/* —— Focus (keyboard) —— */
+:focus {
+    outline: none;
+}
+
+:focus-visible {
+    outline: 2px solid var(--nsc-trust-blue);
+    outline-offset: 3px;
+}
+
+#masthead :focus-visible,
+#site-chrome :focus-visible {
+    outline-color: #ffffff;
+    outline-offset: 2px;
+}
+
+/* —— Hero & display type —— */
+section.relative h1,
+.font-display-lg {
+    text-wrap: balance;
+}
+
+section.relative .font-body-lg {
+    max-width: 38rem;
+}
+
+/* Softer hero overlay for readability */
+section.relative > .absolute.bg-gradient-to-r {
+    background: linear-gradient(
+        105deg,
+        rgba(53, 0, 83, 0.92) 0%,
+        rgba(73, 14, 103, 0.55) 48%,
+        rgba(73, 14, 103, 0.15) 100%
+    ) !important;
+}
+
+/* —— Inner banners —— */
+.nsc-inner-banner {
+    border-bottom: 1px solid rgba(73, 14, 103, 0.08);
+}
+
+.nsc-inner-banner__title {
+    text-wrap: balance;
+    letter-spacing: -0.02em;
+}
+
+/* —— Page headers (learning / inner pages) —— */
+.entry-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(73, 14, 103, 0.12);
+}
+
+.entry-header .entry-title,
+.entry-header h1 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+    font-weight: 700;
+    color: var(--nsc-purple);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    text-wrap: balance;
+}
+
+/* —— Prose (scraped WP + composed content) —— */
+.entry-content {
+    color: var(--nsc-on-surface);
+    font-size: 1.0625rem;
+    line-height: 1.72;
+}
+
+.entry-content > * + * {
+    margin-top: 1.125em;
+}
+
+.entry-content h2 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: clamp(1.35rem, 2.4vw, 1.65rem);
+    font-weight: 600;
+    color: var(--nsc-purple);
+    letter-spacing: -0.02em;
+    margin-top: 2.25rem;
+    margin-bottom: 0.65rem;
+    line-height: 1.28;
+    text-wrap: balance;
+}
+
+.entry-content h3 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--nsc-deep-plum);
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.35;
+}
+
+.entry-content h4 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--nsc-purple);
+    margin-top: 1.35rem;
+}
+
+.entry-content p {
+    color: var(--nsc-on-surface-variant);
+    max-width: var(--nsc-prose-width);
+}
+
+.entry-content > p:first-child {
+    font-size: 1.125rem;
+    line-height: 1.65;
+    color: var(--nsc-on-surface);
+}
+
+.entry-content a:not(.wp-block-button__link):not([class*="bg-"]):not(.nsc-contact-social a) {
+    color: var(--nsc-trust-blue);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 0.15s ease;
+}
+
+.entry-content a:not(.wp-block-button__link):not([class*="bg-"]):hover {
+    color: var(--nsc-purple);
+}
+
+.entry-content ul:not(.wp-block-list):not(.nsc-contact-social),
+.entry-content ol {
+    padding-left: 1.35rem;
+    max-width: var(--nsc-prose-width);
+    color: var(--nsc-on-surface-variant);
+}
+
+.entry-content li + li {
+    margin-top: 0.4em;
+}
+
+.entry-content blockquote {
+    margin: 1.75rem 0;
+    padding: 1.15rem 1.35rem 1.15rem 1.25rem;
+    border-left: 4px solid var(--nsc-purple);
+    border-radius: 0 var(--nsc-radius-md) var(--nsc-radius-md) 0;
+    background: var(--nsc-lavender);
+    color: var(--nsc-on-surface);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    max-width: var(--nsc-prose-width);
+}
+
+.entry-content table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+    margin: 1.5rem 0;
+    border-radius: var(--nsc-radius-md);
+    overflow: hidden;
+    box-shadow: var(--nsc-shadow-soft);
+}
+
+.entry-content th,
+.entry-content td {
+    padding: 0.65rem 0.85rem;
+    border: 1px solid rgba(73, 14, 103, 0.1);
+    text-align: left;
+}
+
+.entry-content th {
+    background: var(--nsc-lavender);
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 600;
+    color: var(--nsc-purple);
+}
+
+.entry-content tr:nth-child(even) td {
+    background: rgba(243, 235, 246, 0.35);
+}
+
+.entry-content img {
+    border-radius: var(--nsc-radius-md);
+}
+
+.entry-content .padlet-embed {
+    border-radius: var(--nsc-radius-md);
+    overflow: hidden;
+    border: 1px solid rgba(73, 14, 103, 0.12);
+    box-shadow: var(--nsc-shadow-soft);
+}
+
+.entry-content .wp-block-button__link,
+.entry-content a.wp-block-button__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.75rem 1.35rem;
+    border-radius: var(--nsc-radius-sm);
+    background: var(--nsc-purple) !important;
+    color: #fff !important;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    text-decoration: none !important;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.entry-content .wp-block-button__link:hover {
+    background: var(--nsc-deep-plum) !important;
+    transform: translateY(-1px);
+}
+
+/* Value / feature cards on home */
+.value-card,
+.british-value-pill,
+.rs-value-pill {
+    border-radius: var(--nsc-radius-md);
+}
+
+/* —— Footer —— */
+footer.bg-royal-purple {
+    background: linear-gradient(180deg, #490e67 0%, #3a0a54 100%);
+}
+
+footer.bg-royal-purple a {
+    transition: color 0.15s ease, opacity 0.15s ease;
+}
+
+footer.bg-royal-purple a:hover {
+    opacity: 0.92;
+}
+
+/* —— Section rhythm —— */
+section.py-section-padding {
+    scroll-margin-top: 6rem;
+}
+
+/* Single-column page cap */
+.nsc-page-single,
+.nsc-page-single .entry-content {
+    max-width: 52rem;
+}
+
+@media (min-width: 48em) {
+    .nsc-page-with-sidebar .entry-content > p,
+    .nsc-page-with-sidebar .entry-content > ul,
+    .nsc-page-with-sidebar .entry-content > ol,
+    .nsc-page-with-sidebar .entry-content > blockquote {
+        max-width: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .editorial-shadow,
+    .interactive-hover,
+    .entry-content .wp-block-button__link,
+    .nsc-secure-login__trigger,
+    .nsc-secure-login__chevron,
+    .nsc-secure-login__panel,
+    .nsc-secure-login__backdrop,
+    .nsc-secure-login__link {
+        transition: none !important;
+    }
+
+    .editorial-shadow:hover {
+        transform: none;
+    }
+
+    .learning-stagger > *,
+    .learning-stagger.is-visible > * {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .nsc-secure-login.is-open .nsc-secure-login__panel:not([hidden]) {
+        transform: none;
+        opacity: 1;
+    }
+}

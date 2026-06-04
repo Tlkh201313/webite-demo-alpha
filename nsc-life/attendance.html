@@ -1,0 +1,2761 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preconnect" href="https://www.northstowesc.org" crossorigin/>
+<link rel="dns-prefetch" href="https://cdn.tailwindcss.com"/>
+<link rel="dns-prefetch" href="https://www.northstowesc.org"/>
+<link rel="dns-prefetch" href="https://padlet.com"/>
+<link rel="stylesheet" href="../learning/learning-content.css"/>
+<meta name="referrer" content="strict-origin-when-cross-origin"/>
+<title>Attendance | Northstowe Secondary College</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#d9dadb",
+                        "on-error-container": "#93000a",
+                        "alert-amber": "#FFB100",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#438bce",
+                        "outline-variant": "#cfc3d0",
+                        "on-tertiary-fixed": "#001d35",
+                        "on-tertiary-fixed-variant": "#00497a",
+                        "on-secondary-container": "#6d2a86",
+                        "surface-container-high": "#e7e8e9",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "house-dyson": "#E30613",
+                        "on-surface-variant": "#4c444f",
+                        "royal-purple": "#490E67",
+                        "primary": "#10001e",
+                        "tertiary-container": "#00213b",
+                        "surface-container-low": "#f3f4f5",
+                        "background": "#f8f9fa",
+                        "on-secondary-fixed-variant": "#6b2883",
+                        "on-secondary": "#ffffff",
+                        "house-attenborough": "#E5BE01",
+                        "secondary-fixed-dim": "#eeb1ff",
+                        "inverse-primary": "#e5b5ff",
+                        "deep-plum": "#350053",
+                        "tertiary-fixed-dim": "#9ccaff",
+                        "on-primary-fixed": "#30004b",
+                        "lavender-tint": "#F3EBF6",
+                        "tertiary-fixed": "#d0e4ff",
+                        "surface-tint": "#7a4a98",
+                        "outline": "#7e7480",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#f0f1f2",
+                        "secondary-fixed": "#fad7ff",
+                        "secondary-container": "#e89cff",
+                        "secondary": "#85419d",
+                        "house-parks": "#00AEEF",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface": "#f8f9fa",
+                        "on-primary-container": "#a572c3",
+                        "primary-fixed": "#f4d9ff",
+                        "on-secondary-fixed": "#330045",
+                        "primary-container": "#350053",
+                        "on-surface": "#191c1d",
+                        "inverse-surface": "#2e3132",
+                        "tertiary": "#000814",
+                        "surface-variant": "#e1e3e4",
+                        "on-background": "#191c1d",
+                        "primary-fixed-dim": "#e5b5ff",
+                        "trust-blue": "#2C79BA",
+                        "house-glennie": "#009640",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container": "#edeeef",
+                        "on-primary-fixed-variant": "#60317e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-sm": "12px",
+                        "stack-md": "24px",
+                        "stack-lg": "48px",
+                        "section-padding": "80px",
+                        "gutter": "32px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "cta-text": ["Hanken Grotesk"],
+                        "body-md": ["Inter"],
+                        "label-md": ["JetBrains Mono"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "cta-text": ["16px", {"lineHeight": "20px", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    },
+                    "animation": {
+                        "fade-in-up": "fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+                        "shimmer": "shimmer 2s infinite linear",
+                        "float": "float 6s ease-in-out infinite"
+                    },
+                    "keyframes": {
+                        "fadeInUp": {
+                            "0%": { opacity: "0", transform: "translateY(20px)" },
+                            "100%": { opacity: "1", transform: "translateY(0)" }
+                        },
+                        "shimmer": {
+                            "0%": { backgroundPosition: "200% 0" },
+                            "100%": { backgroundPosition: "-200% 0" }
+                        },
+                        "float": {
+                            "0%, 100%": { transform: "translateY(0)" },
+                            "50%": { transform: "translateY(-10px)" }
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .editorial-shadow {
+            box-shadow: 0px 4px 20px rgba(53, 0, 83, 0.05);
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+        
+        /* Entrance Animations */
+        @media (prefers-reduced-motion: no-preference) {
+            .reveal-on-scroll {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .reveal-on-scroll.is-visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+            /* Staggered delays for Core Values */
+            .stagger-1 { transition-delay: 100ms; }
+            .stagger-2 { transition-delay: 200ms; }
+            .stagger-3 { transition-delay: 300ms; }
+            .stagger-4 { transition-delay: 400ms; }
+            .stagger-5 { transition-delay: 500ms; }
+
+            /* Vision page: directional & scale reveals */
+            .reveal-from-left {
+                opacity: 0;
+                transform: translateX(-36px);
+                transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .reveal-from-right {
+                opacity: 0;
+                transform: translateX(36px);
+                transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .reveal-scale {
+                opacity: 0;
+                transform: scale(0.94);
+                transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .reveal-from-left.is-visible,
+            .reveal-from-right.is-visible {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            .reveal-scale.is-visible {
+                opacity: 1;
+                transform: scale(1);
+            }
+            .reveal-scale.is-visible .vision-img {
+                transform: scale(1);
+            }
+            .vision-img {
+                transform: scale(1.04);
+                transition: transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .reveal-stagger-group .reveal-stagger-child {
+                opacity: 0;
+                transform: translateY(18px);
+                transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1), transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .reveal-stagger-group.is-visible .reveal-stagger-child {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(1) { transition-delay: 0ms; }
+            .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(2) { transition-delay: 70ms; }
+            .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(3) { transition-delay: 140ms; }
+            .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(4) { transition-delay: 210ms; }
+            .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(5) { transition-delay: 280ms; }
+            .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(6) { transition-delay: 350ms; }
+            .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(7) { transition-delay: 420ms; }
+            .section-heading-line {
+                display: inline-block;
+                position: relative;
+            }
+            .section-heading-line::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -0.35rem;
+                height: 3px;
+                width: 100%;
+                background: linear-gradient(90deg, #490e67, #85419d);
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.15s;
+            }
+            .reveal-on-scroll.is-visible .section-heading-line::after,
+            .reveal-from-left.is-visible .section-heading-line::after,
+            .reveal-from-right.is-visible .section-heading-line::after {
+                transform: scaleX(1);
+            }
+            .value-card {
+                transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+            }
+            .value-card.is-visible {
+                transform: translateY(0);
+            }
+            .value-card.is-visible .value-card__icon {
+                animation: iconPop 0.65s cubic-bezier(0.34, 1.4, 0.64, 1) forwards;
+            }
+            @keyframes iconPop {
+                0% { transform: scale(0.4) rotate(-8deg); opacity: 0.4; }
+                100% { transform: scale(1) rotate(0); opacity: 1; }
+            }
+            @keyframes heroKenBurns {
+                0% { transform: scale(1.12) translateY(0); }
+                100% { transform: scale(1.06) translateY(-1%); }
+            }
+            #hero-parallax img {
+                animation: heroKenBurns 18s ease-in-out infinite alternate;
+            }
+            .trust-values-banner.is-visible img {
+                animation: trustBannerPulse 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            }
+            @keyframes trustBannerPulse {
+                0% { opacity: 0.85; transform: scale(0.98); }
+                100% { opacity: 1; transform: scale(1); }
+            }
+            .british-value-pill {
+                opacity: 0;
+                transform: translateY(12px) scale(0.96);
+                transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease;
+            }
+            .british-values-grid.is-visible .british-value-pill {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+            .british-values-grid.is-visible .british-value-pill:nth-child(1) { transition-delay: 0ms; }
+            .british-values-grid.is-visible .british-value-pill:nth-child(2) { transition-delay: 80ms; }
+            .british-values-grid.is-visible .british-value-pill:nth-child(3) { transition-delay: 160ms; }
+            .british-values-grid.is-visible .british-value-pill:nth-child(4) { transition-delay: 240ms; }
+            .british-values-grid.is-visible .british-value-pill:nth-child(5) { transition-delay: 320ms; }
+
+            .ofsted-rating-card {
+                transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+            }
+            .reveal-stagger-group.is-visible .ofsted-rating-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 28px rgba(73, 14, 103, 0.12);
+            }
+            .ofsted-rating-card__label {
+                font-family: "Hanken Grotesk", sans-serif;
+                font-size: 0.9375rem;
+                line-height: 1.35;
+                font-weight: 600;
+                letter-spacing: -0.01em;
+                text-transform: none;
+            }
+            .box-card-title {
+                font-family: "Hanken Grotesk", sans-serif;
+                font-size: 1.0625rem;
+                line-height: 1.35;
+                font-weight: 600;
+                letter-spacing: -0.01em;
+                color: #490e67;
+            }
+            .link-card-title {
+                font-family: "Hanken Grotesk", sans-serif;
+                font-size: 1.25rem;
+                line-height: 1.3;
+                font-weight: 600;
+                letter-spacing: -0.01em;
+            }
+            .ofsted-rating-card__grade--good {
+                color: #1b6b3a;
+            }
+            .ofsted-rating-card__grade--outstanding {
+                color: #490e67;
+            }
+            .req-card {
+                transition: border-color 0.25s ease, box-shadow 0.25s ease;
+            }
+            .req-card:hover {
+                border-color: rgba(73, 14, 103, 0.25);
+                box-shadow: 0 8px 20px rgba(73, 14, 103, 0.08);
+            }
+            #website-requirements-list.reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(8) { transition-delay: 480ms; }
+            #website-requirements-list.reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(9) { transition-delay: 540ms; }
+            #website-requirements-list.reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(10) { transition-delay: 600ms; }
+            #website-requirements-list.reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(11) { transition-delay: 660ms; }
+            #website-requirements-list.reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(12) { transition-delay: 720ms; }
+            #website-requirements-list.reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(13) { transition-delay: 780ms; }
+            #website-requirements-list.reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(14) { transition-delay: 840ms; }
+            #website-requirements-list.reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(15) { transition-delay: 900ms; }
+            #website-requirements-list.reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(16) { transition-delay: 960ms; }
+            #website-requirements-list.reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(17) { transition-delay: 1020ms; }
+            #website-requirements-list.reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(18) { transition-delay: 1080ms; }
+            #website-requirements-list.reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(19) { transition-delay: 1140ms; }
+            #website-requirements-list.reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(20) { transition-delay: 1200ms; }
+            #website-requirements-list.reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(21) { transition-delay: 1260ms; }
+
+            .views-accordion {
+                border-radius: 0.75rem;
+                overflow: hidden;
+                border: 1px solid rgba(73, 14, 103, 0.12);
+                background: #ffffff;
+                box-shadow: 0 4px 24px rgba(73, 14, 103, 0.06);
+            }
+            .views-accordion + .views-accordion { margin-top: 1rem; }
+            .views-accordion summary {
+                list-style: none;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1rem;
+                padding: 1.125rem 1.5rem;
+                background: #490e67;
+                color: #ffffff;
+                font-family: "Hanken Grotesk", sans-serif;
+                font-size: 1.0625rem;
+                font-weight: 600;
+                letter-spacing: -0.01em;
+                text-transform: capitalize;
+                transition: background 0.2s ease;
+            }
+            .views-accordion summary::-webkit-details-marker { display: none; }
+            .views-accordion summary::after {
+                content: "add";
+                font-family: "Material Symbols Outlined";
+                font-size: 1.5rem;
+                font-weight: 400;
+                transition: transform 0.25s ease;
+            }
+            .views-accordion[open] summary::after { content: "remove"; }
+            .views-accordion[open] summary {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            }
+            .views-accordion__body {
+                padding: 1.5rem;
+            }
+
+            .policy-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 1rem;
+            }
+            .policy-card {
+                display: flex;
+                gap: 0.875rem;
+                padding: 1.25rem;
+                background: #ffffff;
+                border-radius: 0.75rem;
+                border: 1px solid rgba(73, 14, 103, 0.1);
+                box-shadow: 0 4px 24px rgba(73, 14, 103, 0.06);
+                transition: transform 0.25s ease, box-shadow 0.25s ease;
+            }
+            .policy-card:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 32px rgba(73, 14, 103, 0.1);
+            }
+            .policy-card__icon {
+                flex-shrink: 0;
+                font-size: 1.75rem;
+                color: #490e67;
+            }
+            .policy-card__title {
+                font-family: "Hanken Grotesk", sans-serif;
+                font-size: 0.9375rem;
+                font-weight: 600;
+                line-height: 1.35;
+                color: #191c1d;
+                margin-bottom: 0.75rem;
+            }
+            .policy-example-list li::before {
+                content: "";
+                display: inline-block;
+                width: 0.375rem;
+                height: 0.375rem;
+                border-radius: 9999px;
+                background: #85419d;
+                margin-right: 0.5rem;
+                vertical-align: middle;
+            }
+
+            .nsc-inner-banner__title {
+                font-family: "Hanken Grotesk", sans-serif;
+                font-size: clamp(1.75rem, 4vw, 2.25rem);
+                font-weight: 700;
+                color: #490e67;
+                padding: 1.25rem 0 0.75rem;
+            }
+            .nsc-inner-banner__img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            .nsc-page-with-sidebar {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                align-items: start;
+            }
+            @media (min-width: 62em) {
+                .nsc-page-with-sidebar {
+                    grid-template-columns: minmax(0, 1fr) 17.5rem;
+                }
+            }
+            .nsc-page-sidebar {
+                border-radius: 0.5rem;
+                background: #490e67;
+                color: #fff;
+                overflow: hidden;
+            }
+            .nsc-page-sidebar a {
+                display: block;
+                padding: 0.65rem 1rem;
+                font-family: "Inter", sans-serif;
+                font-size: 0.9375rem;
+                line-height: 1.35;
+                color: #fff;
+                text-decoration: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+            }
+            .nsc-page-sidebar a:hover,
+            .nsc-page-sidebar a:focus {
+                background: #531871;
+            }
+            .nsc-page-sidebar a[aria-current="page"] {
+                background: #73308b;
+            }
+            .nsc-page-sidebar .nsc-page-sidebar__parent {
+                font-family: "Hanken Grotesk", sans-serif;
+                font-weight: 700;
+                padding: 0.85rem 1rem;
+                background: #350053;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            }
+            .entry-header .entry-title {
+                font-family: "Hanken Grotesk", sans-serif;
+                font-size: 1.75rem;
+                font-weight: 700;
+                color: #490e67;
+                margin-bottom: 1.5rem;
+            }
+            .entry-content {
+                font-family: "Inter", sans-serif;
+                font-size: 1rem;
+                line-height: 1.6;
+                color: #191c1d;
+            }
+            .entry-content p + p {
+                margin-top: 1rem;
+            }
+            .entry-content :is(p, .testimonials-lead, .curriculum-lead, .mnt-local-notice) a {
+                color: #490e67;
+                font-weight: 600;
+                text-decoration: underline;
+                text-underline-offset: 3px;
+            }
+            .entry-content :is(p, .testimonials-lead, .curriculum-lead, .mnt-local-notice) a:hover {
+                color: #350053;
+            }
+            .entry-content .download-card a {
+                text-decoration: none;
+            }
+            .entry-content .vacancies-lead {
+                font-size: 1.3125rem;
+                line-height: 1.35;
+            }
+            .entry-content .vacancies-lead--lg {
+                font-size: 1.375rem;
+            }
+            .entry-content hr {
+                border: none;
+                border-top: 2px solid rgba(73, 14, 103, 0.2);
+                margin: 1.5rem 0;
+            }
+            #mnt-parent-container {
+                width: 96.7%;
+                margin: 0 auto;
+                background-color: transparent;
+            }
+            
+            
+            .youtube-player {
+                position: relative;
+                width: 100%;
+                aspect-ratio: 16 / 9;
+                min-height: 200px;
+            }
+            .youtube-player__slot {
+                position: absolute;
+                inset: 0;
+            }
+            .youtube-player__activate.hidden {
+                display: none;
+            }
+            .youtube-player__slot iframe {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+            .entry-content .curriculum-figure {
+                margin: 2rem 0;
+                text-align: center;
+            }
+            .entry-content .curriculum-figure img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 0.5rem;
+            }
+
+            .testimonials-lead,
+            .curriculum-lead {
+                font-size: 1.1875rem;
+                line-height: 1.55;
+            }
+            .testimonial-video {
+                margin: 1.25rem auto;
+                max-width: 100%;
+                text-align: center;
+            }
+            .testimonial-video video {
+                width: 100%;
+                max-width: 56rem;
+                height: auto;
+                border-radius: 0.5rem;
+                background: #000;
+            }
+            .testimonial-video figcaption {
+                margin-top: 0.5rem;
+                font-size: 0.9375rem;
+                color: #4c444f;
+            }
+
+            #mnt-parent-container:empty::before {
+                content: "Loading vacancies…";
+                display: block;
+                text-align: center;
+                color: #4c444f;
+                padding: 2rem 1rem;
+            }
+            .mnt-local-notice {
+                padding: 1.5rem;
+                border-radius: 0.5rem;
+                background: rgba(243, 235, 246, 0.8);
+                border: 1px solid rgba(73, 14, 103, 0.15);
+                font-family: "Inter", sans-serif;
+                font-size: 1rem;
+                line-height: 1.55;
+                color: #4c444f;
+            }
+            .mnt-local-notice a {
+                color: #490e67;
+                font-weight: 600;
+            }
+            .download-card {
+                padding: 1.25rem;
+                border-radius: 0.5rem;
+                background: rgba(243, 235, 246, 0.5);
+                border: 1px solid rgba(73, 14, 103, 0.08);
+            }
+
+            .entry-content .wp-block-file {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 0.5rem 1rem;
+                margin: 1.25rem 0;
+                padding: 1rem 1.25rem;
+                border-radius: 0.5rem;
+                background: rgba(243, 235, 246, 0.5);
+                border: 1px solid rgba(73, 14, 103, 0.08);
+            }
+            .entry-content .wp-block-file__embed {
+                flex: 1 1 100%;
+                width: 100%;
+                margin: 0;
+                border: none;
+            }
+            .entry-content .wp-block-file__embed[hidden] {
+                display: none;
+            }
+            .entry-content .wp-block-file > a:not(.wp-block-file__button) {
+                font-weight: 600;
+                color: #490e67;
+                text-decoration: underline;
+                text-underline-offset: 3px;
+            }
+            .entry-content .wp-block-file > a:not(.wp-block-file__button):hover {
+                color: #350053;
+            }
+            .entry-content .wp-block-file__button {
+                display: inline-flex;
+                align-items: center;
+                padding: 0.5rem 1rem;
+                border-radius: 0.375rem;
+                background: #490e67;
+                color: #ffffff;
+                font-family: "Hanken Grotesk", sans-serif;
+                font-weight: 700;
+                font-size: 0.875rem;
+                line-height: 1.2;
+                text-decoration: none;
+                white-space: nowrap;
+            }
+            .entry-content .wp-block-file__button:hover {
+                background: #350053;
+                color: #ffffff;
+            }
+
+            /* Nav: mobile accordion (northstowesc.org) + desktop flyouts at 48em */
+            .menu-toggle {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                min-height: 2.75rem;
+                min-width: 2.75rem;
+                padding: 0.5rem 0.875rem;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: 0.375rem;
+                background: rgba(255, 255, 255, 0.08);
+                color: #ffffff;
+                font-family: "Hanken Grotesk", sans-serif;
+                font-size: 0.8125rem;
+                font-weight: 700;
+                line-height: 1.2;
+                cursor: pointer;
+                transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+                -webkit-tap-highlight-color: transparent;
+            }
+            .menu-toggle:hover,
+            .menu-toggle:focus-visible {
+                background: #73308b;
+                border-color: rgba(255, 255, 255, 0.35);
+                outline: none;
+            }
+            .menu-toggle:active {
+                transform: scale(0.97);
+            }
+            .menu-toggle.is-open {
+                background: #73308b;
+                border-color: rgba(255, 255, 255, 0.3);
+            }
+            .menu-toggle__icon {
+                font-size: 1.625rem;
+                line-height: 1;
+                transition: transform 0.2s ease;
+            }
+            .menu-toggle__icon-close {
+                display: none;
+            }
+            .menu-toggle.is-open .menu-toggle__icon-menu {
+                display: none;
+            }
+            .menu-toggle.is-open .menu-toggle__icon-close {
+                display: block;
+            }
+            .menu-toggle__label {
+                letter-spacing: 0.02em;
+            }
+            @media (max-width: 22rem) {
+                .menu-toggle__label {
+                    display: none;
+                }
+                .menu-toggle {
+                    padding: 0.5rem;
+                    min-width: 2.75rem;
+                }
+            }
+            .dropdown-toggle {
+                display: none;
+            }
+            .nav-dropdown-panel a,
+            .nav-inner > .font-cta-text[href="#"] {
+                font-family: "Hanken Grotesk", sans-serif;
+                font-weight: 600;
+                text-decoration: none;
+                color: #ffffff;
+            }
+
+            @media (max-width: 47.99em) {
+                .site-navigation {
+                    display: grid;
+                    grid-template-rows: 0fr;
+                    width: 100%;
+                    margin-top: 0.5rem;
+                    background: #490e67;
+                    border: 1px solid rgba(255, 255, 255, 0.12);
+                    border-radius: 0.5rem;
+                    box-shadow: 0 8px 24px rgba(16, 0, 30, 0.25);
+                    max-height: none;
+                    overflow: hidden;
+                    opacity: 0;
+                    visibility: hidden;
+                    pointer-events: none;
+                    transition: grid-template-rows 0.28s ease, opacity 0.22s ease, visibility 0.22s ease, margin-top 0.22s ease;
+                }
+                .site-navigation:not(.is-open) {
+                    border-color: transparent;
+                    box-shadow: none;
+                    margin-top: 0;
+                }
+                .site-navigation.is-open {
+                    grid-template-rows: 1fr;
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: auto;
+                    margin-top: 0.75rem;
+                }
+                .site-navigation > .nav-inner {
+                    min-height: 0;
+                    overflow: hidden;
+                }
+                .site-navigation.is-open > .nav-inner {
+                    max-height: min(72vh, calc(100dvh - 11rem));
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    -webkit-overflow-scrolling: touch;
+                    overscroll-behavior: contain;
+                }
+                .nav-inner {
+                    flex-direction: column;
+                    align-items: stretch;
+                    gap: 0;
+                }
+                .nav-menu-item,
+                .nav-inner > .font-cta-text {
+                    position: relative;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+                }
+                .nav-menu-item.mobile-has-submenu,
+                .nav-dropdown-panel li.has-children {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: stretch;
+                }
+                .nav-menu-item.is-submenu-open > .nav-trigger,
+                .nav-dropdown-panel li.has-children.is-submenu-open > a {
+                    background: #531871;
+                }
+                .nav-menu-item > .nav-trigger,
+                .nav-inner > .font-cta-text {
+                    display: flex;
+                    align-items: center;
+                    box-sizing: border-box;
+                    -webkit-tap-highlight-color: transparent;
+                }
+                .nav-menu-item.mobile-has-submenu > .nav-trigger {
+                    flex: 1 1 0;
+                    min-width: 0;
+                    width: auto;
+                    min-height: 3rem;
+                    padding: 0.875rem 1rem 0.875rem 1.125rem;
+                    font-size: clamp(0.9375rem, 2.8vw, 1.0625rem);
+                    line-height: 1.3;
+                }
+                .nav-inner > .font-cta-text {
+                    width: 100%;
+                    min-height: 3rem;
+                    padding: 0.875rem 1.125rem;
+                    font-size: clamp(0.9375rem, 2.8vw, 1.0625rem);
+                    line-height: 1.3;
+                }
+                .nav-menu-item > .nav-trigger:active,
+                .nav-inner > .font-cta-text:active,
+                .nav-dropdown-panel a:active {
+                    background: #531871;
+                }
+                .nav-chevron-desktop,
+                .nav-dropdown-panel .sub-chevron {
+                    display: none !important;
+                }
+                .nav-dropdown-panel,
+                .nav-dropdown-panel .submenu-panel {
+                    position: static;
+                    display: none;
+                    min-width: 0;
+                    width: 100%;
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: auto;
+                    box-shadow: none;
+                    border: none;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                }
+                .nav-menu-item.mobile-has-submenu > .nav-dropdown-panel,
+                .nav-dropdown-panel li.has-children > .submenu-panel {
+                    flex: 0 0 100%;
+                    width: 100%;
+                    order: 10;
+                }
+                .nav-menu-item.is-submenu-open > .nav-dropdown-panel,
+                .nav-dropdown-panel li.has-children.is-submenu-open > .submenu-panel {
+                    display: block;
+                }
+                .nav-dropdown-panel {
+                    background: #3f045d;
+                }
+                .nav-dropdown-panel .submenu-panel {
+                    background: #350053;
+                }
+                .nav-dropdown-panel .submenu-panel .submenu-panel {
+                    background: #2a0042;
+                }
+                .nav-dropdown-panel a {
+                    display: flex;
+                    align-items: center;
+                    min-height: 2.75rem;
+                    width: 100%;
+                    padding: 0.625rem 1rem 0.625rem 1.5rem;
+                    font-size: clamp(0.875rem, 2.6vw, 0.96875rem);
+                    line-height: 1.35;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                    box-sizing: border-box;
+                }
+                .nav-dropdown-panel li.has-children > a {
+                    flex: 1 1 0;
+                    min-width: 0;
+                    width: auto;
+                    padding: 0.625rem 0.75rem 0.625rem 1.5rem;
+                }
+                .nav-dropdown-panel .submenu-panel a {
+                    padding-left: 2.25rem;
+                    min-height: 2.625rem;
+                }
+                .nav-dropdown-panel .submenu-panel .submenu-panel a {
+                    padding-left: 3rem;
+                    font-size: clamp(0.8125rem, 2.4vw, 0.9rem);
+                    min-height: 2.5rem;
+                }
+                .nav-dropdown-panel li:last-child a {
+                    border-bottom: 0;
+                }
+                .nav-inner > .font-cta-text:last-child,
+                .nav-menu-item:last-of-type {
+                    border-bottom: 0;
+                }
+                .nav-menu-item::after {
+                    display: none;
+                }
+                /* Side arrow only (official site) — link left, chevron right */
+                .dropdown-toggle {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex: 0 0 2.75rem;
+                    width: 2.75rem;
+                    min-width: 2.75rem;
+                    align-self: stretch;
+                    min-height: 3rem;
+                    padding: 0;
+                    margin: 0;
+                    border: 0;
+                    border-left: 1px solid rgba(255, 255, 255, 0.15);
+                    border-radius: 0;
+                    background: transparent;
+                    color: #ffffff;
+                    cursor: pointer;
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                    transform: none;
+                    transition: background 0.15s ease;
+                    -webkit-tap-highlight-color: transparent;
+                    order: 2;
+                }
+                .nav-dropdown-panel li.has-children > .dropdown-toggle {
+                    min-height: 2.75rem;
+                }
+                .dropdown-toggle:active {
+                    background: #73308b;
+                }
+                .dropdown-toggle::after {
+                    font-family: "Material Symbols Outlined";
+                    font-size: 1.375rem;
+                    font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+                    content: "expand_more";
+                    transition: transform 0.2s ease;
+                }
+                .dropdown-toggle[aria-expanded="true"] {
+                    background: #73308b;
+                }
+                .dropdown-toggle[aria-expanded="true"]::after {
+                    transform: rotate(180deg);
+                }
+                .dropdown-toggle:hover,
+                .dropdown-toggle:focus-visible {
+                    background: #531871;
+                    outline: none;
+                }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .site-navigation,
+                .menu-toggle,
+                .menu-toggle__icon,
+                .dropdown-toggle::after {
+                    transition: none;
+                }
+            }
+
+            @media (min-width: 48em) {
+                .menu-toggle,
+                .dropdown-toggle {
+                    display: none !important;
+                }
+                .nav-chevron-desktop {
+                    display: inline !important;
+                }
+                .site-navigation {
+                    display: block !important;
+                    width: 100%;
+                    margin-top: 1.125rem;
+                    padding-top: 0.375rem;
+                    max-height: none;
+                    overflow: visible;
+                    background: transparent;
+                    border: 0;
+                }
+                .nav-inner {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 1rem 1.5rem;
+                }
+                .nav-menu-item > .nav-trigger {
+                    padding: 0.5rem 0.75rem;
+                    margin: -0.5rem -0.75rem;
+                    width: auto;
+                }
+                .nav-menu-item:hover > .nav-trigger,
+                .nav-menu-item:focus-within > .nav-trigger {
+                    background: #73308b;
+                }
+                .nav-menu-item::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 100%;
+                    height: 6px;
+                }
+                .nav-dropdown-panel {
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    min-width: 300px;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    background: #490e67;
+                    border: 1px solid rgba(255, 255, 255, 0.08);
+                    box-shadow: 0 12px 32px rgba(16, 0, 30, 0.35);
+                    z-index: 50;
+                    opacity: 0;
+                    visibility: hidden;
+                    pointer-events: none;
+                    transition: opacity 0.2s ease, visibility 0.2s ease;
+                }
+                .nav-menu-item:hover > .nav-dropdown-panel,
+                .nav-menu-item:focus-within > .nav-dropdown-panel {
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: auto;
+                }
+                .nav-dropdown-panel li {
+                    position: relative;
+                }
+                .nav-dropdown-panel a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 1rem;
+                    padding: 0.875rem 1.5rem;
+                    font-size: 15px;
+                    line-height: 1.35;
+                    white-space: normal;
+                    border-bottom: 0;
+                    transition: background 0.15s ease;
+                }
+                .nav-dropdown-panel li:hover > a {
+                    background: #531871;
+                }
+                .nav-dropdown-panel .submenu-panel {
+                    position: absolute;
+                    left: 100%;
+                    top: 0;
+                    min-width: 340px;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    background: #490e67;
+                    border: 1px solid rgba(255, 255, 255, 0.08);
+                    box-shadow: 0 12px 32px rgba(16, 0, 30, 0.35);
+                    z-index: 60;
+                    opacity: 0;
+                    visibility: hidden;
+                    pointer-events: none;
+                    transition: opacity 0.15s ease, visibility 0.15s ease;
+                }
+                .nav-dropdown-panel li.has-children:hover > .submenu-panel,
+                .nav-dropdown-panel li.has-children:focus-within > .submenu-panel {
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: auto;
+                }
+                .nav-dropdown-panel .sub-chevron {
+                    display: inline;
+                    font-size: 1.125rem;
+                    opacity: 0.9;
+                    flex-shrink: 0;
+                }
+                .nav-dropdown-panel.nav-panel--align-right {
+                    left: auto;
+                    right: 0;
+                }
+                .nav-dropdown-panel .submenu-panel.nav-panel--flip-left {
+                    left: auto;
+                    right: 100%;
+                }
+            }
+
+            @media (min-width: 64em) {
+                .site-navigation {
+                    margin-top: 1.625rem;
+                    padding-top: 0.5rem;
+                }
+            }
+        }
+
+        /* Nav Link Underline Hover */
+        .nav-link-underline {
+            position: relative;
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            .nav-link-underline::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: -4px;
+                left: 0;
+                background-color: currentColor;
+                transform-origin: bottom right;
+                transition: transform 0.3s ease-out;
+            }
+            .nav-link-underline:hover::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+
+        /* Shimmer effect for News Cards */
+        .shimmer-hover {
+            position: relative;
+            overflow: hidden;
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            .shimmer-hover::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 50%;
+                height: 100%;
+                background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+                transform: skewX(-20deg);
+                transition: left 0.5s;
+                z-index: 10;
+                pointer-events: none;
+            }
+            .shimmer-hover:hover::before {
+                left: 150%;
+            }
+        }
+
+        /* Enhanced hover states */
+        .interactive-hover {
+            transition: all 0.3s ease;
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            .interactive-hover:hover {
+                transform: translateY(-4px) scale(1.02);
+                box-shadow: 0 10px 25px rgba(53, 0, 83, 0.15);
+            }
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .video-tab {
+            transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
+        }
+        .video-tab.is-active {
+            background-color: #490E67;
+            color: #ffffff;
+        }
+        .video-panel {
+            display: none;
+            opacity: 0;
+            transform: translateY(12px);
+            transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .video-panel.is-active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .video-panel {
+                transition: none;
+            }
+            #hero-parallax img {
+                animation: none;
+            }
+            .reveal-from-left,
+            .reveal-from-right,
+            .reveal-scale,
+            .reveal-stagger-group .reveal-stagger-child,
+            .british-value-pill {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+            .value-card.is-visible .value-card__icon {
+                animation: none;
+            }
+        }
+        .youtube-player__activate.hidden {
+            display: none;
+        }
+        .youtube-player__slot iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .council-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .council-table th,
+        .council-table td {
+            padding: 0.875rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(73, 14, 103, 0.12);
+        }
+        .council-table thead th {
+            background: #e2d3f0;
+            color: #350053;
+            font-family: "Hanken Grotesk", sans-serif;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .council-table tbody tr:hover {
+            background: rgba(243, 235, 246, 0.6);
+        }
+        @media (max-width: 40em) {
+            .council-table thead {
+                display: none;
+            }
+            .council-table tr {
+                display: block;
+                margin-bottom: 1rem;
+                padding: 1rem;
+                background: #fff;
+                border-radius: 0.5rem;
+                border: 1px solid rgba(73, 14, 103, 0.1);
+            }
+            .council-table td {
+                display: block;
+                border: none;
+                padding: 0.25rem 0;
+            }
+            .council-table td::before {
+                content: attr(data-label);
+                display: block;
+                font-size: 0.75rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                color: #85419d;
+                margin-bottom: 0.15rem;
+            }
+        }
+    </style>
+<link rel="stylesheet" href="../nsc-skeleton.css"/>
+<link rel="stylesheet" href="../nsc-secure-login.css"/>
+<link rel="stylesheet" href="../nsc-reveal.css"/>
+<link rel="stylesheet" href="../site-chrome.css"/>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<div id="nsc-skeleton-loader" class="nsc-skeleton" role="status" aria-live="polite" aria-busy="true" aria-label="Loading Northstowe Secondary College">
+<div class="nsc-skeleton__page">
+<div class="nsc-skeleton__alert nsc-skeleton__shimmer" aria-hidden="true"><span class="nsc-skeleton__alert-line"></span></div>
+<header class="nsc-skeleton__masthead" aria-hidden="true">
+<div class="nsc-skeleton__masthead-inner">
+<div class="nsc-skeleton__masthead-row">
+<div class="nsc-skeleton__logo nsc-skeleton__shimmer"></div>
+<div class="nsc-skeleton__masthead-actions">
+<div class="nsc-skeleton__menu-pill nsc-skeleton__shimmer"></div>
+<div class="nsc-skeleton__search nsc-skeleton__shimmer"></div>
+<div class="nsc-skeleton__cta nsc-skeleton__shimmer"></div>
+</div>
+</div>
+<nav class="nsc-skeleton__nav" aria-hidden="true">
+<span class="nsc-skeleton__nav-pill nsc-skeleton__nav-pill--sm nsc-skeleton__shimmer"></span>
+<span class="nsc-skeleton__nav-pill nsc-skeleton__nav-pill--md nsc-skeleton__shimmer"></span>
+<span class="nsc-skeleton__nav-pill nsc-skeleton__nav-pill--lg nsc-skeleton__shimmer"></span>
+<span class="nsc-skeleton__nav-pill nsc-skeleton__nav-pill--xl nsc-skeleton__shimmer"></span>
+<span class="nsc-skeleton__nav-pill nsc-skeleton__nav-pill--lg nsc-skeleton__shimmer"></span>
+<span class="nsc-skeleton__nav-pill nsc-skeleton__nav-pill--md nsc-skeleton__shimmer"></span>
+<span class="nsc-skeleton__nav-pill nsc-skeleton__nav-pill--sm nsc-skeleton__shimmer"></span>
+</nav>
+</div>
+</header>
+<section class="nsc-skeleton__banner" aria-hidden="true">
+<div class="nsc-skeleton__banner-inner">
+<div class="nsc-skeleton__banner-title nsc-skeleton__shimmer"></div>
+</div>
+<div class="nsc-skeleton__banner-img nsc-skeleton__shimmer"></div>
+</section>
+<section class="nsc-skeleton__hero-home" aria-hidden="true">
+<div class="nsc-skeleton__hero-home-lines">
+<span class="nsc-skeleton__shimmer"></span>
+<span class="nsc-skeleton__shimmer"></span>
+<span class="nsc-skeleton__shimmer"></span>
+</div>
+</section>
+<section class="nsc-skeleton__content" aria-hidden="true">
+<div class="nsc-skeleton__content-inner">
+<div class="nsc-skeleton__layout">
+<div class="nsc-skeleton__main">
+<div class="nsc-skeleton__quick-bar">
+<div class="nsc-skeleton__quick nsc-skeleton__shimmer"></div>
+<div class="nsc-skeleton__quick nsc-skeleton__shimmer"></div>
+</div>
+<div class="nsc-skeleton__card nsc-skeleton__card--lavender">
+<div class="nsc-skeleton__card-title nsc-skeleton__shimmer"></div>
+<div class="nsc-skeleton__line nsc-skeleton__line--wide nsc-skeleton__shimmer"></div>
+<div class="nsc-skeleton__line nsc-skeleton__line--medium nsc-skeleton__shimmer"></div>
+<div class="nsc-skeleton__line nsc-skeleton__line--short nsc-skeleton__shimmer"></div>
+</div>
+<div class="nsc-skeleton__card">
+<div class="nsc-skeleton__line nsc-skeleton__line--wide nsc-skeleton__shimmer"></div>
+<div class="nsc-skeleton__line nsc-skeleton__line--medium nsc-skeleton__shimmer"></div>
+</div>
+</div>
+<aside class="nsc-skeleton__sidebar nsc-skeleton__shimmer"></aside>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+<script src="../nsc-skeleton.js"></script>
+<script src="../nsc-secure-login.js" defer></script>
+<!-- Site chrome: wellbeing banner + header (flush stack) -->
+<div id="site-chrome" class="sticky top-0 z-50">
+<div class="bg-alert-amber text-primary py-2 px-4 sm:px-gutter flex items-center justify-center leading-none shadow-none">
+<a class="font-cta-text text-cta-text flex items-center justify-center gap-2 hover:opacity-80 transition-opacity w-full text-center" href="#">
+<span class="material-symbols-outlined">support_agent</span>
+            Feeling worried or anxious? We are here to help.
+            <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<!-- TopNavBar -->
+<header id="masthead" class="bg-royal-purple border-b border-white/10 shadow-sm overflow-visible">
+<div class="flex flex-col w-full max-w-container-max mx-auto px-4 sm:px-gutter py-3 sm:py-4">
+<div class="flex flex-wrap items-center justify-between gap-3 sm:gap-4">
+<!-- Brand Anchor -->
+<a class="flex-shrink-0 hover:scale-105 transition-transform duration-300" href="../main.html">
+<img alt="Northstowe Secondary College Logo" class="h-12 sm:h-16 w-auto object-contain mix-blend-lighten" src="https://lh3.googleusercontent.com/aida/AP1WRLs6H9IuoyL5C2MhSmC14-z0L-UtDJ63B7-VqPCN93fwU1ire7pbIQqBR6G20wu4vbAEfkfFa7M_GQ7jbLoDLzDOTKgv4wOrLMONaQRExU-Syor8-XCF9hFHIpvXSuGOXsQhPjf-buxVfxLotkWnQgDHTfxuAvP4JsxYw5dENpyvvOdb1wTxORYf-qDLi6-Z-VBWTcI4qTPeRcJMB-dQ5sDYNdotUml8iTM_SUQ_0aiWvFsKbX7DULxXu9E"/>
+</a>
+<!-- Actions (menu toggle on small screens, like official site) -->
+<div class="flex items-center gap-2 sm:gap-4 flex-shrink-0">
+<button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-navigation" aria-label="Open main menu">
+<span class="material-symbols-outlined menu-toggle__icon menu-toggle__icon-menu" aria-hidden="true">menu</span>
+<span class="material-symbols-outlined menu-toggle__icon menu-toggle__icon-close" aria-hidden="true">close</span>
+<span class="menu-toggle__label">Main Menu</span>
+</button>
+<div class="hidden lg:flex items-center rounded-full px-4 py-1.5 border border-outline-variant bg-white/10 transition-colors focus-within:bg-white/20 focus-within:border-white/40">
+<span class="material-symbols-outlined text-on-primary/70 text-sm mr-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-body-md w-32 placeholder:text-on-primary/70 text-on-primary transition-all focus:w-48" placeholder="Search..." type="text"/>
+</div>
+<div class="nsc-secure-login" data-nsc-secure-login>
+<button type="button" class="nsc-secure-login__trigger" aria-expanded="false" aria-haspopup="true" aria-controls="nsc-secure-login-panel" id="nsc-secure-login-trigger">
+<span class="material-symbols-outlined" aria-hidden="true">lock</span>
+<span class="nsc-secure-login__label">Secure login</span>
+<span class="material-symbols-outlined nsc-secure-login__chevron" aria-hidden="true">expand_more</span>
+</button>
+<div class="nsc-secure-login__panel" id="nsc-secure-login-panel" role="menu" aria-labelledby="nsc-secure-login-trigger" hidden>
+<p class="nsc-secure-login__intro">Choose a platform to sign in. External links open in a new tab.</p>
+<div class="nsc-secure-login__group">
+<p class="nsc-secure-login__group-title">Parents &amp; carers</p>
+<ul class="nsc-secure-login__list" role="none"><li>
+<a class="nsc-secure-login__link" href="https://www.mychildatschool.com/MCAS/MCSParentLogin" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">family_restroom</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">MCAS (Parent login)</span>
+<span class="nsc-secure-login__link-hint">Payments, messages and student information</span>
+</span>
+</a>
+</li><li>
+<a class="nsc-secure-login__link nsc-secure-login__link--local" href="../parents-and-carers/bromcom.html" role="menuitem">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">help</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">Bromcom / MCAS guide</span>
+<span class="nsc-secure-login__link-hint">Setup help on our website</span>
+</span>
+</a>
+</li></ul>
+</div><div class="nsc-secure-login__group">
+<p class="nsc-secure-login__group-title">School systems</p>
+<ul class="nsc-secure-login__list" role="none"><li>
+<a class="nsc-secure-login__link" href="https://cmat.cloud" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">cloud</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">Microsoft 365</span>
+
+</span>
+</a>
+</li><li>
+<a class="nsc-secure-login__link" href="https://outlook.office.com" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">mail</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">School email</span>
+
+</span>
+</a>
+</li><li>
+<a class="nsc-secure-login__link" href="https://northstowe.oliverasp.co.uk/library/home/news" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">local_library</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">Oliver library</span>
+
+</span>
+</a>
+</li></ul>
+</div><div class="nsc-secure-login__group">
+<p class="nsc-secure-login__group-title">Learning platforms</p>
+<ul class="nsc-secure-login__list" role="none"><li>
+<a class="nsc-secure-login__link" href="https://www.languagenut.com/resources/en-gb/index.html#/LoginScreen?packages=8,34,43,54,33,66&product=languagenut&conditions=1" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">translate</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">Languagenut</span>
+
+</span>
+</a>
+</li><li>
+<a class="nsc-secure-login__link" href="https://app.senecalearning.com/login" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">school</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">Seneca Learning</span>
+
+</span>
+</a>
+</li><li>
+<a class="nsc-secure-login__link" href="https://smartrevise.online/Account/Login" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">auto_stories</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">SmartRevise</span>
+
+</span>
+</a>
+</li><li>
+<a class="nsc-secure-login__link" href="https://auth.sparxmaths.uk/oauth2/auth?client_id=sparx-maths-sw&hd=7945fbe6-d4b2-4b01-89b0-207a949b4642&redirect_uri=https%3A%2F%2Fstudentapi.api.sparxmaths.uk%2Foauth%2Fcallback&response_type=code&scope=openid+profile+email&state=oQnSYpp33PJrbUHBBLHSRmHng-XLHEJxwnL0NaaE9s9a49odEHNP8MAhnWX3Jcvw6CcrWJhwfkITJzBAV7vJedkZeJ2649ueXcEP3J-essYFyP4sS6OV-E5vRhMCpN6Wnfhk237OPGJk3C9Td1EapOzlzkO7RL7rriaKfnFwTYgWWxE7rlI3cIEkSuRH_CM0jg5CMTsLyT7mbdYezZRRWPH8g9htzXObsrs52Gay6K9sZJrPhjp4YL2KAhL-pWuc24tzU7H09vn8L1Xk" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">calculate</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">Sparx Maths</span>
+
+</span>
+</a>
+</li><li>
+<a class="nsc-secure-login__link" href="https://auth.sparxmaths.uk/oauth2/auth?client_id=sparx-reader&hd=7945fbe6-d4b2-4b01-89b0-207a949b4642&redirect_uri=https%3A%2F%2Fapi.sparxreader.com%2Foauth2%2Fcallback%2Fsparx&response_type=code&scope=openid+profile+email&state=q24C5E4qk-5tT3-6ITzxd1UsPjOptePH1w6tLfyelrmoUTkrOAg0yyEf4Oxn2Jou8h9x8Aax9YcfswqCjmoh1L-Su7Dzb9BO_llnfCWYWwRD42L_4yNWznCWIChy8l2tA9q6vuRzF72Fbzzhxy7HoGFNzKRj82DIYjA_do4IPgB1P6ff0ydsm1IJpIFmhwJqHnKrI2pL6eguka7FWAlh4dke2pw0JQ%3D%3D" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">menu_book</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">Sparx Reader</span>
+
+</span>
+</a>
+</li><li>
+<a class="nsc-secure-login__link" href="https://app.tassomai.com/login?returnUrl=%2Fdashboard" role="menuitem" target="_blank" rel="noopener noreferrer">
+<span class="nsc-secure-login__link-icon" aria-hidden="true"><span class="material-symbols-outlined">quiz</span></span>
+<span class="nsc-secure-login__link-text">
+<span class="nsc-secure-login__link-label">Tassomai</span>
+
+</span>
+</a>
+</li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation: flyouts on desktop, accordion toggles below 48em -->
+<nav id="site-navigation" class="site-navigation main-navigation w-full min-[48em]:w-auto" aria-label="Main Menu">
+<div class="nav-inner flex items-center gap-6 lg:gap-8">
+<div class="relative nav-menu-item">
+<a class="nav-trigger font-cta-text text-cta-text hover:text-lavender-tint flex items-center gap-1 transition-all text-on-primary" href="../main.html">Home<span class="material-symbols-outlined text-lg nav-chevron-desktop" aria-hidden="true">expand_more</span></a>
+<ul class="nav-dropdown-panel">
+<li><a href="../welcome.html">Welcome from the Headteacher</a></li>
+</ul>
+</div>
+<div class="relative nav-menu-item">
+<a class="nav-trigger font-cta-text text-cta-text hover:text-lavender-tint flex items-center gap-1 transition-all text-on-primary" href="../about/about-us.html">About<span class="material-symbols-outlined text-lg nav-chevron-desktop" aria-hidden="true">expand_more</span></a>
+<ul class="nav-dropdown-panel">
+<li><a href="../about/about-us.html">About Us</a></li>
+<li><a href="../about/build-timeline.html">Build Timeline</a></li>
+<li><a href="https://www.meridiantrust.co.uk/key-information/gdpr/" target="_blank" rel="noopener noreferrer">GDPR</a></li>
+<li><a href="../about/governance.html">Governance and Academy Council</a></li>
+<li class="has-children">
+<a href="../about/meridian-trust.html">Meridian Trust<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="https://www.meridiantrust.co.uk/captain-carbon/" target="_blank" rel="noopener noreferrer">Captain Carbon's Mission</a></li>
+</ul>
+</li>
+<li><a href="../about/vision-and-values.html">NSC Vision and Values</a></li>
+<li><a href="../about/ofsted-information.html">Ofsted Information</a></li>
+<li><a href="../about/our-staff.html">Our Staff</a></li>
+<li><a href="../about/parent-student-views.html">Parent and Student Views</a></li>
+<li><a href="../about/policies-statutory-information.html">Policies and Statutory Information</a></li>
+<li><a href="../about/school-performance.html">School Performance</a></li>
+<li><a href="../about/sponsorship.html">Sponsorship</a></li>
+<li><a href="../about/staff-vacancies.html">Staff Vacancies</a></li>
+<li><a href="../about/testimonials.html" >Testimonials</a></li>
+</ul>
+</div>
+<div class="relative nav-menu-item">
+<a class="nav-trigger font-cta-text text-cta-text hover:text-lavender-tint flex items-center gap-1 transition-all text-on-primary" href="../learning/curriculum.html">Learning<span class="material-symbols-outlined text-lg nav-chevron-desktop" aria-hidden="true">expand_more</span></a>
+<ul class="nav-dropdown-panel">
+<li class="has-children">
+<a href="../learning/curriculum.html">Curriculum<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="../learning/curriculum/celebrating-diversity.html">Celebrating Diversity</a></li>
+<li><a href="../learning/curriculum/keystage-3.html">Key Stage 3</a></li>
+<li><a href="../learning/curriculum/keystage-4.html">Key Stage 4</a></li>
+<li><a href="../learning/curriculum/pastoral.html">Pastoral</a></li>
+<li class="has-children">
+<a href="../learning/curriculum/subjects.html">Subjects<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="../learning/curriculum/subjects/art.html">Art</a></li>
+<li><a href="../learning/curriculum/subjects/computer-science.html">Computer Science</a></li>
+<li><a href="../learning/curriculum/subjects/dt.html">Design and Technology</a></li>
+<li><a href="../learning/curriculum/subjects/english.html">English</a></li>
+<li><a href="../learning/curriculum/subjects/ethics.html">Ethics</a></li>
+<li><a href="../learning/curriculum/subjects/food-nutrition.html">Food Nutrition</a></li>
+<li><a href="../learning/curriculum/subjects/french.html">French</a></li>
+<li><a href="../learning/curriculum/subjects/geography.html">Geography</a></li>
+<li><a href="../learning/curriculum/subjects/health-and-social-care.html">Health and Social Care</a></li>
+<li><a href="../learning/curriculum/subjects/history.html">History</a></li>
+<li><a href="../learning/curriculum/subjects/how-to-thrive.html">How To Thrive</a></li>
+<li><a href="../learning/curriculum/subjects/maths.html">Maths</a></li>
+<li><a href="../learning/curriculum/subjects/pe-and-sports.html">PE and Sports</a></li>
+<li><a href="../learning/curriculum/subjects/performing-arts.html">Performing Arts</a></li>
+<li><a href="../learning/curriculum/subjects/science.html">Science</a></li>
+</ul>
+</li>
+<li><a href="../learning/curriculum/year-8-9-options.html">Year 8 / 9 Options</a></li>
+</ul>
+</li>
+<li class="has-children">
+<a href="../learning/enrichment.html">Enrichment<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="../learning/enrichment/extending-the-boundaries-of-learning-learning-outside-the-classroom.html">Extending the Boundaries of Learning</a></li>
+<li><a href="../learning/enrichment/student-leadership.html">Student Leadership</a></li>
+</ul>
+</li>
+<li class="has-children">
+<a href="../learning/examinations.html">Examinations<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="../learning/year-11-masterclasses.html">Year 11 Masterclasses</a></li>
+<li><a href="../learning/examinations/access-arrangements.html">Access Arrangements</a></li>
+</ul>
+</li>
+<li><a href="../learning/homework-prep.html">Homework (PREP)</a></li>
+<li><a href="../learning/interventions.html">Interventions</a></li>
+<li><a href="../learning/progress-and-assessment.html">Progress and Assessment</a></li>
+<li><a href="../learning/remote-learning.html">Remote Learning</a></li>
+<li><a href="../learning/teaching-and-learning-strategy.html">Teaching and Learning Strategy</a></li>
+<li><a href="../learning/whole-school-fluency.html">Whole School Fluency</a></li>
+</ul>
+</div>
+<div class="relative nav-menu-item">
+<a class="nav-trigger font-cta-text text-cta-text hover:text-lavender-tint flex items-center gap-1 transition-all text-on-primary" href="index.html">NSC Life<span class="material-symbols-outlined text-lg nav-chevron-desktop" aria-hidden="true">expand_more</span></a>
+<ul class="nav-dropdown-panel">
+<li><a href="absence.html">Absence</a></li>
+<li><a href="attendance.html" aria-current="page" class="bg-white/15">Attendance</a></li>
+<li class="has-children">
+<a href="careers-education.html">Careers (CEIAG)<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="careers-education/careers-and-guidance-for-students.html">Careers and Guidance for Students</a></li>
+<li><a href="careers-education/careers-and-guidance-for-parents.html">Careers and Guidance for Parents</a></li>
+<li><a href="careers-education/careers-and-guidance-for-teachers.html">Careers and Guidance for Teachers</a></li>
+<li><a href="careers-education/information-for-employers.html">Information for Employers</a></li>
+<li><a href="careers-education/labour-market-information.html">Labour Market Information</a></li>
+<li><a href="careers-education/post-16-pathways.html">Post-16 Pathways</a></li>
+<li><a href="careers-education/year-10-work-experience.html">Year 10 Work Experience</a></li>
+</ul>
+</li>
+<li><a href="catering.html">Catering</a></li>
+<li><a href="celebrating-achievement.html">Celebrating Achievement</a></li>
+<li><a href="eal.html">EAL</a></li>
+<li class="has-children">
+<a href="house-system.html">House System<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="house-system/attenborough.html">Attenborough</a></li>
+<li><a href="house-system/dyson.html">Dyson</a></li>
+<li><a href="house-system/glennie.html">Glennie</a></li>
+<li><a href="house-system/parks.html">Parks</a></li>
+</ul>
+</li>
+<li><a href="library.html">Library</a></li>
+<li class="has-children">
+<a href="mental-health-wellbeing.html">Mental Health &amp; Wellbeing<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="feeling-worried-or-anxious.html">Feeling worried or anxious?</a></li>
+</ul>
+</li>
+<li class="has-children">
+<a href="pastoral-care-and-safeguarding.html">Pastoral Care and Safeguarding<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="pastoral-care-and-safeguarding/safeguarding-statement.html">Safeguarding Statement</a></li>
+</ul>
+</li>
+<li><a href="rewards-and-sanctions.html">Rewards and Sanctions</a></li>
+<li><a href="school-day.html">School Day</a></li>
+<li><a href="send.html">SEND</a></li>
+<li><a href="travel.html">Travel</a></li>
+<li><a href="uniform.html">Uniform</a></li>
+</ul>
+</div>
+<div class="relative nav-menu-item">
+<a class="nav-trigger font-cta-text text-cta-text hover:text-lavender-tint flex items-center gap-1 transition-all text-on-primary" href="../parents-and-carers/index.html">Parents and Carers<span class="material-symbols-outlined text-lg nav-chevron-desktop" aria-hidden="true">expand_more</span></a>
+<ul class="nav-dropdown-panel">
+<li><a href="../parents-and-carers/admissions.html">Admissions</a></li>
+<li><a href="../parents-and-carers/applying-for-free-school-meals.html">Applying for Free School Meals</a></li>
+<li><a href="../parents-and-carers/bromcom.html">Bromcom/MCAS</a></li>
+<li><a href="../parents-and-carers/early-closure-notification.html">Early Closure Notification</a></li>
+<li><a href="../parents-and-carers/home-school-communication.html">Home School Communication</a></li>
+<li><a href="../parents-and-carers/keeping-children-safe-online.html">Keeping Children Safe Online</a></li>
+<li><a href="../parents-and-carers/open-evening.html">NSC Open Evening 2025</a></li>
+<li><a href="../parents-and-carers/parents-forum.html">Parents Forum</a></li>
+<li><a href="../parents-and-carers/pupil-premium.html">Pupil Premium and Meridian Trust Charter</a></li>
+<li><a href="../parents-and-carers/support-your-childs-learning.html">Supporting Your Child&#x27;s Learning</a></li>
+<li><a href="../parents-and-carers/transition.html">Transition</a></li>
+</ul>
+</div>
+<div class="relative nav-menu-item">
+<a class="nav-trigger font-cta-text text-cta-text hover:text-lavender-tint flex items-center gap-1 transition-all text-on-primary" href="../news-and-events/index.html">News and Events<span class="material-symbols-outlined text-lg nav-chevron-desktop" aria-hidden="true">expand_more</span></a>
+<ul class="nav-dropdown-panel">
+<li><a href="../news-and-events/calendar.html">Calendar and Key Dates</a></li>
+<li><a href="../news-and-events/latest-news.html">Latest News</a></li>
+<li><a href="../news-and-events/newsletters.html">NSC Newsletters</a></li>
+<li class="has-children">
+<a href="#">Term Dates<span class="material-symbols-outlined sub-chevron">chevron_right</span></a>
+<ul class="submenu-panel">
+<li><a href="../news-and-events/term-dates-2025-2026.html">Term Dates 2025-2026</a></li>
+<li><a href="../news-and-events/term-dates-2026-2027.html">Term Dates 2026-2027</a></li>
+<li><a href="../news-and-events/term-dates-2027-2028.html">Term Dates 2027-2028</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<a class="font-cta-text text-cta-text hover:text-lavender-tint transition-all duration-200 text-on-primary nav-link-underline min-[48em]:nav-link-underline" href="https://pandesports.com/northstowe-college" target="_blank" rel="noopener noreferrer">Hire Our Spaces</a>
+<a class="font-cta-text text-cta-text hover:text-lavender-tint transition-all duration-200 text-on-primary nav-link-underline min-[48em]:nav-link-underline" href="../contact-us.html">Contact Us</a>
+</div>
+</nav>
+</div>
+</header>
+<!-- Banner -->
+<section class="nsc-inner-banner bg-surface-container-lowest border-b border-outline-variant/40" aria-label="Page banner">
+<div class="max-w-container-max mx-auto px-4 sm:px-gutter">
+<h1 class="nsc-inner-banner__title">Attendance</h1>
+</div>
+<img alt="" class="nsc-inner-banner__img" width="1000" height="222" decoding="async" fetchpriority="high" src="https://www.northstowesc.org/wp-content/uploads/2022/10/NSC-Banner-7.jpg?is-pending-load=1"/>
+</section>
+<!-- Main content + Learning sidebar -->
+<section class="py-section-padding bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-4 sm:px-gutter">
+<div class="nsc-page-with-sidebar learning-split-reveal">
+<article class="min-w-0">
+<header class="entry-header">
+<h1 class="entry-title">Attendance</h1>
+</header>
+<div class="entry-content learning-stagger">
+<p class="wp-block-paragraph" style="font-size:19px">We are pleased that children want to attend our school and that they know that good attendance matters.&nbsp; Students who have good attendance: get better jobs in the future, achieve better results, make better friendships and have good self-esteem and confidence.</p>
+
+
+
+<p class="wp-block-paragraph" style="font-size:19px">We want to continue to work with you to ensure the school environment is somewhere your child wants to be and support you in ensuring they can attend every day, on time.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph" style="font-size:19px">Encouraging regular school attendance is one of the most powerful ways you can prepare your child for success, both in school and in their working life. When you make school attendance a priority, you help your child get better grades, develop healthy life habits, avoid dangerous behaviour and have a better chance of securing their ideal career path.</p>
+
+
+
+<p class="wp-block-paragraph" style="font-size:19px">Our intention is always to follow a ‘support first’ approach whenever attendance concerns arise.&nbsp; Part of being able to support families is ensuring you have access to as much information as possible to understand why attending school is important and what happens where absences occur.</p>
+
+
+
+<p class="wp-block-paragraph" style="font-size:19px">We hope you find the following information useful to assist your understanding and help with decision making in respect of your child’s absences from school, should they occur.&nbsp; We would like to take this opportunity to thank you in anticipation of your support to improve attendance levels and progress.</p>
+
+
+
+<p class="wp-block-paragraph" style="font-size:19px">Please find a copy of our Attendance Policy here: <a href="https://www.northstowesc.org/wp-content/uploads/2025/09/Meridian-Trust-Attendance-Policy-Sep-2025.pdf" data-type="link" data-id="https://www.northstowesc.org/wp-content/uploads/2025/09/Meridian-Trust-Attendance-Policy-Sep-2025.pdf">Meridian Trust Attendance Policy</a></p>
+
+
+
+<p class="wp-block-paragraph" style="font-size:19px">A student friendly version of our policy can be found here: <a href="https://www.northstowesc.org/wp-content/uploads/2025/09/Meridian-Trust-Attendance-Policy-For-Pupils-Sep-2025.pdf" data-type="link" data-id="https://www.northstowesc.org/wp-content/uploads/2025/09/Meridian-Trust-Attendance-Policy-For-Pupils-Sep-2025.pdf">Meridian Trust Attendance Policy &#8211; For Pupils</a></p>
+
+
+
+<p class="wp-block-paragraph" style="font-size:19px"><a href="https://www.northstowesc.org/wp-content/uploads/2025/09/Meridian-Trust-Attendance-Letter-to-Parents-September-2025.pdf" data-type="link" data-id="https://www.northstowesc.org/wp-content/uploads/2025/09/Meridian-Trust-Attendance-Letter-to-Parents-September-2025.pdf">Meridian Trust Attendance Letter to Parents &#8211; Sep 2025</a></p>
+
+
+
+<div style="height:11px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="wp-block-heading"><strong>Timings of the School Day:</strong></h2>
+
+
+
+<p class="wp-block-paragraph"><strong>All students are expected to be in their tutor time at 8.50am</strong>.  School gates shut at 8.45am after which all access is via Reception.</p>
+
+
+
+<p class="wp-block-paragraph">Students may access the school site from 8.35am&nbsp; </p>
+
+
+
+<p class="wp-block-paragraph">If students arrive after 8.50am they will be marked as Late (L = authorised)</p>
+
+
+
+<p class="wp-block-paragraph">Our AM registers close at 9.20am.&nbsp; If students arrive after this time, they will have missed registration and will be marked as absent.&nbsp; If their reason is unacceptable, they will be marked as U on the register and if their reason was acceptable, an M (medical appt) or a C (other authorised) will be used to mark the register.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">Our PM Register opens at 2.10pm, and it closes at 2.30pm. The same punctuality codes as above will be used.</p>
+
+
+
+<p class="wp-block-paragraph">The school day ends at 3.10pm.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">For Term Time Dates click <a href="https://www.northstowesc.org/news-and-events/term-dates-2024-2025/" data-type="page" data-id="5345">here</a>.</p>
+
+
+
+<div class="nsc-table-wrap nsc-table-wrap--register">
+<table class="nsc-data-table">
+<caption class="nsc-data-table__caption">Official register times</caption>
+<thead>
+<tr>
+<th scope="col">AM registers open</th>
+<th scope="col">AM registration closes (Late coded L)</th>
+<th scope="col">AM registers close (U/A late after)</th>
+<th scope="col">PM registers recorded</th>
+<th scope="col">PM registers close</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8:50am</td>
+<td>8:55am</td>
+<td>9:20am</td>
+<td>2:10pm</td>
+<td>2:30pm</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+<div style="height:11px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="wp-block-heading has-black-color has-text-color has-link-color wp-elements-39b7f7a3d75fde578783ec4426128365"><a><strong>Important steps that you can take to ensure a high level of attendance:</strong></a></h2>
+
+
+
+<ul class="wp-block-list">
+<li>Ensure you attend every day, on time (by 8.50am at the latest), equipped and ready to learn.</li>
+
+
+
+<li>Ensure the College has up to date e-mail addresses and telephone numbers.</li>
+
+
+
+<li>If you are ill, contact the College every day you are absent and provide an explanatory note on your return. If no contact is received regarding an absence, it is recorded as unauthorised. Ultimately the academy is responsible for deciding if the absence is authorised or not.&nbsp;</li>
+
+
+
+<li><strong><em>(For your information, a Penalty Notice may be issued in relation to a child whose attendance at school is less than 90% including unauthorised absences over a given period and a range of interventions have been implemented by the College to raise the attendance.)</em></strong></li>
+
+
+
+<li>Only genuine absence will be authorised. You may be asked to provide supportive information, if you have a poor attendance record.</li>
+
+
+
+<li>Ensure that medical appointments are made outside of college time.</li>
+
+
+
+<li>Respond to college letters or telephone calls regarding attendance and punctuality.</li>
+
+
+
+<li>Contact your tutor or Student Support Assistant if you are experiencing difficulty in getting into the college.</li>
+</ul>
+
+
+
+<div style="height:6px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p class="wp-block-paragraph">The academy’s <strong>Senior Attendance Champion</strong> is: Carl Deighton</p>
+
+
+
+<ul class="wp-block-list">
+<li>This is a statutory role, and they will ensure all school-based staff complete their attendance responsibilities in line with the legislation, DfE Statutory Guidance and academy’s policies and procedures.</li>
+</ul>
+
+
+
+<div style="height:11px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="wp-block-heading has-black-color has-text-color has-link-color wp-elements-63786cfea64b6b6d58309043707bcc8f"><a><strong>Why is Attendance Important?</strong></a></h2>
+
+
+
+<ul class="wp-block-list">
+<li>Attendance is extremely important because all children have a legal right to access a full-time education to ensure they can learn and develop into confident, educated, socially aware and employable young adults.&nbsp; Research demonstrates high levels of attendance and punctuality are crucial in ensuring students achieve their best, both academically and socially.&nbsp;</li>
+
+
+
+<li>We want to help your child strive for excellence (not to be confused with perfection) therefore, if they are to reach their potential, a high level of attendance is essential to access all the learning opportunities on offer.&nbsp; We also know that absence can interrupt and damage a child’s learning, and when children are absent it can have an impact on others in the class too.</li>
+
+
+
+<li>We promote and celebrate school attendance and expect all students to aspire to 100% attendance, with a minimum of 96% whenever possible. &nbsp;Research shows that if students miss 17 days a year (1.5 days per month or approx. 91% overall), they can drop one GCSE grade when it comes to their exams.</li>
+</ul>
+
+
+
+<div style="height:11px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="wp-block-heading has-black-color has-text-color has-link-color wp-elements-8182ca94aa8a100024ce5920027468d3"><a><strong>What are the laws around school attendance?</strong></a><strong></strong></h2>
+
+
+
+<ul class="wp-block-list">
+<li>Statutory Guidance from the Department for Education (DfE) called <strong><em>Working Together to Improve School Attendance</em></strong> came into force on 19<sup>th</sup> August 2024 underpinned with new legislation <strong><em>The School Attendance (Pupil Registration) (England) Regulations 2024</em></strong>.&nbsp;</li>
+
+
+
+<li>The new guidance gives clear responsibilities to ‘everyone’ involved in the care of a child and clearly connects that absence from school is classed as a safeguarding concern in terms of ensuring the whereabouts of every child is concerned and in exploring absence when the level of attendance is of concern.</li>
+
+
+
+<li>It also reinforces the duties of both schools and parents in respect of attendance which are outlined in <strong><em>The Education Act 1996</em></strong>.&nbsp; All children who are of <strong>compulsory school age</strong> (from the start of the term after they turn 5 years old, until the last Friday in June of their 16<sup>th</sup> year) <strong>must</strong> receive an education at school or otherwise.&nbsp; A child’s parent(s) (or carer(s)) is responsible for ensuring this happens under this act and where a child is over compulsory school age the parent(s)/carer(s) have a duty to encourage their participation in education or training up to the age of 18 under <strong>Part 1 of Education and Skills Act 2008</strong>.&nbsp; Where a parent/carer fails to ensure a child receives education, <strong><em>s444</em></strong> of the above act states they may have committed an offence.</li>
+</ul>
+
+
+
+<div style="height:11px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="wp-block-heading has-black-color has-text-color has-link-color wp-elements-fce9f9d20183b1728c389445d01be8ff"><a><strong>What are Everyone’s Responsibilities?</strong></a></h2>
+
+
+
+<p class="wp-block-paragraph">The new statutory duties mean schools have key responsibilities and they must:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Ensure families have access to the academy’s Attendance Policy which clearly states expectations and processes for absence and support.</li>
+
+
+
+<li>Have a whole school culture that promotes the benefits of good attendance – promoting and encouraging attendance is everyone’s responsibility.</li>
+
+
+
+<li>Record registers accurately using statutory coding and have robust daily processes to follow up on all absences quickly.</li>
+
+
+
+<li>We <strong>must not</strong> keep AM and PM registration periods open for more than 30 minutes and if students arrive after that point they must be marked <strong>absent</strong> for the whole session, using an authorised or unauthorised absence code (students must sign in to be counted for fire registers).&nbsp; This means it is vital that students arrive for school on time or in exceptional situations before the registration period closes, as we will have no choice but to mark them absent for the rest of the session (morning or afternoon) which will affect their overall absence level.&nbsp;</li>
+
+
+
+<li>Proactively use data to identify students who are at risk of becoming persistently absent as per the new National Framework Thresholds (see below).</li>
+
+
+
+<li>Work with parents/families about reasons for all types of absence (authorised and unauthorised) and explore to identify if support needs to be offered to remove barriers to attendance or if a legal sanction is appropriate.&nbsp;</li>
+
+
+
+<li>Follow a ‘support first’ approach prior to considering legal action, except if the absence is for a reason that does not require support e.g. term time holidays or absence for specific recreational, leisure etc., which is an automatic legal sanction.</li>
+
+
+
+<li>Where support is not engaged with or does not work, use multi-agency support to provide formal and targeted support or refer to the local authority for legal action or statutory children’s services.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Under the new legislation and guidance, Schools/Academies MUST also now share data with the DfE daily, and with the Local Authority when they are admitted or deleted from the school roll.&nbsp; Also, data must be shared with the LA once:</p>
+
+
+
+<ul class="wp-block-list">
+<li>A child’s attendance shows they have had 10 continuous absent sessions,</li>
+
+
+
+<li>If a child has 15 days of illness (continuous or accumulative) or they are likely to have (this could lead to education being provided by the LA if health professional evidence is clear the child cannot attend the school)</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading"><strong>Definition of Parent/Carer</strong></h3>
+
+
+
+<p class="wp-block-paragraph">The term ‘Parent/Carer’ is used to address those with responsibilities for children.&nbsp; For the purposes of education and attendance matters and identifying those with legal responsibilities for student care and attendance:</p>
+
+
+
+<p class="wp-block-paragraph"><em>‘Parents’ are determined as per Section 576 of the Education Act 1996 which defines a parent as:</em></p>
+
+
+
+<ul class="wp-block-list">
+<li><em>the natural parents of a child, whether they are married or not;</em></li>
+
+
+
+<li><em>anyone who although not a natural parent, has parental responsibility for a child;</em></li>
+
+
+
+<li><em>any person who has care of a child or young person i.e., lives with and looks after the child.</em></li>
+</ul>
+
+
+
+<h3 class="wp-block-heading"><strong>Responsibilities of Parents/Carers:</strong></h3>
+
+
+
+<p class="wp-block-paragraph">As well as the legal duty to ensure their child receives education, parents who enroll their child in a school, must also ensure regular attendance (including if their child is receiving education in an alternative education setting) by encouraging their child and working with the school to discuss barriers to attendance and not permitting absence from school without good reason.</p>
+
+
+
+<p class="wp-block-paragraph">Regular attendance means every day the school is open, except if a statutory reason for absence applies.&nbsp; Other responsibilities are:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Notifying the academy of absence on the first day, or as soon as possible after, when their child is unable to attend for exceptional reasons e.g., illness. This should be prior to the registers opening.</li>
+
+
+
+<li>Requesting all planned absence in advance and only request leave of absence for exceptional circumstances.</li>
+
+
+
+<li>Booking medical appointments outside of the school day wherever possible, and where this is not possible, they should limit the amount of time their child is absent from school on the day of that appointment e.g., working around the registration points to avoid absence being recorded.</li>
+
+
+
+<li>Ensuring contact information held by the school is up to date and notify them of changes.</li>
+
+
+
+<li>Proactively engage in support offered to prevent their child from becoming or where they are persistently or severely absent, to avoid more formalised support being required.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading"><strong>Students Responsibilities are:</strong></h3>
+
+
+
+<ul class="wp-block-list">
+<li>Aspire to attend every day on time and ready to learn unless there are exceptional causes/reasons for absence.</li>
+
+
+
+<li>Ensure someone (parent or a member of staff) knows they are having difficulties or are worried about school so that conversations can take place to support them.</li>
+</ul>
+
+
+
+<div style="height:11px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="wp-block-heading"><strong>Term Time Exceptional Absence from School</strong></h2>
+
+
+
+<p class="wp-block-paragraph">Family holidays or absence due to recreation or leisure purposes are <strong>not</strong> allowed to be taken during school term time.&nbsp; While family holidays are enriching experiences, the school year is designed to give families the opportunity for these breaks without having to disrupt their children’s education (175 non-school days).</p>
+
+
+
+<p class="wp-block-paragraph">As set out in <strong><em>The School Attendance (Pupil Registration) (England) Regulations 2024,</em></strong> headteachers continue to have the power to authorise leave of absence, but <strong>only when requested in advance and for exceptional</strong> <strong>circumstances; </strong>each case should be considered on its own merits.&nbsp; It is for schools to consider the specific details and relevant context behind each request. If the absence reaches the national threshold of <em><span style="text-decoration: underline;">10 unauthorised sessions of absence in a rolling 10 school weeks</span> </em>a legal sanction can automatically be considered.&nbsp; See below Penalty Notices and Legal Sanctions Section.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph"><strong>NB.</strong> To clarify, the ‘10 weeks’ is not fixed, and is a trigger period for schools to identify if there may be a concern with attendance.&nbsp; Any legal action that is subsequently taken may be for a longer period if addressing multiple absences but it may be shorter if dealing with a specific single period of absence of 10 sessions or more e.g. for an unauthorised holiday of 1 week.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">The 10 sessions can be made up of any combination of unauthorised absence, examples of this are:</p>
+
+
+
+<ul class="wp-block-list">
+<li>4 sessions of ‘holiday’ taken in term time plus 6 sessions of arriving late after the register has closed (U codes) within a 10-week period.</li>
+
+
+
+<li>10 sessions within one week or spanning over the end/start of 2 weeks.</li>
+
+
+
+<li>6 sessions of ‘holiday’ in week 1 followed by 4 sessions of absence on subsequent weeks.</li>
+
+
+
+<li>4 sessions at the end of one half-term or term, followed by 6 sessions at the start of the next half-term or term.&nbsp; Terms can also be in different academic years.</li>
+
+
+
+<li>10 sessions taken as individual or consecutive days over a number of weeks but within a 10-week period.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">An absence is classified as unauthorised when a child is away from school <strong>without</strong> the permission of the school.&nbsp; To request any leave during term time a <strong>Term Time Exceptional Absence Request Form</strong> needs to be completed in advance (we ask for 3-weeks to allow for full consideration and response).&nbsp; You may add an additional letter and/or documentations with the form, if you feel more information will support your request.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">Please find a downloadable copy of the <strong>Term Time Absence for Exceptional Circumstances Request Form</strong> here: <a href="https://www.northstowesc.org/wp-content/uploads/2025/01/Term-Time-Absence-Request-Form_January-2025.pdf" data-type="link" data-id="https://www.northstowesc.org/wp-content/uploads/2025/01/Term-Time-Absence-Request-Form_January-2025.pdf" target="_blank" rel="noreferrer noopener">Northstowe Learning Community Term-Time Absence Request Form</a></p>
+
+
+
+<p class="has-black-color has-text-color has-link-color wp-elements-8dfe7f54c2cf2783a971ecc99c475f05 wp-block-paragraph"><a><strong>Reminder</strong></a> – It is the responsibility of the parent/carer to provide information and evidence to the academy to demonstrate their request <strong>is</strong> exceptional so that the request can be appropriately considered.</p>
+
+
+
+<p class="wp-block-paragraph">The following will not meet the exceptional circumstances criteria, but this list is only a demonstration of what does not meet the criteria, it is not a definitive or exhaustive list:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Looking after other children, Birthdays or Shopping trips,</li>
+
+
+
+<li>Truancy before or during the school day, or any unexplained absences,</li>
+
+
+
+<li>Late arrival at school after registration has closed,</li>
+
+
+
+<li>Holidays inc., cheaper holidays/flights, or any absence for recreation or leisure purposes,</li>
+
+
+
+<li>Unagreed leave, or absence that has no exceptional cause evident,</li>
+
+
+
+<li>Visiting family or friends (even if they have different term time dates) in the UK or overseas,</li>
+
+
+
+<li>Family weddings of more than 1 day of immediate family members,</li>
+
+
+
+<li>Medical treatment overseas (unless it was an emergency treatment whilst abroad as part of a pre-authorised absence (evidence will be required)), or it can be demonstrated it cannot be done in the UK.</li>
+</ul>
+
+
+
+<div style="height:11px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="wp-block-heading"><strong>Penalty Notices and Legal Sanctions</strong></h2>
+
+
+
+<p class="wp-block-paragraph">Once the national absence threshold has been met, schools have a duty to consider:</p>
+
+
+
+<ol style="list-style-type:lower-alpha" class="wp-block-list">
+<li>If support is required</li>
+
+
+
+<li>If a Penalty Notice is required</li>
+
+
+
+<li>If another type of legal sanction is required</li>
+</ol>
+
+
+
+<p class="wp-block-paragraph">I hope you will have gleaned from all the above information that using legal action is not a preferred route, as our intention, ethos and process is always a ‘support first’ approach.&nbsp; However, where support is not engaged with, or declined the duty placed on schools is to inform the LA so that formal consideration of legal action can be taken.</p>
+
+
+
+<p class="wp-block-paragraph">Penalty Notices fines were introduced under <strong><em>Section 23 of the Anti-Social Behaviour Act 2003</em></strong> and are issued under <strong><em>The Education (Penalty Notices) (England) (Amendment) Regulations 2007 &amp; amendments 2012, 2013 &amp; 2024. </em></strong>&nbsp;The fines are set by the Government; the school does not receive the fine, and they are used as an alternative to prosecution where a parent is given the opportunity to discharge their liability by paying the penalty.&nbsp; All Penalty Notices are issued as per the academy’s Local Authority Code of Conduct.</p>
+
+
+
+<p class="wp-block-paragraph">Parents must have received a warning that a Penalty Notice may be considered prior to one being issued.&nbsp; When the absence is due to a single period event, e.g. a Term Time Absence of 10 unauthorised sessions or more, due to non-exceptional reasons (e.g., holiday), parents will have received a warning either advising them their request is not authorised or they have not followed due process and the absence taken is not authorised, and both letters would state a Penalty Notice will be requested.</p>
+
+
+
+<p class="wp-block-paragraph">Where the absence is for a multiple absence period, and it is deemed that support may be required to help the family improve the attendance, a meeting must be offered to discuss what support may be required.&nbsp; This will often include the offer of and Early Help Assessment or other LA Early Help Pathway Referrals, and it may also include an Attendance Contract where the school and wider support networks can collaborate to pool resources.</p>
+
+
+
+<p class="wp-block-paragraph">Once it has been identified that support is not something that is required or wanted, a Legal Warning Letter will be issued giving notice to parents that attendance must improve.&nbsp; A timescale in which to demonstrate significant improvement in attendance will be given in the letter so that attendance can be monitored before a legal sanction is issued.</p>
+
+
+
+<p class="wp-block-paragraph">Only <strong>2 Penalty Notices</strong> can be issued to the same parent in respect of the same child within a 3-year rolling period (the 3-year period starts 19<sup>th</sup> August 2024).&nbsp; If there is need for further action following 2 Penalty Notices being issued, <strong>alternative</strong> <strong>action</strong> should be taken instead e.g., prosecution in the Magistrates’ Court or other formalised legal intervention.</p>
+
+
+
+<p class="wp-block-paragraph">Penalty Notices are currently (as @ Sept 2024) <strong>£160 per child, per parent, if paid within 28 days </strong>of receipt of the notice but this is<strong> reduced to £80 per child, per parent, if paid within 21 days </strong>of receipt of the notice.&nbsp;&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">Following the receipt of all required documentation the Local Authority will decide whether to issue the requested Penalty Notice(s).&nbsp; The Local Authority will liaise directly with the Academy at each stage of following a penalty notice being issued.&nbsp; If the penalty is <strong>not paid</strong> in full by the end of the 28-day period, the Local Authority must either prosecute or withdraw the notice.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">Where a <strong>2nd Penalty Notice</strong> is issued to the same parent in respect of the same child the Penalty Notice will be charged at a <strong>flat rate of £160 to be paid within 28 days</strong> (no reduction for early payment will be allowed).&nbsp; Further offences will be dealt with by prosecution in the Magistrates Courts.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Please Note:&nbsp;</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>If the LA feel a Penalty Notice would not be effective they can decide not to offer parents the opportunity of a Penalty Notice and take a case through the prosecution route instead.&nbsp; They may do this where they see repeated absence patterns, even if the individual absence events do not meet the national absence threshold.</li>
+
+
+
+<li>Only the Local Authority can withdraw a penalty notice and they can only withdraw it if; it ought not to have been issued i.e., no offence was committed; it has been issued to the wrong person; or it contains material errors.&nbsp;</li>
+</ul>
+
+
+
+<div style="height:11px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="wp-block-heading"><strong>What is absence and how is it recorded?</strong></h2>
+
+
+
+<p class="wp-block-paragraph">Every half-day (either an AM or PM session) = one session.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">One whole day = two sessions.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">Absence must be categorised as AUTHORISED or UNAUTHORISED.&nbsp; The school must record absences using the statutory coding given by the DfE.&nbsp; This is why information about absence is sought from parents so that the registers can be accurate.&nbsp; School must also follow up on absences quickly to meet their safeguarding duties and visits to the family home may be necessary.&nbsp; Where children cannot be located, schools must report the information to the LA Child Missing Education (CME) Dept.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Unauthorised </strong>absence is where the Headteacher/Principal or their designated staff members do <strong>not</strong> consider it reasonable to be absent due to the reason given, or overall level of concern, and/or for which no “Term Time Absence Request&#8221; has been received.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Authorised absence</strong> may be for illness, medical/dental appointments (which unavoidably fall within the school day), emergencies or other short exceptional cause/circumstance that is unavoidable and the Headteacher/Principal agrees the absence is necessary.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">It is the Headteacher/Principal who decides if an absence should be authorised as per the DfE Guidance.&nbsp; Where possible, parents’ sharing supportive information with the school is beneficial to working together to ensure absence is recorded accurately and support can be put into place quickly where needed.</p>
+
+
+
+<p class="wp-block-paragraph">Both types of absence are explored as we have mentioned above to support improvement by putting in specific support or interventions.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading"><strong>What is a Persistent and Severe Absentee?</strong></h3>
+
+
+
+<p class="wp-block-paragraph">A student whose attendance level reaches the ‘<strong>national threshold</strong>’ of 10 unauthorised sessions (half days) in a rolling 10-week period.&nbsp; However, if any student has 10 sessions of any type of absence in a 10-week rolling period they are also classed as a <strong>Persistent Absentee</strong>.&nbsp; You may see or hear this level of absence being referred to as <strong>PA</strong>.</p>
+
+
+
+<p class="wp-block-paragraph">A PA level of attendance is classed as a ‘concern’ and we have a duty to explore and support in the first instance.&nbsp; Please understand that in exploring absence, we are attempting to be preventative not punitive.&nbsp; It is important we work together to explore reasons, potential solutions or identify support for your child or your family to improve things.</p>
+
+
+
+<p class="wp-block-paragraph">Any student who has 50% or less attendance of any type of absence is classed as a <strong>Severe Absentee</strong>, also often referred to as <strong>SA</strong>.&nbsp; For those that fall into the SA category, if absence is for <strong>unauthorised</strong> reasons, the absences may constitute educational neglect and cause the safeguarding of the student to be of so much concern that a referral to statutory services may be required for intensive support.&nbsp; Where absence is authorised, there should be a robust support plan in place that ensures education can be accessed wherever possible.</p>
+
+
+
+<figure class="wp-block-image size-full"><img sizes="(max-width: 752px) 100vw, 752px" decoding="async" width="752" height="518" loading="lazy" src="https://www.northstowesc.org/wp-content/uploads/2025/01/aTTENDANCE.png" alt="Attendance information infographic" class="wp-image-6690" srcset="https://www.northstowesc.org/wp-content/uploads/2025/01/aTTENDANCE.png 752w, https://www.northstowesc.org/wp-content/uploads/2025/01/aTTENDANCE.png?resize=300,207 300w"/></figure>
+
+
+
+<h3 class="wp-block-heading"><strong>What do we do to prevent absences and support removal of barriers to attending school or accessing education?</strong></h3>
+
+
+
+<p class="wp-block-paragraph">So that we can prevent students falling into <strong>PA</strong> or <strong>SA</strong> (persistent or severe absentee) categories we monitor <strong>all </strong>attendance.&nbsp; This enables us to identify students early who may need support to remove barriers to them attending school.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">This includes having early conversations with you (and your child if old enough) and meeting with you to discuss absences, even if they are authorised absences, as all absence must be explored in line with the above statutory duties.&nbsp; The actions taken to explore, support or consider legal actions will depend on the reasons for absence e.g., an absence for a 2-week hospital admission, would be treated differently to a 2-week holiday, or 1 of week Chicken Pox would be treated differently to 1 or 2 days per week over a few weeks.</p>
+
+
+
+<p class="wp-block-paragraph">We also promote having good attendance by ensuring that you and your child has information about their attendance level.&nbsp; We do this in newsletters, and information around school as well as discussions and assemblies.&nbsp; This helps to raise awareness of how they are doing, how important it is to come to school and what to do if it feels less easy for them.&nbsp; We frequently recognise effort to achieve good attendance, not just 100% awards as we feel it is important to recognise that some barriers to attending are not chosen or the fault of the child or family.</p>
+
+
+
+<p class="wp-block-paragraph">See our visual roadmap of process here &#8211; <a href="https://cmat.sharepoint.com/:b:/r/sites/CMATAttendance/Shared%20Documents/General/2024-2025/Meridian%20Trust%20Attendance%20Roadmap%20Sept%202024.pdf?csf=1&amp;web=1&amp;e=7hVNAN">Meridian Trust Attendance Roadmap Sept 2024.pdf</a></p>
+
+
+
+<div style="height:11px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="wp-block-heading"><strong>What can you do to help your child maintain a high level of attendance?</strong></h2>
+
+
+
+<p class="wp-block-paragraph">There are several things you can do:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Support your child to attend every day, on time, equipped and ready to learn.</li>
+
+
+
+<li>Ensure you request all planned absence in advance, and only do so for absence that can be demonstrated as exceptional circumstances &#8211; plan family trips, holidays, or events outside of term time.&nbsp;&nbsp;&nbsp;</li>
+
+
+
+<li>Ensure you notify us as soon as possible in the case of unplanned absence e.g., an emergency or illness.&nbsp;Please see above contacts for absence.</li>
+
+
+
+<li>Where possible, arrange health appointments at times that prevent absence from the AM or PM registration points.&nbsp; Signing out to go to appointments and then signing back into school is a good option, if after school or holiday time appointments cannot be arranged.&nbsp;&nbsp;&nbsp;<strong>NB.</strong> We do understand it may not always be possible to avoid and we encourage you to share any supportive information with us where it’s not, as it helps us to keep our register coding sympathetic and accurate.</li>
+
+
+
+<li>Encourage and reinforce positive thinking about school and its importance, with the understanding that regular attendance means attending every day the school is open unless an exceptional or statutory reason applies, as detailed above.&nbsp;</li>
+
+
+
+<li>Talk openly about school and/or any worries that occur to build self-awareness, encourage problem solving skills and boost confidence to know it is normal to be worried about things, but that we can help ourselves by sharing those worries with others.&nbsp;&nbsp;&nbsp;</li>
+
+
+
+<li>Contact your child’s tutor/class teacher if you are having trouble in getting your child to attend or if there are things affecting their learning or happiness at school.&nbsp; Prevention is generally better than attempting to cure later.</li>
+
+
+
+<li>Proactively engage with support to enable the removal of barriers to attendance and education and ensure we have up to date contact information for you in case of emergency.&nbsp;</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Further details about government policy and advice on this matter is available at <a href="https://www.gov.uk/school-attendance-absence/help-with-getting-your-child-to-go-to-school">help with getting your child to go to school</a>.</p>
+
+
+
+<p class="wp-block-paragraph">Meridian Trust <a href="https://www.meridiantrust.co.uk/key-information/attendance/">Attendance and Support Information</a></p>
+
+
+
+<p class="wp-block-paragraph">External support and resources: <a href="feeling-worried-or-anxious.html">Feeling worried or anxious?</a></p>
+
+
+
+<section class="attendance-staff" id="attendance-staff">
+<h2 class="attendance-staff__title">Attendance staff &#8211; Meridian Trust and Northstowe Secondary College</h2>
+
+<div class="attendance-staff__group">
+<h3 class="attendance-staff__group-title">Trust attendance staff</h3>
+<div class="nsc-table-wrap">
+<table class="nsc-data-table">
+<thead>
+<tr>
+<th scope="col">Name</th>
+<th scope="col">Title</th>
+<th scope="col">Designated Safeguarding Lead trained (DSL)</th>
+<th scope="col">Email contact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sharon Templeman</td>
+<td>Trust Attendance Welfare Leader</td>
+<td class="nsc-cell--yesno">Yes</td>
+<td><a href="mailto:stempleman@meridiantrust.co.uk">stempleman@meridiantrust.co.uk</a></td>
+</tr>
+<tr>
+<td>Martin Campbell</td>
+<td>Executive Principal</td>
+<td class="nsc-cell--yesno">Yes</td>
+<td><a href="mailto:mcampbell@merdiantrust.co.uk">mcampbell@merdiantrust.co.uk</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="attendance-staff__group">
+<h3 class="attendance-staff__group-title">Northstowe Secondary College attendance staff</h3>
+<div class="nsc-table-wrap">
+<table class="nsc-data-table">
+<thead>
+<tr>
+<th scope="col">Name</th>
+<th scope="col">Title</th>
+<th scope="col">DSL trained</th>
+<th scope="col">Email contact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claire Mills</td>
+<td>Principal</td>
+<td class="nsc-cell--yesno">Yes</td>
+<td><a href="mailto:Head@northstowe.education">Head@northstowe.education</a></td>
+</tr>
+<tr>
+<td>Carl Deighton</td>
+<td>Attendance Lead (SLT)</td>
+<td class="nsc-cell--yesno">Yes</td>
+<td><a href="mailto:CDeighton@northstowe.education">CDeighton@northstowe.education</a></td>
+</tr>
+<tr>
+<td>Nicky Tabb</td>
+<td>Attendance Officer</td>
+<td class="nsc-cell--yesno">No</td>
+<td><a href="mailto:NTabb@northstowe.education">NTabb@northstowe.education</a></td>
+</tr>
+<tr>
+<td>Simon Russell</td>
+<td>Designated Safeguarding Lead (DSL)</td>
+<td class="nsc-cell--yesno">Yes</td>
+<td><a href="mailto:SRussell@Northstowe.education">SRussell@Northstowe.education</a></td>
+</tr>
+<tr>
+<td>Sarah Middleton</td>
+<td>Academy Councillor</td>
+<td class="nsc-cell--yesno">No</td>
+<td><a href="mailto:smiddleton@gov.northstowe.education">smiddleton@gov.northstowe.education</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="attendance-staff__group">
+<h3 class="attendance-staff__group-title">Staff responsible for daily attendance reporting</h3>
+<div class="nsc-table-wrap">
+<table class="nsc-data-table">
+<thead>
+<tr>
+<th scope="col">Name</th>
+<th scope="col">Title</th>
+<th scope="col">House / year / crew</th>
+<th scope="col">Email contact</th>
+<th scope="col">Tel number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Caroline Cook</td>
+<td>Student Support Assistant &amp; Attendance</td>
+<td>Attenborough</td>
+<td><a href="mailto:CCook@northstowe.education">CCook@northstowe.education</a></td>
+<td class="nsc-cell--tel">01223 343806</td>
+</tr>
+<tr>
+<td>Debbie Pitt</td>
+<td>Student Support Assistant</td>
+<td>Dyson</td>
+<td><a href="mailto:DPitt@northstowe.education">DPitt@northstowe.education</a></td>
+<td class="nsc-cell--tel">01223 343728</td>
+</tr>
+<tr>
+<td>Clare Wadd</td>
+<td>Student Support Assistant</td>
+<td>Glennie</td>
+<td><a href="mailto:CWadd@northstowe.education">CWadd@northstowe.education</a></td>
+<td class="nsc-cell--tel">01223 343736</td>
+</tr>
+<tr>
+<td>Louise Bucknall</td>
+<td>Student Support Assistant</td>
+<td>Parks</td>
+<td><a href="mailto:LBucknall@northstowe.education">LBucknall@northstowe.education</a></td>
+<td class="nsc-cell--tel">01223 343809</td>
+</tr>
+<tr>
+<td>Hannah Matthews</td>
+<td>Senior Tutor</td>
+<td>Attenborough</td>
+<td><a href="mailto:HMatthews@Northstowe.education">HMatthews@Northstowe.education</a></td>
+<td class="nsc-cell--tel">01223 343800</td>
+</tr>
+<tr>
+<td>Hope Noble</td>
+<td>Senior Tutor</td>
+<td>Dyson</td>
+<td><a href="mailto:HNoble@northstowe.education">HNoble@northstowe.education</a></td>
+<td class="nsc-cell--tel">01223 343800</td>
+</tr>
+<tr>
+<td>Anthony Williams</td>
+<td>Senior Tutor</td>
+<td>Glennie</td>
+<td><a href="mailto:AWilliams@northstowe.education">AWilliams@northstowe.education</a></td>
+<td class="nsc-cell--tel">01223 343800</td>
+</tr>
+<tr>
+<td>Anne Steventon</td>
+<td>Senior Tutor</td>
+<td>Parks</td>
+<td><a href="mailto:ASteventon@northstowe.education">ASteventon@northstowe.education</a></td>
+<td class="nsc-cell--tel">01223 343800</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<ul class="attendance-staff__links">
+<li><a href="https://www.cambridgeshire.gov.uk/residents/children-and-families/schools-learning/education-your-rights-and-responsibilities/non-attendance-and-the-law">Local Authority Penalty Notice Code of Conduct</a></li>
+<li><a href="https://www.meridiantrust.co.uk/key-information/policies/">Trust Attendance Policy</a></li>
+<li><a href="https://www.meridiantrust.co.uk/key-information/attendance/">Trust Parent Attendance Support Information</a></li>
+</ul>
+</section>
+
+
+
+<div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p class="wp-block-paragraph" style="font-size:24px"><strong>Holidays and Authorised Exceptional Absence from School</strong></p>
+
+
+
+<p class="wp-block-paragraph" style="font-size:19px">Family holidays are no longer allowed to be taken during school term time.&nbsp; Families who take their children out of school for holidays without permission may be fined.&nbsp; However, there are situations where the Headteacher may use discretion to authorise the absence in exceptional circumstances.&nbsp; If you feel that such an absence from school is necessary, please fill in the Term Time Absence Request Form and send to your child’s House Office or to <a href="mailto:termtimeabsence@northstowe.education">termtimeabsence@northstowe.education</a>. This must be done at least four weeks in advance of the date of travel where possible to enable the academy to consider and respond to the request. Parents must detail the exceptional circumstance of the request and provide sufficient evidence to verify the reasons, either with the request, or when subsequently requested.</p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://www.northstowesc.org/wp-content/uploads/2025/01/Term-Time-Absence-Request-Form_January-2025.pdf" data-type="link" data-id="https://www.northstowesc.org/wp-content/uploads/2025/01/Term-Time-Absence-Request-Form_January-2025.pdf" target="_blank" rel="noreferrer noopener">Northstowe Learning Community Term-Time Absence Request Form</a></p>
+</div>
+</article>
+<aside class="nsc-page-sidebar" aria-label="NSC Life section">
+<p class="nsc-page-sidebar__parent">NSC Life</p>
+<nav aria-label="NSC Life">
+<a href="absence.html">Absence</a>
+<a href="attendance.html" aria-current="page">Attendance</a>
+<a href="careers-education.html">Careers (CEIAG)</a>
+<a href="catering.html">Catering</a>
+<a href="celebrating-achievement.html">Celebrating Achievement</a>
+<a href="eal.html">EAL</a>
+<a href="house-system.html">House System</a>
+<a href="library.html">Library</a>
+<a href="mental-health-wellbeing.html">Mental Health &amp; Wellbeing</a>
+<a href="pastoral-care-and-safeguarding.html">Pastoral Care and Safeguarding</a>
+<a href="rewards-and-sanctions.html">Rewards and Sanctions</a>
+<a href="school-day.html">School Day</a>
+<a href="send.html">SEND</a>
+<a href="travel.html">Travel</a>
+<a href="uniform.html">Uniform</a>
+</nav>
+</aside>
+</div>
+</div>
+</section>
+<!-- Trust Partner Section -->
+<section class="py-section-padding border-t border-outline-variant reveal-on-scroll">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<h2 class="font-headline-md text-headline-md text-royal-purple mb-12">Northstowe Learning Community &amp; Meridian Trust</h2>
+<div class="flex flex-wrap justify-center items-center gap-16 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+<img loading="lazy" decoding="async" alt="Northstowe Primary School" class="h-16 w-auto transition-transform hover:scale-110 duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARNfzPCfTwsFKXqOLtHp153N-20N_V_WRuzu1J_pF-DjQK1EdbdSKJtw4XrG1dhQE0eLWpzwyL19_ICDPuDpMSpGcWT07XyZclW2lmr0h9urCtadvD9F5iXpS861zAIVIPUGjMeDjRsHnAV4GWyOiOn-3kvGrkIYQwr4jMfZvTrFfSJLgmVh4LoEaFqseNzjyguTUUDFKiDe-mqVp4BpT4FWDxeom4wBeBQrOBIPz4E7BQ7F4ePJQShSD9zwrwpK52fE4Y38YSUn14"/>
+<div class="flex items-center gap-4 transition-transform hover:scale-105 duration-300 interactive-hover">
+<img loading="lazy" decoding="async" alt="Meridian Trust" class="h-20 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWPGKSMLUJSBBXu2zH62fs3hQuP3U79eqeaDTPe_05F_YOTOwzumRe_GROHXTKkHhX96YmuaQVQpAZ7myz-0EpyONf6PuGGswYdIkZEjy00NhQlc4eYDivjemfvyTPIn6nhh8LpjlOr7hyhxN6IKkJexBiGwgNobEpNmoY8gSr81vhgYRa0vX0UmuZfifISW6-5S3hD6xuuKEfWI_9evdCUz582fHHxwMIjOAVKe8yfSXilT-X1mK5tnfAXESbHuEO3Y2CQFfLom6f"/>
+<div class="text-left">
+<p class="font-label-md text-label-md text-on-surface-variant max-w-xs">Sharing excellent education practice across Cambridgeshire.</p>
+</div>
+</div>
+<img loading="lazy" decoding="async" alt="Northstowe Sixth Form" class="h-16 w-auto transition-transform hover:scale-110 duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXq80oShGpJ9rGWBEFxDPsbAkS3qnCHx1exsUq8sOPj3Ezq4jYHNQiWbHCHO9--MBm2Nkq7TbLZtuuUbwtmDYuIgpQq2_EP_CkkFV6kINwMXBlDX89QYdBbRCaAb5qS1S-NM_znjxBk4ePLNQycLWg4kkDKorEoutmTj68E4VJaEqgQWu0anIxUpwGAMALuniOW4BqTEwd-IyHvttZ6qcYvVJ-u14xI0MVYQDyPcGanMBaBOvFBbCWOfOF6N0PPfqTfKSVfXQuwlzm"/>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="text-on-primary pt-section-padding pb-8 bg-royal-purple border-t border-white/10">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
+<!-- Info Col -->
+<div class="space-y-6">
+<img loading="lazy" decoding="async" alt="Logo White" class="h-16 w-auto hover:opacity-80 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLs6H9IuoyL5C2MhSmC14-z0L-UtDJ63B7-VqPCN93fwU1ire7pbIQqBR6G20wu4vbAEfkfFa7M_GQ7jbLoDLzDOTKgv4wOrLMONaQRExU-Syor8-XCF9hFHIpvXSuGOXsQhPjf-buxVfxLotkWnQgDHTfxuAvP4JsxYw5dENpyvvOdb1wTxORYf-qDLi6-Z-VBWTcI4qTPeRcJMB-dQ5sDYNdotUml8iTM_SUQ_0aiWvFsKbX7DULxXu9E"/>
+<p class="font-body-md text-surface-variant opacity-80 leading-relaxed">
+                    Northstowe Secondary College is committed to creating a safe and stimulating environment where all students are empowered to achieve their potential.
+                </p>
+</div>
+<!-- Links Col -->
+<div>
+<h4 class="font-headline-md text-headline-md mb-8">Quick Links</h4>
+<nav class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-surface-variant hover:text-on-primary transition-all nav-link-underline inline-block w-fit" href="../contact-us.html">Contact Us</a>
+<a class="font-body-md text-body-md text-surface-variant hover:text-on-primary transition-all nav-link-underline inline-block w-fit" href="#">Job Vacancies</a>
+<a class="font-body-md text-body-md text-surface-variant hover:text-on-primary transition-all nav-link-underline inline-block w-fit" href="../about/meridian-trust.html">Meridian Trust</a>
+<a class="font-body-md text-body-md text-surface-variant hover:text-on-primary transition-all nav-link-underline inline-block w-fit" href="#">Sitemap</a>
+<a class="font-body-md text-body-md text-surface-variant hover:text-on-primary transition-all nav-link-underline inline-block w-fit" href="#">Privacy Policy</a>
+</nav>
+</div>
+<!-- Contact Col -->
+<div>
+<h4 class="font-headline-md text-headline-md mb-8">Get In Touch</h4>
+<div class="space-y-4 font-body-md text-surface-variant opacity-80">
+<div class="flex items-start gap-3 group">
+<span class="material-symbols-outlined text-on-primary group-hover:scale-110 transition-transform">location_on</span>
+<span class="">Stirling Road, Northstowe, Cambridge, CB24 1DJ</span>
+</div>
+<div class="flex items-center gap-3 group">
+<span class="material-symbols-outlined text-on-primary group-hover:scale-110 transition-transform">call</span>
+<a class="hover:text-on-primary nav-link-underline" href="tel:01223343800">01223 343800</a>
+</div>
+<div class="flex items-center gap-3 group">
+<span class="material-symbols-outlined text-on-primary group-hover:scale-110 transition-transform">mail</span>
+<a class="hover:text-on-primary nav-link-underline" href="mailto:office@northstowesc.org">office@northstowesc.org</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Copyright Bar -->
+<div class="max-w-container-max mx-auto px-gutter mt-20 pt-8 border-t border-on-primary/10" style="border-color: rgba(255, 255, 255, 0.1);">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 text-label-md font-label-md opacity-60">
+<p class="">© Northstowe Secondary College. Part of the Meridian Trust.</p>
+<p class="">Website by Meridian Trust</p>
+</div>
+</div>
+</footer>
+<script src="../nsc-reveal.js" defer></script>
+<!-- FAB for Top -->
+<button class="fixed bottom-8 right-8 w-12 h-12 bg-royal-purple text-on-primary rounded-full editorial-shadow flex items-center justify-center hover:bg-deep-plum hover:scale-110 active:scale-95 transition-all duration-300 z-50 group" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<span class="material-symbols-outlined group-hover:-translate-y-1 transition-transform duration-300">arrow_upward</span>
+</button>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+
+        // Prototype nav: keep placeholder links local until real pages exist
+        document.querySelectorAll('header nav a[href="#"]').forEach((link) => {
+            link.addEventListener('click', (event) => event.preventDefault());
+        });
+
+        // Responsive nav (northstowesc.org: Main Menu + accordion below 48em)
+        const siteNavigation = document.getElementById('site-navigation');
+        const menuToggle = document.querySelector('.menu-toggle');
+        const desktopNavMq = window.matchMedia('(min-width: 48em)');
+
+        function createDropdownToggle() {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'dropdown-toggle';
+            button.setAttribute('aria-expanded', 'false');
+            button.innerHTML = '<span class="sr-only">Expand submenu</span>';
+            return button;
+        }
+
+        function bindMobileAccordionToggle(container, button) {
+            button.addEventListener('click', (event) => {
+                if (desktopNavMq.matches) {
+                    return;
+                }
+                event.preventDefault();
+                event.stopPropagation();
+                const isOpen = container.classList.toggle('is-submenu-open');
+                button.setAttribute('aria-expanded', String(isOpen));
+            });
+        }
+
+        function setupMobileNavToggles() {
+            document.querySelectorAll('.nav-menu-item').forEach((item) => {
+                const panel = item.querySelector(':scope > .nav-dropdown-panel');
+                const link = item.querySelector(':scope > .nav-trigger');
+                if (!panel || !link) {
+                    return;
+                }
+
+                item.classList.add('mobile-has-submenu');
+
+                let toggle = item.querySelector(':scope > .dropdown-toggle');
+                if (!toggle) {
+                    toggle = createDropdownToggle();
+                    bindMobileAccordionToggle(item, toggle);
+                }
+                link.insertAdjacentElement('afterend', toggle);
+            });
+
+            document.querySelectorAll('.nav-dropdown-panel .has-children').forEach((item) => {
+                const link = item.querySelector(':scope > a');
+                const panel = item.querySelector(':scope > .submenu-panel');
+                if (!link || !panel) {
+                    return;
+                }
+
+                let toggle = item.querySelector(':scope > .dropdown-toggle');
+                if (!toggle) {
+                    toggle = createDropdownToggle();
+                    bindMobileAccordionToggle(item, toggle);
+                }
+                link.insertAdjacentElement('afterend', toggle);
+            });
+        }
+
+        function setMainMenuOpen(isOpen) {
+            siteNavigation?.classList.toggle('is-open', isOpen);
+            menuToggle?.classList.toggle('is-open', isOpen);
+            menuToggle?.setAttribute('aria-expanded', String(isOpen));
+            menuToggle?.setAttribute('aria-label', isOpen ? 'Close main menu' : 'Open main menu');
+            const label = menuToggle?.querySelector('.menu-toggle__label');
+            if (label) {
+                label.textContent = isOpen ? 'Close' : 'Main Menu';
+            }
+        }
+
+        function resetMobileNavState() {
+            setMainMenuOpen(false);
+            document.querySelectorAll('.is-submenu-open').forEach((node) => {
+                node.classList.remove('is-submenu-open');
+            });
+            document.querySelectorAll('.dropdown-toggle').forEach((button) => {
+                button.setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        setupMobileNavToggles();
+
+        function setupDesktopNavPanelFlip() {
+            if (!siteNavigation) {
+                return;
+            }
+
+            function clearNavPanelFlip() {
+                siteNavigation.querySelectorAll('.nav-panel--align-right, .nav-panel--flip-left').forEach((panel) => {
+                    panel.classList.remove('nav-panel--align-right', 'nav-panel--flip-left');
+                    panel.style.removeProperty('max-height');
+                    panel.style.removeProperty('overflow-y');
+                    panel.style.removeProperty('transform');
+                });
+            }
+
+            function fitNavPanel(panel) {
+                if (!desktopNavMq.matches || !panel) {
+                    return;
+                }
+                panel.classList.remove('nav-panel--align-right', 'nav-panel--flip-left');
+                panel.style.removeProperty('max-height');
+                panel.style.removeProperty('overflow-y');
+                panel.style.removeProperty('transform');
+                requestAnimationFrame(() => {
+                    const pad = 12;
+                    let rect = panel.getBoundingClientRect();
+                    const isSubmenu = panel.classList.contains('submenu-panel');
+                    if (rect.right > window.innerWidth - pad) {
+                        panel.classList.add(isSubmenu ? 'nav-panel--flip-left' : 'nav-panel--align-right');
+                        rect = panel.getBoundingClientRect();
+                    }
+                    if (isSubmenu && rect.left < pad) {
+                        panel.classList.remove('nav-panel--flip-left');
+                    }
+                    if (rect.bottom > window.innerHeight - pad) {
+                        if (isSubmenu) {
+                            panel.style.maxHeight = `${Math.max(160, window.innerHeight - rect.top - pad)}px`;
+                            panel.style.overflowY = 'auto';
+                        } else {
+                            let shift = rect.bottom - (window.innerHeight - pad);
+                            const maxShift = Math.max(0, rect.top - pad);
+                            shift = Math.min(shift, maxShift);
+                            if (shift > 0) {
+                                panel.style.transform = `translateY(-${shift}px)`;
+                            }
+                        }
+                    }
+                });
+            }
+
+            siteNavigation.querySelectorAll('.nav-menu-item').forEach((item) => {
+                const panel = item.querySelector(':scope > .nav-dropdown-panel');
+                if (!panel) {
+                    return;
+                }
+                const onOpen = () => {
+                    clearNavPanelFlip();
+                    fitNavPanel(panel);
+                };
+                item.addEventListener('mouseenter', onOpen);
+                item.addEventListener('focusin', onOpen);
+            });
+
+            siteNavigation.querySelectorAll('li.has-children').forEach((item) => {
+                const sub = item.querySelector(':scope > .submenu-panel');
+                if (!sub) {
+                    return;
+                }
+                const onOpen = () => fitNavPanel(sub);
+                item.addEventListener('mouseenter', onOpen);
+                item.addEventListener('focusin', onOpen);
+            });
+
+            siteNavigation.addEventListener('mouseleave', clearNavPanelFlip);
+            window.addEventListener('resize', clearNavPanelFlip);
+        }
+
+        setupDesktopNavPanelFlip();
+
+        menuToggle?.addEventListener('click', () => {
+            setMainMenuOpen(!siteNavigation.classList.contains('is-open'));
+        });
+
+
+        const buildYouTubeEmbedUrl = (videoId, { autoplay = false } = {}) => {
+            let url = `https://www.youtube.com/embed/${videoId}`;
+            if (autoplay) url += '?autoplay=1';
+            return url;
+        };
+        const mountYouTubePlayer = (player, { autoplay = false } = {}) => {
+            const videoId = player.getAttribute('data-youtube-id');
+            if (!videoId || player.dataset.mounted === 'true') return;
+            const slot = player.querySelector('.youtube-player__slot');
+            const btn = player.querySelector('.youtube-player__activate');
+            if (!slot) return;
+            const iframe = document.createElement('iframe');
+            iframe.title = player.getAttribute('data-title') || 'YouTube video';
+            iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+            iframe.allowFullscreen = true;
+            iframe.loading = 'eager';
+            iframe.src = buildYouTubeEmbedUrl(videoId, { autoplay: autoplay || player.hasAttribute('data-autoplay-on-show') });
+            slot.appendChild(iframe);
+            btn?.classList.add('hidden');
+            player.dataset.mounted = 'true';
+        };
+        document.querySelectorAll('.youtube-player[data-youtube-id]').forEach((player) => {
+            player.querySelector('.youtube-player__activate')?.addEventListener('click', () => mountYouTubePlayer(player, { autoplay: true }));
+        });
+
+        desktopNavMq.addEventListener('change', (event) => {
+            if (event.matches) {
+                resetMobileNavState();
+            }
+        });
+
+    });
+</script>
+
+
+
+</body></html>

@@ -1,0 +1,239 @@
+/**
+ * Secure login dropdown — header chrome
+ */
+
+/* Keep menu above page dim layer when open */
+#site-chrome.nsc-secure-login-open {
+    z-index: 200;
+}
+
+.nsc-secure-login {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.nsc-secure-login.is-open {
+    z-index: 2;
+}
+
+.nsc-secure-login__trigger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    min-height: 2.75rem;
+    padding: 0.5rem 0.875rem;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 0.5rem;
+    background: #ffffff;
+    color: #490e67;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: nowrap;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(16, 0, 30, 0.12);
+    transition:
+        background 0.15s ease,
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        border-color 0.15s ease;
+}
+
+.nsc-secure-login__trigger:hover {
+    background: #f3ebf6;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(16, 0, 30, 0.16);
+}
+
+.nsc-secure-login__trigger:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+.nsc-secure-login__trigger .material-symbols-outlined {
+    font-size: 1.125rem;
+}
+
+.nsc-secure-login__chevron {
+    transition: transform 0.2s ease;
+}
+
+.nsc-secure-login.is-open .nsc-secure-login__chevron {
+    transform: rotate(180deg);
+}
+
+.nsc-secure-login__panel {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    z-index: 2;
+    width: min(22.5rem, calc(100vw - 2rem));
+    max-height: min(70vh, 28rem);
+    overflow: auto;
+    overscroll-behavior: contain;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(73, 14, 103, 0.12);
+    background: #ffffff;
+    box-shadow: 0 16px 48px rgba(16, 0, 30, 0.22);
+    padding: 0.875rem 0.75rem 0.75rem;
+    transform: translateY(-4px);
+    opacity: 0;
+    transition:
+        opacity 0.2s ease,
+        transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nsc-secure-login.is-open .nsc-secure-login__panel:not([hidden]) {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.nsc-secure-login__panel[hidden] {
+    display: none;
+}
+
+.nsc-secure-login__intro {
+    margin: 0 0 0.75rem;
+    padding: 0 0.35rem;
+    font-size: 0.8125rem;
+    line-height: 1.45;
+    color: #4c444f;
+}
+
+.nsc-secure-login__group + .nsc-secure-login__group {
+    margin-top: 0.625rem;
+    padding-top: 0.625rem;
+    border-top: 1px solid rgba(73, 14, 103, 0.1);
+}
+
+.nsc-secure-login__group-title {
+    margin: 0 0 0.35rem;
+    padding: 0 0.35rem;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #490e67;
+}
+
+.nsc-secure-login__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.25rem;
+}
+
+.nsc-secure-login__link {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+    padding: 0.55rem 0.5rem;
+    border-radius: 0.5rem;
+    color: #191c1d;
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.nsc-secure-login__link:hover,
+.nsc-secure-login__link:focus-visible {
+    background: rgba(243, 235, 246, 0.9);
+    color: #490e67;
+}
+
+.nsc-secure-login__link-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.375rem;
+    background: rgba(73, 14, 103, 0.08);
+    color: #490e67;
+}
+
+.nsc-secure-login__link-icon .material-symbols-outlined {
+    font-size: 1.125rem;
+}
+
+.nsc-secure-login__link-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    min-width: 0;
+}
+
+.nsc-secure-login__link-label {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.nsc-secure-login__link-hint {
+    font-size: 0.75rem;
+    line-height: 1.35;
+    color: #4c444f;
+}
+
+.nsc-secure-login__link--local .nsc-secure-login__link-hint {
+    color: #2c79ba;
+}
+
+/* Dim layer — mobile only, sits under #site-chrome (z-index 200) */
+.nsc-secure-login__backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 150;
+    background: rgba(16, 0, 30, 0.4);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.nsc-secure-login__backdrop:not([hidden]) {
+    opacity: 1;
+}
+
+.nsc-secure-login__backdrop[hidden] {
+    display: none;
+}
+
+.nsc-secure-login-body-lock {
+    overflow: hidden;
+}
+
+@media (min-width: 48em) {
+    .nsc-secure-login__backdrop {
+        display: none !important;
+    }
+}
+
+@media (max-width: 47.99em) {
+    .nsc-secure-login__panel {
+        position: fixed;
+        top: auto;
+        right: 0.75rem;
+        left: 0.75rem;
+        bottom: 0.75rem;
+        z-index: 3;
+        width: auto;
+        max-height: none;
+        padding: 1rem 0.875rem;
+    }
+
+    .nsc-secure-login__intro {
+        font-size: 0.875rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .nsc-secure-login__trigger,
+    .nsc-secure-login__chevron,
+    .nsc-secure-login__link {
+        transition: none;
+    }
+}

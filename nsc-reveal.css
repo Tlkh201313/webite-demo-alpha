@@ -1,0 +1,340 @@
+/* NSC site-wide motion system (load after page inline styles) */
+
+:root {
+    --nsc-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --nsc-ease-emphasis: cubic-bezier(0.16, 1, 0.3, 1);
+    --nsc-ease-spring: cubic-bezier(0.34, 1.25, 0.64, 1);
+    --nsc-duration-instant: 0.15s;
+    --nsc-duration-fast: 0.22s;
+    --nsc-duration-medium: 0.38s;
+    --nsc-reveal-duration: 0.58s;
+    --nsc-reveal-distance: 18px;
+    --nsc-reveal-distance-x: 24px;
+    --nsc-stagger-step: 52ms;
+    --nsc-stagger-max: 12;
+    --nsc-hover-lift: -3px;
+    --nsc-hover-scale: 1.015;
+    --nsc-shadow-hover: 0 12px 28px rgba(53, 0, 83, 0.14);
+}
+
+/* Avoid entrance flashes while the first-load skeleton is visible */
+html.nsc-skeleton-active .reveal-on-scroll,
+html.nsc-skeleton-active .reveal-from-left,
+html.nsc-skeleton-active .reveal-from-right,
+html.nsc-skeleton-active .reveal-scale,
+html.nsc-skeleton-active .value-card,
+html.nsc-skeleton-active .learning-split-reveal article,
+html.nsc-skeleton-active .learning-split-reveal aside,
+html.nsc-skeleton-active .learning-stagger > *,
+html.nsc-skeleton-active .reveal-stagger-group .reveal-stagger-child,
+html.nsc-skeleton-active .british-value-pill,
+html.nsc-skeleton-active .rs-value-pill {
+    transition: none !important;
+    animation: none !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .reveal-on-scroll {
+        opacity: 0;
+        transform: translate3d(0, var(--nsc-reveal-distance), 0);
+        transition:
+            opacity var(--nsc-reveal-duration) var(--nsc-ease-out),
+            transform var(--nsc-reveal-duration) var(--nsc-ease-out);
+    }
+
+    .reveal-on-scroll.is-visible {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .reveal-from-left {
+        opacity: 0;
+        transform: translate3d(calc(var(--nsc-reveal-distance-x) * -1), 0, 0);
+        transition:
+            opacity 0.64s var(--nsc-ease-out),
+            transform 0.64s var(--nsc-ease-out);
+    }
+
+    .reveal-from-right {
+        opacity: 0;
+        transform: translate3d(var(--nsc-reveal-distance-x), 0, 0);
+        transition:
+            opacity 0.64s var(--nsc-ease-out),
+            transform 0.64s var(--nsc-ease-out);
+    }
+
+    .reveal-from-left.is-visible,
+    .reveal-from-right.is-visible {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .reveal-scale {
+        opacity: 0;
+        transform: scale(0.98);
+        transition:
+            opacity 0.66s var(--nsc-ease-out),
+            transform 0.66s var(--nsc-ease-out);
+    }
+
+    .reveal-scale.is-visible {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .reveal-stagger-group .reveal-stagger-child {
+        opacity: 0;
+        transform: translate3d(0, 12px, 0);
+        transition:
+            opacity 0.48s var(--nsc-ease-out),
+            transform 0.48s var(--nsc-ease-out);
+    }
+
+    .reveal-stagger-group.is-visible .reveal-stagger-child {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(1) {
+        transition-delay: 0ms;
+    }
+    .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(2) {
+        transition-delay: calc(var(--nsc-stagger-step) * 1);
+    }
+    .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(3) {
+        transition-delay: calc(var(--nsc-stagger-step) * 2);
+    }
+    .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(4) {
+        transition-delay: calc(var(--nsc-stagger-step) * 3);
+    }
+    .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(5) {
+        transition-delay: calc(var(--nsc-stagger-step) * 4);
+    }
+    .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(6) {
+        transition-delay: calc(var(--nsc-stagger-step) * 5);
+    }
+    .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(7) {
+        transition-delay: calc(var(--nsc-stagger-step) * 6);
+    }
+    .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(8) {
+        transition-delay: calc(var(--nsc-stagger-step) * 7);
+    }
+    .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(9) {
+        transition-delay: calc(var(--nsc-stagger-step) * 8);
+    }
+    .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(10) {
+        transition-delay: calc(var(--nsc-stagger-step) * 9);
+    }
+    .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(11) {
+        transition-delay: calc(var(--nsc-stagger-step) * 10);
+    }
+    .reveal-stagger-group.is-visible .reveal-stagger-child:nth-child(12) {
+        transition-delay: calc(var(--nsc-stagger-step) * 11);
+    }
+
+    .stagger-1 {
+        transition-delay: calc(var(--nsc-stagger-step) * 1) !important;
+    }
+    .stagger-2 {
+        transition-delay: calc(var(--nsc-stagger-step) * 2) !important;
+    }
+    .stagger-3 {
+        transition-delay: calc(var(--nsc-stagger-step) * 3) !important;
+    }
+    .stagger-4 {
+        transition-delay: calc(var(--nsc-stagger-step) * 4) !important;
+    }
+    .stagger-5 {
+        transition-delay: calc(var(--nsc-stagger-step) * 5) !important;
+    }
+
+    /* Value cards (vision / values pages) */
+    .value-card {
+        transition:
+            transform var(--nsc-duration-medium) var(--nsc-ease-emphasis),
+            box-shadow var(--nsc-duration-medium) ease,
+            border-color var(--nsc-duration-medium) ease;
+    }
+
+    .value-card.is-visible .value-card__icon {
+        animation: nsc-icon-pop 0.6s var(--nsc-ease-spring) forwards;
+    }
+
+    @keyframes nsc-icon-pop {
+        0% {
+            transform: scale(0.45) rotate(-6deg);
+            opacity: 0.35;
+        }
+        100% {
+            transform: scale(1) rotate(0);
+            opacity: 1;
+        }
+    }
+
+    /* British / trust value pills */
+    .british-value-pill,
+    .rs-value-pill {
+        opacity: 0;
+        transform: translate3d(0, 10px, 0) scale(0.98);
+        transition:
+            opacity 0.44s var(--nsc-ease-out),
+            transform 0.44s var(--nsc-ease-out),
+            background-color var(--nsc-duration-fast) ease,
+            border-color var(--nsc-duration-fast) ease;
+    }
+
+    .british-values-grid.is-visible .british-value-pill,
+    .rs-values-grid.is-visible .rs-value-pill,
+    .reveal-stagger-group.is-visible .british-value-pill,
+    .reveal-stagger-group.is-visible .rs-value-pill {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+
+    .british-values-grid.is-visible .british-value-pill:nth-child(1),
+    .rs-values-grid.is-visible .rs-value-pill:nth-child(1) {
+        transition-delay: 0ms;
+    }
+    .british-values-grid.is-visible .british-value-pill:nth-child(2),
+    .rs-values-grid.is-visible .rs-value-pill:nth-child(2) {
+        transition-delay: calc(var(--nsc-stagger-step) * 1.5);
+    }
+    .british-values-grid.is-visible .british-value-pill:nth-child(3),
+    .rs-values-grid.is-visible .rs-value-pill:nth-child(3) {
+        transition-delay: calc(var(--nsc-stagger-step) * 3);
+    }
+    .british-values-grid.is-visible .british-value-pill:nth-child(4),
+    .rs-values-grid.is-visible .rs-value-pill:nth-child(4) {
+        transition-delay: calc(var(--nsc-stagger-step) * 4.5);
+    }
+    .british-values-grid.is-visible .british-value-pill:nth-child(5),
+    .rs-values-grid.is-visible .rs-value-pill:nth-child(5) {
+        transition-delay: calc(var(--nsc-stagger-step) * 6);
+    }
+
+    .section-heading-line::after {
+        transition: transform 0.62s var(--nsc-ease-emphasis) 0.12s;
+    }
+
+    .reveal-on-scroll.is-visible .section-heading-line::after,
+    .reveal-from-left.is-visible .section-heading-line::after,
+    .reveal-from-right.is-visible .section-heading-line::after {
+        transform: scaleX(1);
+    }
+
+    /* Cards, CTAs, logo links — GPU-friendly (transform + shadow only) */
+    .interactive-hover {
+        transition:
+            transform var(--nsc-duration-medium) var(--nsc-ease-out),
+            box-shadow var(--nsc-duration-medium) var(--nsc-ease-out),
+            border-color var(--nsc-duration-fast) ease,
+            background-color var(--nsc-duration-fast) ease,
+            color var(--nsc-duration-fast) ease;
+    }
+
+    .interactive-hover:hover,
+    .interactive-hover:focus-visible {
+        transform: translate3d(0, var(--nsc-hover-lift), 0) scale(var(--nsc-hover-scale));
+        box-shadow: var(--nsc-shadow-hover);
+    }
+
+    .interactive-hover:active {
+        transform: translate3d(0, -1px, 0) scale(0.995);
+        transition-duration: var(--nsc-duration-instant);
+    }
+
+    /* Nav & masthead micro-interactions */
+    .menu-toggle,
+    .nav-trigger,
+    .nav-dropdown-panel a,
+    .nav-inner > .font-cta-text[href] {
+        transition:
+            background var(--nsc-duration-fast) ease,
+            border-color var(--nsc-duration-fast) ease,
+            color var(--nsc-duration-fast) ease,
+            transform var(--nsc-duration-instant) var(--nsc-ease-out);
+    }
+
+    .menu-toggle:active,
+    .nav-trigger:active {
+        transform: scale(0.98);
+    }
+
+    .nav-link-underline::after {
+        transition: transform var(--nsc-duration-medium) var(--nsc-ease-out);
+    }
+
+    .video-tab {
+        transition:
+            background var(--nsc-duration-fast) ease,
+            color var(--nsc-duration-fast) ease,
+            transform var(--nsc-duration-instant) ease;
+    }
+
+    .video-tab:not(.is-active):hover {
+        transform: translateY(-1px);
+    }
+
+    .video-panel {
+        transition:
+            opacity var(--nsc-duration-medium) var(--nsc-ease-emphasis),
+            transform var(--nsc-duration-medium) var(--nsc-ease-emphasis);
+    }
+
+    .reveal-on-scroll.is-visible,
+    .reveal-from-left.is-visible,
+    .reveal-from-right.is-visible,
+    .reveal-scale.is-visible,
+    .reveal-stagger-group.is-visible .reveal-stagger-child,
+    .learning-split-reveal.is-visible article,
+    .learning-split-reveal.is-visible aside,
+    .learning-stagger.is-visible > * {
+        will-change: auto;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal-on-scroll,
+    .reveal-from-left,
+    .reveal-from-right,
+    .reveal-scale,
+    .value-card,
+    .learning-split-reveal,
+    .reveal-stagger-group,
+    .learning-stagger,
+    .reveal-stagger-group .reveal-stagger-child,
+    .british-value-pill,
+    .rs-value-pill {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+        animation: none !important;
+    }
+
+    .reveal-on-scroll,
+    .reveal-from-left,
+    .reveal-from-right,
+    .reveal-scale {
+        visibility: visible !important;
+    }
+
+    .interactive-hover:hover,
+    .interactive-hover:focus-visible,
+    .interactive-hover:active {
+        transform: none !important;
+    }
+
+    .value-card.is-visible .value-card__icon {
+        animation: none !important;
+    }
+
+    .section-heading-line::after {
+        transform: scaleX(1) !important;
+        transition: none !important;
+    }
+
+    .video-panel {
+        transition: none !important;
+    }
+}
+
