@@ -86,8 +86,12 @@ def patch_file(path: Path) -> bool:
 
 
 def main() -> None:
-    targets = [ROOT / "welcome.html"]
-    targets.extend(sorted((ROOT / "about").glob("*.html")))
+    skip_dirs = {"node_modules", "graphify-out", ".firecrawl", ".git"}
+    targets = sorted(
+        p
+        for p in ROOT.rglob("*.html")
+        if not skip_dirs.intersection(p.parts)
+    )
     changed = 0
     for fp in targets:
         if patch_file(fp):
