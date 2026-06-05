@@ -12,12 +12,16 @@ Home page content is in `main.html`; the site root redirects there via `index.ht
 
 ## Local preview
 
+One Python host serves pages and proxies remote images/videos (northstowesc.org, etc.):
+
 ```powershell
 cd C:\Users\USER\Desktop\vibecoding-websites\nsc-web
-python -m http.server 3456
+python serve.py 8080
 ```
 
-Open http://127.0.0.1:3456/main.html
+Or: `.\serve.ps1 8080`
+
+Open http://127.0.0.1:8080/main.html — external media is fetched through `/__media` and cached under `assets/_proxy_cache/`.
 
 ## Deploy updates
 

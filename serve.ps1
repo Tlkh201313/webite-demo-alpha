@@ -6,4 +6,4 @@ Write-Host "Serving $Root at http://127.0.0.1:$Port/"
 Write-Host "  Home:       http://127.0.0.1:$Port/main.html"
 Write-Host "  About Us:   http://127.0.0.1:$Port/about/about-us.html"
 Write-Host "Press Ctrl+C to stop."
-python -m http.server $Port
+python serve.py $Port

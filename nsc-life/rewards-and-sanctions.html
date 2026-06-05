@@ -1245,7 +1245,7 @@
 <link rel="stylesheet" href="../nsc-skeleton.css?v=3"/>
 <link rel="stylesheet" href="../nsc-secure-login.css?v=3"/>
 <link rel="stylesheet" href="../nsc-reveal.css?v=3"/>
-<link rel="stylesheet" href="../site-chrome.css?v=5"/>
+<link rel="stylesheet" href="../site-chrome.css?v=6"/>
 <link rel="stylesheet" href="../nsc-responsive.css?v=3"/>
 </head>
 <body class="bg-background text-on-background font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
@@ -1315,6 +1315,7 @@
 <script src="../nsc-skeleton.js"></script>
 <script src="../nsc-responsive.js" defer></script>
 <script src="../nsc-secure-login.js" defer></script>
+<script src="../nsc-site-search.js" defer></script>
 <!-- Site chrome: wellbeing banner + header (flush stack) -->
 <div id="site-chrome" class="sticky top-0 z-50">
 <div class="bg-alert-amber text-primary py-2 px-4 sm:px-gutter flex items-center justify-center leading-none shadow-none">
@@ -1339,10 +1340,14 @@
 <span class="material-symbols-outlined menu-toggle__icon menu-toggle__icon-close" aria-hidden="true">close</span>
 <span class="menu-toggle__label">Main Menu</span>
 </button>
-<div class="hidden lg:flex items-center rounded-full px-4 py-1.5 border border-outline-variant bg-white/10 transition-colors focus-within:bg-white/20 focus-within:border-white/40">
-<span class="material-symbols-outlined text-on-primary/70 text-sm mr-2">search</span>
-<input class="bg-transparent border-none focus:ring-0 text-body-md w-32 placeholder:text-on-primary/70 text-on-primary transition-all focus:w-48" placeholder="Search..." type="text"/>
-</div>
+<form class="nsc-site-search hidden lg:flex" role="search" data-nsc-site-search>
+<label class="nsc-site-search__label">Search site</label>
+<span class="material-symbols-outlined nsc-site-search__icon" aria-hidden="true">search</span>
+<input class="nsc-site-search__input" type="search" name="q" placeholder="Search site…" autocomplete="off" enterkeyhint="search" aria-label="Search site"/>
+<button type="submit" class="nsc-site-search__submit" aria-label="Search">
+<span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+</button>
+</form>
 <div class="nsc-secure-login" data-nsc-secure-login>
 <button type="button" class="nsc-secure-login__trigger" aria-expanded="false" aria-haspopup="true" aria-controls="nsc-secure-login-panel" id="nsc-secure-login-trigger">
 <span class="material-symbols-outlined" aria-hidden="true">lock</span>

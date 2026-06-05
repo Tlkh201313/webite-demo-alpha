@@ -6,6 +6,9 @@ on:
     paths:
       - '**.html'
       - 'assets/**'
+      - 'data/**'
+      - '*.css'
+      - '*.js'
       - '.github/workflows/**'
   workflow_dispatch:
 

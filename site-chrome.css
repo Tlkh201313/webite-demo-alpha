@@ -45,6 +45,244 @@ body {
         0 10px 36px rgba(16, 0, 30, 0.22);
 }
 
+/* Desktop: nav row blends with purple masthead */
+@media (min-width: 48em) {
+    #masthead .site-navigation {
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+    }
+
+    #masthead .site-navigation .nav-inner {
+        justify-content: flex-end;
+    }
+
+    #masthead .site-navigation .nav-trigger,
+    #masthead .site-navigation .nav-inner > .font-cta-text,
+    #masthead .site-navigation .nav-chevron-desktop {
+        color: #ffffff;
+    }
+
+    #masthead .site-navigation .nav-menu-item > .nav-trigger {
+        border-radius: 0.25rem;
+    }
+
+    #masthead .site-navigation .nav-menu-item:hover > .nav-trigger,
+    #masthead .site-navigation .nav-menu-item:focus-within > .nav-trigger,
+    #masthead .site-navigation .nav-inner > .font-cta-text:hover,
+    #masthead .site-navigation .nav-inner > .font-cta-text:focus-visible,
+    #masthead .site-navigation .nav-trigger[aria-current="page"],
+    #masthead .site-navigation .nav-inner > .font-cta-text[aria-current="page"],
+    #masthead .site-navigation .nav-inner > .font-cta-text.bg-white\/15 {
+        background: #73308b !important;
+        color: #ffffff !important;
+    }
+
+    #masthead .site-navigation .nav-menu-item:hover > .nav-trigger .nav-chevron-desktop,
+    #masthead .site-navigation .nav-menu-item:focus-within > .nav-trigger .nav-chevron-desktop,
+    #masthead .site-navigation .nav-trigger[aria-current="page"] .nav-chevron-desktop {
+        color: #ffffff;
+    }
+}
+
+/* —— Site search —— */
+.nsc-site-search__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.nsc-site-search {
+    align-items: center;
+    gap: 0.35rem;
+    min-height: 2.5rem;
+    padding: 0.25rem 0.35rem 0.25rem 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.06);
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.nsc-site-search:focus-within {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08);
+}
+
+.nsc-site-search__icon {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.72);
+    flex-shrink: 0;
+}
+
+.nsc-site-search__input {
+    width: 7.5rem;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    color: #ffffff;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.3;
+    outline: none;
+    transition: width 0.25s ease;
+}
+
+.nsc-site-search__input::placeholder {
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.nsc-site-search:focus-within .nsc-site-search__input {
+    width: 11rem;
+}
+
+.nsc-site-search__submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border: 0;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.nsc-site-search__submit:hover,
+.nsc-site-search__submit:focus-visible {
+    background: rgba(255, 255, 255, 0.24);
+    outline: none;
+}
+
+.nsc-site-search__submit:active {
+    transform: scale(0.96);
+}
+
+.nsc-site-search--page {
+    max-width: 36rem;
+    padding: 0.35rem 0.45rem 0.35rem 1rem;
+    background: #ffffff;
+    border: 1px solid rgba(73, 14, 103, 0.14);
+    box-shadow: var(--nsc-shadow-soft);
+}
+
+.nsc-site-search--page:focus-within {
+    border-color: rgba(73, 14, 103, 0.35);
+    box-shadow: 0 0 0 3px rgba(73, 14, 103, 0.08);
+}
+
+.nsc-site-search--page .nsc-site-search__icon,
+.nsc-site-search--page .nsc-site-search__input,
+.nsc-site-search--page .nsc-site-search__input::placeholder {
+    color: var(--nsc-on-surface-variant);
+}
+
+.nsc-site-search--page .nsc-site-search__input {
+    width: 100%;
+    color: var(--nsc-on-surface);
+}
+
+.nsc-site-search--page .nsc-site-search__submit {
+    background: var(--nsc-purple);
+}
+
+.nsc-site-search--page .nsc-site-search__submit:hover,
+.nsc-site-search--page .nsc-site-search__submit:focus-visible {
+    background: var(--nsc-deep-plum);
+}
+
+.nsc-search-page__intro {
+    max-width: 42rem;
+    margin-bottom: 2rem;
+}
+
+.nsc-search-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.85rem;
+}
+
+.nsc-search-result {
+    margin: 0;
+}
+
+.nsc-search-result__link {
+    display: block;
+    padding: 1rem 1.15rem;
+    border: 1px solid rgba(73, 14, 103, 0.1);
+    border-radius: var(--nsc-radius-md);
+    background: #ffffff;
+    text-decoration: none;
+    box-shadow: var(--nsc-shadow-soft);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.nsc-search-result__link:hover,
+.nsc-search-result__link:focus-visible {
+    transform: translateY(-1px);
+    border-color: rgba(73, 14, 103, 0.22);
+    box-shadow: var(--nsc-shadow-lift);
+    outline: none;
+}
+
+.nsc-search-result__eyebrow {
+    display: block;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--nsc-trust-blue);
+    margin-bottom: 0.35rem;
+}
+
+.nsc-search-result__title {
+    display: block;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--nsc-purple);
+    margin-bottom: 0.35rem;
+}
+
+.nsc-search-result__desc {
+    display: block;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--nsc-on-surface-variant);
+}
+
+.nsc-search-empty {
+    margin: 1rem 0 0;
+    padding: 1rem 1.15rem;
+    border-radius: var(--nsc-radius-md);
+    background: var(--nsc-lavender);
+    color: var(--nsc-on-surface);
+}
+
+@media (max-width: 63.99em) {
+    .nsc-site-search.hidden.lg\:flex {
+        display: none !important;
+    }
+}
+
 .glass-nav {
     background-color: rgba(255, 255, 255, 0.94);
     border-bottom: 1px solid rgba(73, 14, 103, 0.08);

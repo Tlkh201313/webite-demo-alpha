@@ -198,7 +198,7 @@ embed {
 }
 
 /* —— Tablet —— */
-@media (min-width: 72em) and (max-width: 63.99em) {
+@media (min-width: 48em) and (max-width: 63.99em) {
     html {
         scroll-padding-top: 6.25rem;
     }
