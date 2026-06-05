@@ -1,3 +1,6 @@
+# Mobile app (Capacitor / Android) — website repo only
+mobile-app/
+
 # Local / tooling
 .cursor/
 .firecrawl/

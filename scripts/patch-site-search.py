@@ -11,7 +11,7 @@ OLD_SEARCH = """<div class="hidden lg:flex items-center rounded-full px-4 py-1.5
 <input class="bg-transparent border-none focus:ring-0 text-body-md w-32 placeholder:text-on-primary/70 text-on-primary transition-all focus:w-48" placeholder="Search..." type="text"/>
 </div>"""
 
-NEW_SEARCH = """<form class="nsc-site-search hidden lg:flex" role="search" data-nsc-site-search>
+NEW_SEARCH = """<form class="nsc-site-search nsc-site-search--header" role="search" data-nsc-site-search>
 <label class="nsc-site-search__label">Search site</label>
 <span class="material-symbols-outlined nsc-site-search__icon" aria-hidden="true">search</span>
 <input class="nsc-site-search__input" type="search" name="q" placeholder="Search site…" autocomplete="off" enterkeyhint="search" aria-label="Search site"/>
