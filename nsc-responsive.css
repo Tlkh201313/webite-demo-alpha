@@ -76,58 +76,79 @@ embed {
         box-sizing: border-box;
     }
 
-    /* Hero: grow with content; avoid clipping under tall sticky chrome */
-    section.relative.h-\[65vh\] {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
+    /* Page heroes — natural height, contained background (no bleed into next section) */
+    section.relative.flex.items-center.overflow-hidden {
+        display: block;
+        position: relative;
+        isolation: isolate;
+        overflow: hidden !important;
         box-sizing: border-box;
-        min-height: max(16rem, calc(100dvh - var(--nsc-chrome-h, 11rem)));
+        min-height: 0 !important;
         height: auto !important;
-        overflow: visible;
-        padding-top: clamp(1.25rem, 4vw, 2rem);
-        padding-bottom: clamp(1.5rem, 5vw, 2.5rem);
+        padding: clamp(1.25rem, 4vw, 2rem) 0 clamp(1.5rem, 5vw, 2.25rem);
     }
 
-    section.relative.h-\[65vh\] > .absolute.inset-0,
-    section.relative.h-\[65vh\] > .absolute.inset-0.w-full,
-    section.relative.h-\[65vh\] > #hero-parallax {
-        min-height: 100%;
+    section.relative.flex.items-center.overflow-hidden > #hero-parallax,
+    section.relative.flex.items-center.overflow-hidden > .absolute.inset-0 {
+        position: absolute;
+        inset: 0;
+        width: 100%;
         height: 100%;
-    }
-
-    section.relative.h-\[65vh\] > .absolute.bg-gradient-to-r,
-    section.relative.h-\[65vh\] > .absolute.inset-0.bg-gradient-to-r {
         min-height: 100%;
+        transform: none !important;
+        will-change: auto;
     }
 
-    section.relative.h-\[65vh\].overflow-hidden {
-        overflow: visible !important;
+    section.relative.flex.items-center.overflow-hidden #hero-parallax img,
+    section.relative.flex.items-center.overflow-hidden > #hero-parallax img {
+        transform: none !important;
+        scale: 1 !important;
     }
 
-    section.relative.min-h-\[420px\] {
-        min-height: max(16rem, calc(100dvh - var(--nsc-chrome-h, 11rem))) !important;
+    section.relative.flex.items-center.overflow-hidden > .relative.z-20,
+    section.relative.flex.items-center.overflow-hidden > div.relative.z-20 {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 100%;
+        animation: none !important;
     }
 
-    section.relative.h-\[65vh\] .max-w-2xl,
-    section.relative.h-\[65vh\] .relative.z-20 {
+    section.relative.flex.items-center.overflow-hidden .max-w-2xl,
+    section.relative.flex.items-center.overflow-hidden .max-w-3xl {
         width: 100%;
         max-width: 100%;
     }
 
-    section.relative.h-\[65vh\] .flex.flex-wrap.gap-4 {
+    section.relative.flex.items-center.overflow-hidden .flex.flex-wrap.gap-4 {
         flex-direction: column;
         align-items: stretch;
         gap: 0.75rem;
     }
 
-    section.relative.h-\[65vh\] .flex.flex-wrap.gap-4 > a {
+    section.relative.flex.items-center.overflow-hidden .flex.flex-wrap.gap-4 > a {
         width: 100%;
         justify-content: center;
         text-align: center;
         padding: 0.875rem 1rem;
         font-size: clamp(0.8125rem, 3.6vw, 0.9375rem);
         box-sizing: border-box;
+    }
+
+    /* Solid stack above any hero paint overflow */
+    section.relative.flex.items-center.overflow-hidden + section {
+        position: relative;
+        z-index: 3;
+        isolation: isolate;
+    }
+
+    section.py-section-padding.bg-surface-container-lowest,
+    section#welcome-message {
+        background-color: #ffffff;
+    }
+
+    section.py-section-padding {
+        scroll-margin-top: var(--nsc-chrome-h, 11rem);
     }
 
     .nsc-inner-banner__img {
@@ -188,7 +209,18 @@ embed {
     #masthead .flex.items-center.gap-2 > .nsc-secure-login {
         flex: 1 1 0;
         min-width: 0;
-        max-width: 50%;
+        max-width: none;
+    }
+
+    #masthead .flex.items-center.gap-2 > .nsc-site-search__mount,
+    #masthead .flex.items-center.gap-2 > .nsc-site-search {
+        flex: 0 0 auto;
+    }
+
+    #masthead .nsc-site-search__toggle {
+        width: 2.75rem;
+        min-width: 2.75rem;
+        padding: 0;
     }
 
     #masthead img {
@@ -287,9 +319,7 @@ embed {
 
 /* Landscape phone */
 @media (max-width: 47.99em) and (orientation: landscape) {
-    section.relative.h-\[65vh\] {
-        min-height: max(12rem, calc(100dvh - var(--nsc-chrome-h, 9rem)));
-        height: auto;
+    section.relative.flex.items-center.overflow-hidden {
         padding-top: 1rem;
         padding-bottom: 1.25rem;
     }

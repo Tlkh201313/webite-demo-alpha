@@ -47,9 +47,19 @@
         });
     }
 
+    function tameHeroMotion() {
+        if (window.innerWidth >= 768) {
+            return;
+        }
+        document.querySelectorAll("#hero-parallax").forEach(function (el) {
+            el.style.transform = "none";
+        });
+    }
+
     function apply() {
         updateViewportVars();
         updateChromeOffset();
+        tameHeroMotion();
         wrapEntryTables();
     }
 
@@ -61,6 +71,7 @@
             resizeTimer = window.setTimeout(function () {
                 updateViewportVars();
                 updateChromeOffset();
+                tameHeroMotion();
             }, 100);
         },
         { passive: true }
