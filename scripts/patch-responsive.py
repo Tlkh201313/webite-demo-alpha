@@ -79,7 +79,7 @@ def ensure_js_script(text: str, href: str) -> str:
 
 
 def patch_file(path: Path) -> bool:
-    text = path.read_text(encoding="utf-8", errors="replace")
+    text = path.read_text(encoding="utf-8")
     original = text
     css_href = rel_href(path, CSS_FILE)
     js_href = rel_href(path, JS_FILE)

@@ -571,7 +571,7 @@
                 color: #ffffff;
             }
 
-            @media (max-width: 71.99em) {
+            @media (max-width: 47.99em) {
                 .site-navigation {
                     display: grid;
                     grid-template-rows: 0fr;
@@ -733,7 +733,7 @@
                 .nav-menu-item::after {
                     display: none;
                 }
-                /* Side arrow only (official site) � link left, chevron right */
+                /* Side arrow only (official site) — link left, chevron right */
                 .dropdown-toggle {
                     display: flex;
                     align-items: center;
@@ -794,7 +794,7 @@
                 }
             }
 
-            @media (min-width: 72em) {
+            @media (min-width: 48em) {
                 .menu-toggle,
                 .dropdown-toggle {
                     display: none !important;
@@ -1490,7 +1490,7 @@
 <span class="font-label-md text-label-md text-lavender-tint tracking-widest block mb-4 uppercase opacity-0 animate-[fadeInUp_0.8s_ease-out_0.2s_forwards]">About Northstowe</span>
 <h1 class="font-display-lg text-[clamp(2rem,6vw,3rem)] sm:text-display-lg text-on-primary mb-6 leading-tight opacity-0 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards]">Sponsorship</h1>
 <p class="font-body-lg text-body-lg text-on-primary/90 mb-10 leading-relaxed opacity-0 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards]">
-                    Local businesses sponsoring our 3G sports pitches � thank you for supporting NSC and our community.
+                    Local businesses sponsoring our 3G sports pitches — thank you for supporting NSC and our community.
                 </p>
 <div class="flex flex-wrap gap-4 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.8s_forwards]">
 <a class="bg-on-primary text-deep-plum font-cta-text text-cta-text px-8 py-4 flex items-center gap-2 hover:bg-lavender-tint transition-all duration-300 interactive-hover rounded-md" href="#overview">
@@ -1663,7 +1663,7 @@
 <!-- Copyright Bar -->
 <div class="max-w-container-max mx-auto px-gutter mt-20 pt-8 border-t border-on-primary/10" style="border-color: rgba(255, 255, 255, 0.1);">
 <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-label-md font-label-md opacity-60">
-<p class="">� Northstowe Secondary College. Part of the Meridian Trust.</p>
+<p class="">© Northstowe Secondary College. Part of the Meridian Trust.</p>
 <p class="">Website by Meridian Trust</p>
 </div>
 </div>
@@ -1685,7 +1685,7 @@
         // Responsive nav (northstowesc.org: Main Menu + accordion below 48em)
         const siteNavigation = document.getElementById('site-navigation');
         const menuToggle = document.querySelector('.menu-toggle');
-        const desktopNavMq = window.matchMedia('(min-width: 72em)');
+        const desktopNavMq = window.matchMedia('(min-width: 48em)');
 
         function createDropdownToggle() {
             const button = document.createElement('button');

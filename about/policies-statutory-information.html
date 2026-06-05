@@ -488,7 +488,7 @@
                 color: #ffffff;
             }
 
-            @media (max-width: 71.99em) {
+            @media (max-width: 47.99em) {
                 .site-navigation {
                     display: grid;
                     grid-template-rows: 0fr;
@@ -650,7 +650,7 @@
                 .nav-menu-item::after {
                     display: none;
                 }
-                /* Side arrow only (official site) � link left, chevron right */
+                /* Side arrow only (official site) — link left, chevron right */
                 .dropdown-toggle {
                     display: flex;
                     align-items: center;
@@ -711,7 +711,7 @@
                 }
             }
 
-            @media (min-width: 72em) {
+            @media (min-width: 48em) {
                 .menu-toggle,
                 .dropdown-toggle {
                     display: none !important;
@@ -1652,7 +1652,7 @@
 </div>
 <div class="max-w-3xl mx-auto space-y-4">
 <div class="download-card reveal-on-scroll">
-<p class="font-body-md text-body-md text-on-surface-variant mb-3">Student Ethnicity Data � December 2024</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-3">Student Ethnicity Data – December 2024</p>
 <div class="flex flex-wrap gap-3">
 <a class="bg-royal-purple text-on-primary font-cta-text text-cta-text px-5 py-2.5 rounded-lg hover:bg-deep-plum transition-colors inline-flex items-center gap-2" href="https://www.northstowesc.org/wp-content/uploads/2024/12/Student-Ethinicity-Data.pdf" target="_blank" rel="noopener noreferrer">View PDF <span class="material-symbols-outlined text-[18px]">open_in_new</span></a>
 <a class="border-2 border-royal-purple text-royal-purple font-cta-text text-cta-text px-5 py-2.5 rounded-lg hover:bg-lavender-tint/50 transition-colors inline-flex items-center gap-2" href="https://www.northstowesc.org/wp-content/uploads/2024/12/Student-Ethinicity-Data.pdf" download>Download</a>
@@ -1785,7 +1785,7 @@
 <!-- Copyright Bar -->
 <div class="max-w-container-max mx-auto px-gutter mt-20 pt-8 border-t border-on-primary/10" style="border-color: rgba(255, 255, 255, 0.1);">
 <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-label-md font-label-md opacity-60">
-<p class="">� Northstowe Secondary College. Part of the Meridian Trust.</p>
+<p class="">© Northstowe Secondary College. Part of the Meridian Trust.</p>
 <p class="">Website by Meridian Trust</p>
 </div>
 </div>
@@ -1807,7 +1807,7 @@
         // Responsive nav (northstowesc.org: Main Menu + accordion below 48em)
         const siteNavigation = document.getElementById('site-navigation');
         const menuToggle = document.querySelector('.menu-toggle');
-        const desktopNavMq = window.matchMedia('(min-width: 72em)');
+        const desktopNavMq = window.matchMedia('(min-width: 48em)');
 
         function createDropdownToggle() {
             const button = document.createElement('button');
