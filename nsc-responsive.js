@@ -16,6 +16,18 @@
         root.style.setProperty("--nsc-vh", window.innerHeight * 0.01 + "px");
     }
 
+    function updateChromeOffset() {
+        const chrome = document.getElementById("site-chrome");
+        if (!chrome) {
+            return;
+        }
+        const h = Math.ceil(chrome.getBoundingClientRect().height);
+        if (h > 0) {
+            root.style.setProperty("--nsc-chrome-h", h + "px");
+            root.style.scrollPaddingTop = h + "px";
+        }
+    }
+
     function wrapEntryTables() {
         // Wrap tables if on smaller screens (less than 1024px)
         if (window.innerWidth >= 1024) {
@@ -37,6 +49,7 @@
 
     function apply() {
         updateViewportVars();
+        updateChromeOffset();
         wrapEntryTables();
     }
 
@@ -47,15 +60,36 @@
             window.clearTimeout(resizeTimer);
             resizeTimer = window.setTimeout(function () {
                 updateViewportVars();
+                updateChromeOffset();
             }, 100);
         },
         { passive: true }
     );
     window.addEventListener("orientationchange", apply);
 
-    if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", apply);
-    } else {
-        apply();
+    function observeChrome() {
+        const chrome = document.getElementById("site-chrome");
+        if (!chrome || typeof ResizeObserver === "undefined") {
+            return;
+        }
+        const ro = new ResizeObserver(function () {
+            updateChromeOffset();
+        });
+        ro.observe(chrome);
     }
+
+    function onReady() {
+        apply();
+        observeChrome();
+        window.setTimeout(updateChromeOffset, 250);
+        window.setTimeout(updateChromeOffset, 1000);
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", onReady);
+    } else {
+        onReady();
+    }
+
+    window.addEventListener("load", updateChromeOffset, { passive: true });
 })();

@@ -6,6 +6,7 @@
 :root {
     --nsc-gutter-mobile: 0.75rem;
     --nsc-gutter-tablet: 1.25rem;
+    --nsc-chrome-h: 11rem;
 }
 
 /* Fluid media everywhere */
@@ -56,10 +57,10 @@ embed {
 /* —— Mobile —— */
 @media (max-width: 47.99em) {
     html {
-        scroll-padding-top: 5.5rem;
+        scroll-padding-top: var(--nsc-chrome-h, 11rem);
         /* Fluid scale: 15px on narrow phones, up to 17px on wider ones.
            Using vw ensures real phones scale identically to DevTools. */
-        font-size: clamp(15px, 4.2vw, 17px);
+        font-size: clamp(14px, 3.8vw, 17px);
         -webkit-text-size-adjust: 100%;
         text-size-adjust: 100%;
     }
@@ -75,9 +76,58 @@ embed {
         box-sizing: border-box;
     }
 
+    /* Hero: grow with content; avoid clipping under tall sticky chrome */
     section.relative.h-\[65vh\] {
-        min-height: 18rem;
-        height: 52vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        box-sizing: border-box;
+        min-height: max(16rem, calc(100dvh - var(--nsc-chrome-h, 11rem)));
+        height: auto !important;
+        overflow: visible;
+        padding-top: clamp(1.25rem, 4vw, 2rem);
+        padding-bottom: clamp(1.5rem, 5vw, 2.5rem);
+    }
+
+    section.relative.h-\[65vh\] > .absolute.inset-0,
+    section.relative.h-\[65vh\] > .absolute.inset-0.w-full,
+    section.relative.h-\[65vh\] > #hero-parallax {
+        min-height: 100%;
+        height: 100%;
+    }
+
+    section.relative.h-\[65vh\] > .absolute.bg-gradient-to-r,
+    section.relative.h-\[65vh\] > .absolute.inset-0.bg-gradient-to-r {
+        min-height: 100%;
+    }
+
+    section.relative.h-\[65vh\].overflow-hidden {
+        overflow: visible !important;
+    }
+
+    section.relative.min-h-\[420px\] {
+        min-height: max(16rem, calc(100dvh - var(--nsc-chrome-h, 11rem))) !important;
+    }
+
+    section.relative.h-\[65vh\] .max-w-2xl,
+    section.relative.h-\[65vh\] .relative.z-20 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    section.relative.h-\[65vh\] .flex.flex-wrap.gap-4 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    section.relative.h-\[65vh\] .flex.flex-wrap.gap-4 > a {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 0.875rem 1rem;
+        font-size: clamp(0.8125rem, 3.6vw, 0.9375rem);
+        box-sizing: border-box;
     }
 
     .nsc-inner-banner__img {
@@ -92,19 +142,91 @@ embed {
         line-height: 1.15;
     }
 
+    /* Wellbeing banner — readable, tappable, respects notch */
+    #site-chrome > div:first-child {
+        padding-top: max(0.5rem, env(safe-area-inset-top, 0px));
+        padding-bottom: 0.625rem;
+    }
+
+    #site-chrome > div:first-child a.font-cta-text {
+        font-size: clamp(0.75rem, 3.4vw, 0.875rem);
+        line-height: 1.35;
+        gap: 0.35rem;
+        flex-wrap: wrap;
+        padding: 0.15rem 0;
+    }
+
+    #site-chrome > div:first-child .material-symbols-outlined {
+        font-size: 1.125rem;
+        flex-shrink: 0;
+    }
+
+    /* Masthead: logo row, then full-width action buttons */
+    #masthead > div > .flex.flex-wrap.items-center.justify-between,
+    #masthead .flex.flex-wrap.items-center.justify-between.gap-3 {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 0.65rem;
+    }
+
     #masthead .flex.items-center.justify-between {
         flex-wrap: wrap;
         gap: 0.75rem;
     }
 
+    #masthead .flex.items-center.gap-2,
+    #masthead .flex.items-center.gap-2.sm\:gap-4 {
+        width: 100%;
+        max-width: 100%;
+        flex-shrink: 1;
+        min-width: 0;
+        gap: 0.5rem;
+    }
+
+    #masthead .flex.items-center.gap-2 > .menu-toggle,
+    #masthead .flex.items-center.gap-2 > .nsc-secure-login {
+        flex: 1 1 0;
+        min-width: 0;
+        max-width: 50%;
+    }
+
     #masthead img {
-        max-height: 3.25rem;
+        max-height: clamp(2.5rem, 10vw, 3.25rem);
         width: auto;
+        max-width: min(100%, 16rem);
+    }
+
+    #masthead .menu-toggle,
+    #masthead .nsc-secure-login__trigger {
+        width: 100%;
+        max-width: 100%;
+        min-height: 2.75rem;
+        padding: 0.5rem 0.5rem;
+        font-size: clamp(0.6875rem, 3vw, 0.8125rem);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        box-sizing: border-box;
     }
 
     .menu-toggle {
         min-height: 2.75rem;
-        min-width: 2.75rem;
+        min-width: 0;
+    }
+
+    .menu-toggle__label,
+    .nsc-secure-login__label {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Back-to-top FAB: sit above system nav */
+    button.fixed.bottom-8.right-8 {
+        bottom: max(1.25rem, env(safe-area-inset-bottom, 0px));
+        right: max(1rem, env(safe-area-inset-right, 0px));
+        width: 2.75rem;
+        height: 2.75rem;
     }
 
     .nsc-page-with-sidebar {
@@ -166,8 +288,10 @@ embed {
 /* Landscape phone */
 @media (max-width: 47.99em) and (orientation: landscape) {
     section.relative.h-\[65vh\] {
-        min-height: 16rem;
-        height: 70vh;
+        min-height: max(12rem, calc(100dvh - var(--nsc-chrome-h, 9rem)));
+        height: auto;
+        padding-top: 1rem;
+        padding-bottom: 1.25rem;
     }
 }
 
