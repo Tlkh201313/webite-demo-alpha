@@ -76,102 +76,39 @@ embed {
         box-sizing: border-box;
     }
 
-    /* Page heroes — natural height, contained background (no bleed into next section) */
+    /* Page heroes — contained background, readable copy in WebView */
+    #nsc-page-hero,
     section.relative.flex.items-center.overflow-hidden {
-        display: block;
-        position: relative;
+        align-items: flex-start;
         isolation: isolate;
         overflow: hidden !important;
-        box-sizing: border-box;
-        min-height: 0 !important;
-        height: auto !important;
-        padding: clamp(1.25rem, 4vw, 2rem) 0 clamp(1.5rem, 5vw, 2.25rem);
+        padding-top: 1.25rem;
+        padding-bottom: 1.75rem;
     }
 
     section.relative.flex.items-center.overflow-hidden > #hero-parallax,
     section.relative.flex.items-center.overflow-hidden > .absolute.inset-0 {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        min-height: 100%;
         transform: none !important;
-        will-change: auto;
     }
 
-    section.relative.flex.items-center.overflow-hidden #hero-parallax img,
-    section.relative.flex.items-center.overflow-hidden > #hero-parallax img {
+    section.relative.flex.items-center.overflow-hidden #hero-parallax img {
         transform: none !important;
         scale: 1 !important;
     }
 
-    section.relative.flex.items-center.overflow-hidden > .relative.z-20,
-    section.relative.flex.items-center.overflow-hidden > div.relative.z-20 {
-        position: relative;
-        z-index: 2;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    section.relative.flex.items-center.overflow-hidden > .relative.z-20[class*="animate-"],
-    section.relative.flex.items-center.overflow-hidden > div.relative.z-20[class*="animate-"] {
-        animation: none !important;
-    }
-
-    /* WebView-safe: no fade-in — full contrast white copy on a solid scrim */
     section.relative.flex.items-center.overflow-hidden > .absolute.bg-gradient-to-r,
     section.relative.flex.items-center.overflow-hidden > div.absolute.inset-0.bg-gradient-to-r {
-        background: rgba(53, 0, 83, 0.94) !important;
+        background: rgba(53, 0, 83, 0.92) !important;
     }
 
-    section.relative.flex.items-center.overflow-hidden .max-w-2xl,
-    section.relative.flex.items-center.overflow-hidden .max-w-3xl,
-    section.relative.flex.items-center.overflow-hidden .max-w-2xl *:not(a),
-    section.relative.flex.items-center.overflow-hidden .max-w-3xl *:not(a),
     section.relative.flex.items-center.overflow-hidden .max-w-2xl h1,
     section.relative.flex.items-center.overflow-hidden .max-w-2xl p,
-    section.relative.flex.items-center.overflow-hidden .max-w-2xl span,
+    section.relative.flex.items-center.overflow-hidden .max-w-2xl > span,
     section.relative.flex.items-center.overflow-hidden .max-w-3xl h1,
     section.relative.flex.items-center.overflow-hidden .max-w-3xl p,
-    section.relative.flex.items-center.overflow-hidden .max-w-3xl span {
+    section.relative.flex.items-center.overflow-hidden .max-w-3xl > span {
         color: #ffffff !important;
         opacity: 1 !important;
-        animation: none !important;
-        transform: none !important;
-        -webkit-text-fill-color: #ffffff !important;
-        text-shadow: 0 1px 3px rgba(16, 0, 30, 0.55);
-    }
-
-    section.relative.flex.items-center.overflow-hidden .flex.flex-wrap.gap-4 > a.bg-on-primary {
-        color: #490e67 !important;
-        -webkit-text-fill-color: #490e67 !important;
-        text-shadow: none;
-    }
-
-    section.relative.flex.items-center.overflow-hidden .flex.flex-wrap.gap-4 > a.border-2 {
-        color: #ffffff !important;
-        -webkit-text-fill-color: #ffffff !important;
-        text-shadow: none;
-    }
-
-    section.relative.flex.items-center.overflow-hidden [class*="opacity-0"] {
-        opacity: 1 !important;
-        animation: none !important;
-        transform: none !important;
-    }
-
-    section.relative.flex.items-center.overflow-hidden h1,
-    section.relative.flex.items-center.overflow-hidden p,
-    section.relative.flex.items-center.overflow-hidden span {
-        color: #ffffff !important;
-        -webkit-text-fill-color: #ffffff !important;
-    }
-
-    /* Masthead logo: transparent PNG sits on royal-purple header */
-    #masthead a.flex-shrink-0 img,
-    #masthead img[alt*="Logo"] {
-        mix-blend-mode: normal !important;
-        background: transparent !important;
     }
 
     section.relative.flex.items-center.overflow-hidden .max-w-2xl,
