@@ -11,7 +11,7 @@
 <link rel="dns-prefetch" href="https://padlet.com"/>
 <link rel="stylesheet" href="learning/learning-content.css"/>
 <link rel="stylesheet" href="site-content.css?v=13"/>
-<meta name="referrer" content="no-referrer"/>
+<meta name="referrer" content="strict-origin-when-cross-origin"/>
 <title>Contact Us | Northstowe Secondary College</title>
 <link rel="icon" type="image/png" href="assets/images/nsc-favicon.png" sizes="32x32"/>
 <link rel="apple-touch-icon" href="assets/images/nsc-favicon.png"/>
@@ -2075,9 +2075,17 @@ allowfullscreen=""
 
 
         const buildYouTubeEmbedUrl = (videoId, { autoplay = false } = {}) => {
-            let url = `https://www.youtube.com/embed/${videoId}`;
-            if (autoplay) url += '?autoplay=1';
-            return url;
+            const origin = (location.protocol === 'file:' || !location.origin || location.origin === 'null')
+                ? 'https://tlkh201313.github.io'
+                : location.origin;
+            const params = new URLSearchParams({
+                rel: '0',
+                modestbranding: '1',
+                playsinline: '1',
+                origin,
+            });
+            if (autoplay) params.set('autoplay', '1');
+            return `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
         };
         const mountYouTubePlayer = (player, { autoplay = false } = {}) => {
             const videoId = player.getAttribute('data-youtube-id');

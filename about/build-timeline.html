@@ -3,7 +3,7 @@
 <html class="scroll-smooth" lang="en" style=""><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
-<meta name="referrer" content="no-referrer"/>
+<meta name="referrer" content="strict-origin-when-cross-origin"/>
 <title>Build Timeline | Northstowe Secondary College</title>
 <link rel="icon" type="image/png" href="../assets/images/nsc-favicon.png" sizes="32x32"/>
 <link rel="apple-touch-icon" href="../assets/images/nsc-favicon.png"/>
@@ -1626,7 +1626,7 @@ Contact Us
         // YouTube embeds — Error 153 fix: valid Referer + origin (required since late 2025)
         const YOUTUBE_EMBED_ORIGIN = (() => {
             if (location.protocol === 'file:' || !location.origin || location.origin === 'null') {
-                return 'https://www.northstowesc.org';
+                return 'https://tlkh201313.github.io';
             }
             return location.origin;
         })();
@@ -1637,7 +1637,7 @@ Contact Us
                 rel: '0',
                 modestbranding: '1'
             });
-            return `https://www.youtube-nocookie.com/embed/${videoId}?${params.toString()}`;
+            return `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
         };
 
         const mountYouTubePlayer = (player) => {
@@ -1648,7 +1648,7 @@ Contact Us
             if (!slot) return;
             const iframe = document.createElement('iframe');
             iframe.title = player.getAttribute('data-title') || 'YouTube video';
-            iframe.referrerPolicy = 'no-referrer';
+            iframe.referrerPolicy = 'strict-origin-when-cross-origin';
             iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
             iframe.allowFullscreen = true;
             iframe.loading = 'lazy';
