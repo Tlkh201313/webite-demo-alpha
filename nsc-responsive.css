@@ -79,6 +79,9 @@ embed {
     /* Page heroes — contained background, readable copy in WebView */
     #nsc-page-hero,
     section.relative.flex.items-center.overflow-hidden {
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none;
         align-items: flex-start;
         isolation: isolate;
         overflow: hidden !important;
@@ -88,6 +91,9 @@ embed {
 
     section.relative.flex.items-center.overflow-hidden > #hero-parallax,
     section.relative.flex.items-center.overflow-hidden > .absolute.inset-0 {
+        position: absolute;
+        inset: 0;
+        height: 100%;
         transform: none !important;
     }
 
@@ -99,6 +105,31 @@ embed {
     section.relative.flex.items-center.overflow-hidden > .absolute.bg-gradient-to-r,
     section.relative.flex.items-center.overflow-hidden > div.absolute.inset-0.bg-gradient-to-r {
         background: rgba(53, 0, 83, 0.92) !important;
+    }
+
+    section.relative.flex.items-center.overflow-hidden > .relative.z-20,
+    section.relative.flex.items-center.overflow-hidden > div.relative.z-20 {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+    }
+
+    section.relative.flex.items-center.overflow-hidden .max-w-2xl > span,
+    section.relative.flex.items-center.overflow-hidden .max-w-3xl > span {
+        margin-bottom: 0.5rem;
+        font-size: clamp(0.6875rem, 2.8vw, 0.8125rem);
+    }
+
+    section.relative.flex.items-center.overflow-hidden .max-w-2xl h1,
+    section.relative.flex.items-center.overflow-hidden .max-w-3xl h1 {
+        margin-bottom: 0.75rem;
+    }
+
+    section.relative.flex.items-center.overflow-hidden .max-w-2xl p,
+    section.relative.flex.items-center.overflow-hidden .max-w-3xl p {
+        margin-bottom: 1rem;
+        font-size: clamp(0.875rem, 3.6vw, 1rem);
+        line-height: 1.45;
     }
 
     section.relative.flex.items-center.overflow-hidden .max-w-2xl h1,
@@ -118,6 +149,8 @@ embed {
     }
 
     section.relative.flex.items-center.overflow-hidden .flex.flex-wrap.gap-4 {
+        margin-top: 0.25rem;
+        padding-bottom: 0.25rem;
         flex-direction: column;
         align-items: stretch;
         gap: 0.75rem;
@@ -125,9 +158,10 @@ embed {
 
     section.relative.flex.items-center.overflow-hidden .flex.flex-wrap.gap-4 > a {
         width: 100%;
+        min-height: 2.75rem;
         justify-content: center;
         text-align: center;
-        padding: 0.875rem 1rem;
+        padding: 0.75rem 0.875rem;
         font-size: clamp(0.8125rem, 3.6vw, 0.9375rem);
         box-sizing: border-box;
     }
