@@ -110,7 +110,7 @@ embed {
     section.relative.flex.items-center.overflow-hidden > .relative.z-20,
     section.relative.flex.items-center.overflow-hidden > div.relative.z-20 {
         position: relative;
-        z-index: 2;
+        z-index: 20;
         width: 100%;
     }
 
